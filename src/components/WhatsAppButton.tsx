@@ -1,0 +1,56 @@
+
+import { useState, useEffect } from "react";
+
+const WhatsAppButton = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <a
+      href="https://wa.me/1234567890"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`fixed bottom-6 right-6 bg-borgona text-white p-3 rounded-full shadow-lg transition-all transform z-50 ${
+        isVisible 
+          ? "translate-y-0 opacity-100" 
+          : "translate-y-10 opacity-0 pointer-events-none"
+      }`}
+      aria-label="Contactar por WhatsApp"
+    >
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M20.5335 3.46C19.2945 2.216 17.8104 1.231 16.1759 0.563C14.5415 -0.106 12.7905 -0.144 11.1371 0.454C9.48379 1.053 7.97124 2.067 6.80625 3.394C5.64126 4.722 4.8676 6.314 4.55849 8.02C4.24938 9.726 4.41812 11.483 5.04763 13.1C5.67714 14.718 6.74551 16.136 8.14 17.2L4 23.94L10.93 19.94C12.4452 20.6503 14.1052 20.9882 15.7793 20.9237C17.4535 20.8591 19.082 20.3941 20.5338 19.5697C21.9856 18.7454 23.2147 17.589 24.1187 16.1983C25.0228 14.8075 25.5733 13.2268 25.7263 11.5865C25.8794 9.9462 25.6301 8.2941 25.0002 6.76569C24.3702 5.23728 23.3763 3.8736 22.1019 2.78317C20.8275 1.69274 19.3098 0.90757 17.6777 0.495325C16.0456 0.0830803 14.3463 0.055375 12.7034 0.414522"
+          fill="white"
+        />
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M12.0001 2C13.4242 1.99975 14.8244 2.36223 16.0678 3.05464C17.3112 3.74705 18.3544 4.74731 19.0936 5.95928C19.8329 7.17125 20.2414 8.5538 20.2789 9.97786C20.3165 11.4019 19.9817 12.8063 19.3056 14.056C18.6296 15.3057 17.6409 16.36 16.4368 17.1118C15.2327 17.8635 13.8538 18.2858 12.4297 18.3375C11.0056 18.3892 9.60063 18.0684 8.34626 17.4048C7.09189 16.7412 6.04386 15.763 5.30006 14.56L5.00006 14.06L4.36006 17L2.00006 16.61L3.20006 10.61C2.86006 8.62 3.22006 6.55 4.19638 4.83049C5.1727 3.11098 6.6961 1.81539 8.50006 1.2C9.63403 0.87558 10.8142 0.79224 11.9778 0.955161C13.1415 1.11808 14.2587 1.54237 15.2501 2.19"
+          fill="white"
+        />
+      </svg>
+    </a>
+  );
+};
+
+export default WhatsAppButton;
