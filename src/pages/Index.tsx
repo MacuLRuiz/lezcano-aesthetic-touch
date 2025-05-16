@@ -39,10 +39,10 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
               <h1 className="hero-quote mb-6">
-                Cirugía plástica con propósito.
+                Hola, soy la Dra. Beatriz Lezcano.
               </h1>
               <p className="text-xl mb-8">
-                Resultados naturales, atención cercana y compromiso médico.
+                Cirujana plástica y segunda generación de médicos. Trabajo con un enfoque personalizado, humano y profesional para que cada paciente se sienta acompañado y seguro.
               </p>
               <NavLink to="/contacto" className="btn-primary inline-block">
                 Solicitá tu consulta
@@ -65,10 +65,9 @@ const Index = () => {
       <section className="py-16 bg-gris-claro">
         <div className="container-custom text-center">
           <div className="max-w-2xl mx-auto">
+            <h2 className="hero-quote mb-6">Cirugía plástica con propósito.</h2>
             <p className="text-xl animate-on-scroll">
-              Soy la Dra. Beatriz Lezcano, cirujana plástica y segunda generación de médicos. 
-              Trabajo con un enfoque personalizado, humano y profesional para que cada paciente 
-              se sienta acompañado y seguro.
+              Resultados naturales, atención cercana y compromiso médico.
             </p>
           </div>
         </div>
