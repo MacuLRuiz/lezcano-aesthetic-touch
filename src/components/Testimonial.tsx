@@ -18,7 +18,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
         ? 'bg-white shadow-md p-8' 
         : 'bg-gris-claro p-6'
       } 
-      rounded-md relative
+      rounded-md relative h-full
     `}>
       <div className="text-4xl text-borgona opacity-20 absolute top-4 left-4">"</div>
       <p className={`

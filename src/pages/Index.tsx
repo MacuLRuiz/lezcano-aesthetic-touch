@@ -1,9 +1,8 @@
-
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
 import ProcedureCard from "@/components/ProcedureCard";
-import Testimonial from "@/components/Testimonial";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 
 const Index = () => {
   useEffect(() => {
@@ -30,6 +29,21 @@ const Index = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const testimonials = [
+    {
+      quote: "La Dra. Lezcano es excelente profesional. Me sentí muy cómoda y segura durante todo el proceso. Los resultados fueron mejores de lo que esperaba, muy naturales.",
+      author: "Carolina S."
+    },
+    {
+      quote: "Después de muchas consultas con diferentes profesionales, elegí a la Dra. Lezcano por su calidez y profesionalismo. Su atención personalizada y seguimiento post operatorio fueron excepcionales.",
+      author: "Laura T."
+    },
+    {
+      quote: "Increíble experiencia desde la primera consulta. La Dra. explicó todo con paciencia y claridad. El procedimiento fue exactamente como lo habíamos planeado y la recuperación muy bien acompañada.",
+      author: "Mariana R."
+    }
+  ];
 
   return (
     <>
@@ -124,10 +138,9 @@ const Index = () => {
           />
           
           <div className="max-w-3xl mx-auto animate-on-scroll">
-            <Testimonial
-              quote="La Dra. Lezcano es excelente profesional. Me sentí muy cómoda y segura durante todo el proceso. Los resultados fueron mejores de lo que esperaba, muy naturales."
-              author="Carolina S."
-              featured={true}
+            <TestimonialCarousel 
+              testimonials={testimonials}
+              featured={true} 
             />
           </div>
         </div>

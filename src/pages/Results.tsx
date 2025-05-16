@@ -1,9 +1,8 @@
-
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
 import BeforeAfter from "@/components/BeforeAfter";
-import Testimonial from "@/components/Testimonial";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 
 const Results = () => {
   useEffect(() => {
@@ -30,6 +29,26 @@ const Results = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const testimonials = [
+    {
+      quote: "La Dra. Lezcano es excelente profesional. Me sentí muy cómoda y segura durante todo el proceso. Los resultados fueron mejores de lo que esperaba, muy naturales.",
+      author: "María P."
+    },
+    {
+      quote: "Después de muchas consultas con diferentes profesionales, elegí a la Dra. Lezcano por su calidez y profesionalismo. Su atención personalizada y seguimiento post operatorio fueron excepcionales.",
+      author: "Laura S."
+    },
+    {
+      quote: "Increíble experiencia desde la primera consulta. La Dra. explicó todo con paciencia y claridad. El procedimiento fue exactamente como lo habíamos planeado y la recuperación muy bien acompañada.",
+      author: "Carolina M."
+    }
+  ];
+
+  const featuredTestimonial = {
+    quote: "Agradezco a la Dra. Beatriz por su dedicación y profesionalismo. El procedimiento de reconstrucción mamaria no solo cambió mi apariencia física, sino que me devolvió la confianza y me ayudó a cerrar un capítulo difícil de mi vida.",
+    author: "Gabriela T."
+  };
 
   return (
     <>
@@ -95,27 +114,8 @@ const Results = () => {
             subtitle="Lo que dicen quienes confiaron en mi trabajo"
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="animate-on-scroll">
-              <Testimonial
-                quote="La Dra. Lezcano es excelente profesional. Me sentí muy cómoda y segura durante todo el proceso. Los resultados fueron mejores de lo que esperaba, muy naturales."
-                author="María P."
-              />
-            </div>
-            
-            <div className="animate-on-scroll">
-              <Testimonial
-                quote="Después de muchas consultas con diferentes profesionales, elegí a la Dra. Lezcano por su calidez y profesionalismo. Su atención personalizada y seguimiento post operatorio fueron excepcionales."
-                author="Laura S."
-              />
-            </div>
-            
-            <div className="animate-on-scroll">
-              <Testimonial
-                quote="Increíble experiencia desde la primera consulta. La Dra. explicó todo con paciencia y claridad. El procedimiento fue exactamente como lo habíamos planeado y la recuperación muy bien acompañada."
-                author="Carolina M."
-              />
-            </div>
+          <div className="animate-on-scroll max-w-4xl mx-auto">
+            <TestimonialCarousel testimonials={testimonials} />
           </div>
         </div>
       </section>
@@ -124,9 +124,8 @@ const Results = () => {
       <section className="py-12">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto animate-on-scroll">
-            <Testimonial
-              quote="Agradezco a la Dra. Beatriz por su dedicación y profesionalismo. El procedimiento de reconstrucción mamaria no solo cambió mi apariencia física, sino que me devolvió la confianza y me ayudó a cerrar un capítulo difícil de mi vida."
-              author="Gabriela T."
+            <TestimonialCarousel 
+              testimonials={[featuredTestimonial]} 
               featured={true}
             />
           </div>
