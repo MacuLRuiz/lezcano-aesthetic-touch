@@ -32,15 +32,22 @@ const Procedures = () => {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="pt-24 pb-12">
-        <div className="container-custom text-center">
-          <h1 className="text-4xl md:text-5xl font-seasons mb-6">Procedimientos</h1>
-          <p className="text-lg max-w-2xl mx-auto">
+      {/* Hero Section with Background Image */}
+      <section 
+        className="relative pt-32 pb-24 min-h-[60vh] flex items-center" 
+        style={{
+          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.8), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/f9351f8e-2805-4aa2-b6d3-8478f2fcade6.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        }}
+      >
+        <div className="container-custom text-center relative z-10">
+          <h1 className="text-4xl md:text-6xl font-seasons mb-6 text-white">Procedimientos</h1>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto text-white">
             Tratamientos personalizados con los más altos estándares de seguridad y calidad para 
             potenciar tu belleza natural.
           </p>
-          <div className="h-1 w-24 bg-rosa-claro mx-auto mt-6"></div>
+          <div className="h-1 w-24 bg-rosa-claro mx-auto mt-8"></div>
         </div>
       </section>
 
