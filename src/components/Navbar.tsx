@@ -43,7 +43,7 @@ const Navbar = () => {
             />
           ) : (
             <img 
-              src="/lovable-uploads/b0a16dc1-62b5-439d-961b-a68098a55c04.png" 
+              src="/lovable-uploads/2f2356fc-234a-49aa-b7f1-683fe6bb7d6c.png" 
               alt="Dra. Beatriz Lezcano - Cirugía Plástica y Reparadora" 
               className="h-10 md:h-12"
             />
