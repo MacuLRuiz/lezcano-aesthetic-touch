@@ -18,9 +18,9 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start">
             <NavLink to="/">
               <img 
-                src="/lovable-uploads/2f2356fc-234a-49aa-b7f1-683fe6bb7d6c.png" 
-                alt="Logo Dra. Beatriz Lezcano" 
-                className="h-16 mb-4"
+                src="/lovable-uploads/b0a16dc1-62b5-439d-961b-a68098a55c04.png" 
+                alt="Dra. Beatriz Lezcano - Cirugía Plástica y Reparadora" 
+                className="h-20 mb-4"
               />
             </NavLink>
             <p className="text-sm text-center md:text-left">

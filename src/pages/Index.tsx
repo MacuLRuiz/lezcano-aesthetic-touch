@@ -38,6 +38,13 @@ const Index = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
+              <div className="mb-8">
+                <img 
+                  src="/lovable-uploads/b0a16dc1-62b5-439d-961b-a68098a55c04.png" 
+                  alt="Dra. Beatriz Lezcano - Cirugía Plástica y Reparadora" 
+                  className="max-w-[280px] md:max-w-[320px] mx-auto md:mx-0"
+                />
+              </div>
               <h1 className="hero-quote mb-6">
                 Cirugía plástica con propósito.
               </h1>

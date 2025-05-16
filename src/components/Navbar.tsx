@@ -35,11 +35,19 @@ const Navbar = () => {
     >
       <div className="container-custom flex justify-between items-center">
         <NavLink to="/" className="flex items-center">
-          <img 
-            src="/lovable-uploads/2f2356fc-234a-49aa-b7f1-683fe6bb7d6c.png" 
-            alt="Logo Dra. Beatriz Lezcano" 
-            className="h-10 md:h-12"
-          />
+          {isScrolled ? (
+            <img 
+              src="/lovable-uploads/f9351f8e-2805-4aa2-b6d3-8478f2fcade6.png" 
+              alt="Logo BL" 
+              className="h-10 md:h-12"
+            />
+          ) : (
+            <img 
+              src="/lovable-uploads/b0a16dc1-62b5-439d-961b-a68098a55c04.png" 
+              alt="Dra. Beatriz Lezcano - Cirugía Plástica y Reparadora" 
+              className="h-10 md:h-12"
+            />
+          )}
         </NavLink>
 
         {/* Mobile menu button */}
