@@ -38,7 +38,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/3f23d7ac-a31a-4ca5-81c0-6bdb7971560c.png"
             alt="Logo BL"
-            className="h-10 md:h-12"
+            className="h-8 md:h-10" // Reduced from h-10 md:h-12 to h-8 md:h-10
           />
         </NavLink>
 
