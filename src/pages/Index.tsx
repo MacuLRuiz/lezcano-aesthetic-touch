@@ -51,7 +51,7 @@ const Index = () => {
             <div className="order-1 md:order-2">
               <div className="aspect-[3/4] bg-gris-claro rounded-md overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3"
+                  src="/lovable-uploads/d43af646-00e7-43e5-9241-53a24cb353f9.png"
                   alt="Dra. Beatriz Lezcano"
                   className="w-full h-full object-cover"
                 />
