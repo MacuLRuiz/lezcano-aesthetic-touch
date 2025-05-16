@@ -37,7 +37,7 @@ const Navbar = () => {
         <NavLink to="/" className="flex items-center">
           {isScrolled ? (
             <img 
-              src="/lovable-uploads/f9351f8e-2805-4aa2-b6d3-8478f2fcade6.png" 
+              src="/lovable-uploads/1dae403a-6366-4f51-a9dd-a6d984ba2796.png" 
               alt="Logo BL" 
               className="h-10 md:h-12"
             />
