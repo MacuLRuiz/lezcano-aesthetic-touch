@@ -91,6 +91,7 @@ const Index = () => {
                 title="Rinoplastia"
                 description="Armoniza la forma y funcionalidad de la nariz, mejorando tanto la estética como la respiración."
                 link="/procedimientos"
+                imageSrc="/lovable-uploads/4595e78e-5fb5-4554-af82-3b5386081e5a.png"
               />
             </div>
             
@@ -99,6 +100,7 @@ const Index = () => {
                 title="Aumento mamario"
                 description="Realza el volumen y la forma de los senos para una apariencia más armónica y natural."
                 link="/procedimientos"
+                imageSrc="/lovable-uploads/371b18e7-0749-4015-9787-163ab28fe24b.png"
               />
             </div>
             
@@ -107,6 +109,7 @@ const Index = () => {
                 title="Botox"
                 description="Tratamiento no invasivo para suavizar líneas de expresión y prevenir signos de envejecimiento."
                 link="/procedimientos"
+                imageSrc="/lovable-uploads/243dd21a-d6ab-44ce-9864-860c9ee44492.png"
               />
             </div>
           </div>
