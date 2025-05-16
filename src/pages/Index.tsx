@@ -49,7 +49,7 @@ const Index = () => {
               </NavLink>
             </div>
             <div className="order-1 md:order-2">
-              <div className="aspect-[3/4] bg-gris-claro rounded-md overflow-hidden">
+              <div className="aspect-[3/4] bg-gris-claro rounded-md overflow-hidden max-w-[320px] mx-auto">
                 <img
                   src="/lovable-uploads/d43af646-00e7-43e5-9241-53a24cb353f9.png"
                   alt="Dra. Beatriz Lezcano"
