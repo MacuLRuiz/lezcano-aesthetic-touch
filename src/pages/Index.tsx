@@ -126,7 +126,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto animate-on-scroll">
             <Testimonial
               quote="La Dra. Lezcano es excelente profesional. Me sentí muy cómoda y segura durante todo el proceso. Los resultados fueron mejores de lo que esperaba, muy naturales."
-              author="María P."
+              author="Carolina S."
               featured={true}
             />
           </div>
@@ -137,7 +137,7 @@ const Index = () => {
       <section className="py-16 bg-borgona text-white">
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-seasons mb-6 text-white">
-            ¿Lista para dar el primer paso?
+            ¿Listo para dar el primer paso?
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
             Te invito a una consulta personalizada para evaluar juntas las mejores opciones para ti.
