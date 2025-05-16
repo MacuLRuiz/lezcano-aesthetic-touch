@@ -1,10 +1,14 @@
-
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  
+  // Check if current route is in results or procedures pages
+  const isSpecialPage = location.pathname === "/procedimientos" || 
+                        location.pathname === "/resultados-y-testimonios";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,18 +31,29 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  // Determine the background color based on scroll state and current page
+  const getBgColor = () => {
+    if (isScrolled) {
+      return "bg-white shadow-md"; 
+    } else if (isSpecialPage) {
+      return "bg-white bg-opacity-90"; // Light background for special pages even when not scrolled
+    } else {
+      return "bg-transparent"; // Transparent for other pages when not scrolled
+    }
+  };
+
   return (
     <nav 
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? "py-2 bg-white shadow-md" : "py-4 bg-transparent"
-      }`}
+        isScrolled ? "py-2" : "py-4"
+      } ${getBgColor()}`}
     >
       <div className="container-custom flex justify-between items-center">
         <NavLink to="/" className="flex items-center">
           <img 
             src="/lovable-uploads/3f23d7ac-a31a-4ca5-81c0-6bdb7971560c.png"
             alt="Logo BL"
-            className="h-8 md:h-10" // Reduced from h-10 md:h-12 to h-8 md:h-10
+            className="h-8 md:h-10"
           />
         </NavLink>
 
