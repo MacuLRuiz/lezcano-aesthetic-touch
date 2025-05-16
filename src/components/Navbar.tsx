@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -35,11 +36,8 @@ const Navbar = () => {
       <div className="container-custom flex justify-between items-center">
         <NavLink to="/" className="flex items-center">
           <img 
-            src={isScrolled 
-              ? "/lovable-uploads/3f23d7ac-a31a-4ca5-81c0-6bdb7971560c.png"
-              : "/lovable-uploads/2f2356fc-234a-49aa-b7f1-683fe6bb7d6c.png"
-            }
-            alt={isScrolled ? "Logo BL" : "Dra. Beatriz Lezcano - Cirugía Plástica y Reparadora"}
+            src="/lovable-uploads/3f23d7ac-a31a-4ca5-81c0-6bdb7971560c.png"
+            alt="Logo BL"
             className="h-10 md:h-12"
           />
         </NavLink>
