@@ -23,7 +23,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
       <div className="text-4xl text-borgona opacity-20 absolute top-4 left-4">"</div>
       <p className={`
         ${featured 
-          ? 'text-xl italic font-seasons text-borgona' 
+          ? 'text-xl italic' 
           : 'text-lg italic'
         }
         mb-4 relative z-10
