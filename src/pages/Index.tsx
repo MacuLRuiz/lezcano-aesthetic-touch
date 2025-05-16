@@ -62,13 +62,28 @@ const Index = () => {
       </section>
 
       {/* Introduction */}
-      <section className="py-16 bg-gris-claro">
-        <div className="container-custom text-center">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="hero-quote mb-6">Cirugía plástica con propósito.</h2>
-            <p className="text-xl animate-on-scroll">
-              Resultados naturales, atención cercana y compromiso médico.
-            </p>
+      <section className="py-16 bg-borgona text-white">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="text-center md:text-left">
+              <div className="max-w-xl">
+                <h2 className="text-3xl md:text-4xl mb-6 font-seasons text-white">
+                  Cirugía plástica con propósito.
+                </h2>
+                <p className="text-xl animate-on-scroll">
+                  Resultados naturales, atención cercana y compromiso médico.
+                </p>
+              </div>
+            </div>
+            <div className="animate-on-scroll">
+              <div className="aspect-[4/3] bg-white bg-opacity-10 rounded-md overflow-hidden">
+                <img
+                  src="/lovable-uploads/b0a16dc1-62b5-439d-961b-a68098a55c04.png"
+                  alt="Cirugía plástica con propósito"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
