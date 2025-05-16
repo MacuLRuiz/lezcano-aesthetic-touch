@@ -65,6 +65,7 @@ const Procedures = () => {
                 title="Rinoplastia"
                 description="Armoniza la forma y funcionalidad de la nariz, mejorando tanto la estética como la respiración. Resultados naturales que armonizan con tus rasgos faciales."
                 link="/contacto"
+                imageSrc="/lovable-uploads/2f2356fc-234a-49aa-b7f1-683fe6bb7d6c.png"
               />
             </div>
             
@@ -73,6 +74,7 @@ const Procedures = () => {
                 title="Aumento mamario"
                 description="Realza el volumen y la forma de los senos para una apariencia más armónica y natural, adaptada a tu proporción corporal y expectativas."
                 link="/contacto"
+                imageSrc="/lovable-uploads/4595e78e-5fb5-4554-af82-3b5386081e5a.png"
               />
             </div>
             
@@ -81,6 +83,7 @@ const Procedures = () => {
                 title="Lipoescultura"
                 description="Remodela el contorno corporal eliminando acúmulos de grasa localizada y definiendo la silueta para un resultado proporcional y armónico."
                 link="/contacto"
+                imageSrc="/lovable-uploads/3980f895-566b-4465-8516-6c1cd83ab4d1.png"
               />
             </div>
           </div>
@@ -101,6 +104,7 @@ const Procedures = () => {
                 title="Reconstrucción mamaria"
                 description="Devuelve la forma y volumen del seno tras una mastectomía u otras intervenciones, con un enfoque personalizado y sensible a las necesidades físicas y emocionales."
                 link="/contacto"
+                imageSrc="/lovable-uploads/b0a16dc1-62b5-439d-961b-a68098a55c04.png"
               />
             </div>
             
@@ -109,6 +113,7 @@ const Procedures = () => {
                 title="Corrección de cicatrices"
                 description="Mejora la apariencia de cicatrices causadas por lesiones, cirugías previas o quemaduras, utilizando técnicas avanzadas para integrarlas mejor con la piel circundante."
                 link="/contacto"
+                imageSrc="/lovable-uploads/3f23d7ac-a31a-4ca5-81c0-6bdb7971560c.png"
               />
             </div>
           </div>
@@ -129,6 +134,7 @@ const Procedures = () => {
                 title="Botox"
                 description="Tratamiento para suavizar líneas de expresión y prevenir signos de envejecimiento, especialmente en frente, entrecejo y patas de gallo. Proporciona un aspecto rejuvenecido y natural."
                 link="/contacto"
+                imageSrc="/lovable-uploads/1dae403a-6366-4f51-a9dd-a6d984ba2796.png"
               />
             </div>
             
@@ -137,6 +143,7 @@ const Procedures = () => {
                 title="Relleno con ácido hialurónico"
                 description="Restaura el volumen perdido, define contornos y mejora la hidratación en labios, pómulos y surcos nasogenianos. Resultados inmediatos y naturales."
                 link="/contacto"
+                imageSrc="/lovable-uploads/d700353d-f0af-4a66-aa7d-01c9069e8613.png"
               />
             </div>
           </div>
