@@ -148,6 +148,49 @@ const Procedures = () => {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-12 bg-gris-claro">
+        <div className="container-custom">
+          <SectionTitle 
+            title="Preguntas frecuentes" 
+          />
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="bg-white p-6 rounded-md shadow-sm">
+              <h3 className="text-xl font-seasons mb-3">¿Es necesaria una consulta previa?</h3>
+              <p>
+                Sí, siempre realizamos una evaluación personalizada antes de cualquier procedimiento
+                para analizar tus necesidades y establecer expectativas claras.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-md shadow-sm">
+              <h3 className="text-xl font-seasons mb-3">¿Cuál es el tiempo de recuperación?</h3>
+              <p>
+                Varía según el procedimiento. En la consulta te brindaré información detallada sobre los
+                cuidados y tiempos específicos de recuperación para cada caso.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-md shadow-sm">
+              <h3 className="text-xl font-seasons mb-3">¿Se aceptan obras sociales?</h3>
+              <p>
+                Algunos procedimientos reconstructivos pueden estar cubiertos. Consulta tu caso particular
+                para analizar las opciones de cobertura.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-md shadow-sm">
+              <h3 className="text-xl font-seasons mb-3">¿Cuándo veré los resultados?</h3>
+              <p>
+                Los resultados inmediatos varían según el procedimiento. Los resultados finales
+                pueden apreciarse entre 3 a 6 meses después de la cirugía.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-12 bg-borgona text-white">
         <div className="container-custom text-center">
