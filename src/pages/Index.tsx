@@ -63,7 +63,7 @@ const Index = () => {
               </NavLink>
             </div>
             <div className="order-1 md:order-2">
-              <div className="aspect-[3/4] bg-gris-claro rounded-md overflow-hidden max-w-[320px] mx-auto">
+              <div className="aspect-[3/4] bg-white rounded-md overflow-hidden max-w-[320px] mx-auto">
                 <img
                   src="/lovable-uploads/d43af646-00e7-43e5-9241-53a24cb353f9.png"
                   alt="Dra. Beatriz Lezcano"
@@ -80,7 +80,7 @@ const Index = () => {
         <div className="container-custom w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <div className="h-[50vh] bg-gris-claro rounded-md overflow-hidden">
+              <div className="h-[50vh] bg-white rounded-md overflow-hidden">
                 <img
                   src="/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png"
                   alt="Dra. Lezcano realizando procedimiento estético"
@@ -141,7 +141,7 @@ const Index = () => {
       </section>
 
       {/* Featured Testimonial */}
-      <section className="py-16 bg-rosa-claro bg-opacity-20">
+      <section className="py-16 bg-white bg-opacity-20">
         <div className="container-custom">
           <SectionTitle 
             title="Lo que dicen mis pacientes" 
