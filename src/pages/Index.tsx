@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
@@ -8,22 +9,24 @@ const Index = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     
-    // Simple animation on scroll
+    // Animación mejorada en scroll
     const handleScroll = () => {
       const elements = document.querySelectorAll('.animate-on-scroll');
-      elements.forEach(element => {
+      elements.forEach((element, index) => {
         const position = element.getBoundingClientRect();
         
-        // If element is in viewport
+        // Si el elemento está en el viewport
         if(position.top < window.innerHeight - 100) {
-          element.classList.add('animated');
+          setTimeout(() => {
+            element.classList.add('animated');
+          }, index * 100); // Stagger animation
         }
       });
     };
 
     window.addEventListener('scroll', handleScroll);
-    // Trigger once on load
-    setTimeout(handleScroll, 500);
+    // Trigger inicial
+    setTimeout(handleScroll, 300);
     
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -48,22 +51,24 @@ const Index = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-24 md:pt-32 pb-16 md:pb-24">
+      <section className="pt-24 md:pt-32 pb-16 md:pb-24 bg-white relative overflow-hidden">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
-              <h1 className="hero-quote mb-6">
+              <h1 className="hero-quote mb-6 animate-fade-in-left">
                 Hola, soy la Dra. Beatriz Lezcano.
               </h1>
-              <p className="text-xl mb-8">
+              <p className="text-xl mb-8 animate-fade-in-left delay-200">
                 Cirujana plástica y segunda generación de médicos. Trabajo con un enfoque personalizado, humano y profesional para que cada paciente se sienta acompañado y seguro.
               </p>
-              <NavLink to="/contacto" className="btn-primary inline-block">
-                ¡Hablemos!
-              </NavLink>
+              <div className="animate-fade-in-left delay-300">
+                <NavLink to="/contacto" className="btn-primary inline-block">
+                  ¡Hablemos!
+                </NavLink>
+              </div>
             </div>
-            <div className="order-1 md:order-2">
-              <div className="aspect-[3/4] bg-white rounded-md overflow-hidden max-w-[320px] mx-auto">
+            <div className="order-1 md:order-2 animate-fade-in-right delay-100">
+              <div className="aspect-[3/4] bg-white rounded-md overflow-hidden max-w-[320px] mx-auto image-container animate-float">
                 <img
                   src="/lovable-uploads/d43af646-00e7-43e5-9241-53a24cb353f9.png"
                   alt="Dra. Beatriz Lezcano"
@@ -73,14 +78,18 @@ const Index = () => {
             </div>
           </div>
         </div>
+        
+        {/* Elementos decorativos */}
+        <div className="absolute top-20 right-10 w-32 h-32 bg-rosa-suave rounded-full opacity-20 animate-float delay-500"></div>
+        <div className="absolute bottom-20 left-10 w-20 h-20 bg-nude rounded-full opacity-30 animate-float delay-300"></div>
       </section>
 
       {/* Introduction */}
-      <section className="py-16 bg-borgona text-white min-h-[70vh] flex items-center">
+      <section className="py-16 bg-borgona text-white min-h-[70vh] flex items-center relative overflow-hidden">
         <div className="container-custom w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1">
-              <div className="h-[50vh] bg-white rounded-md overflow-hidden">
+            <div className="order-2 md:order-1 animate-on-scroll">
+              <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
                 <img
                   src="/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png"
                   alt="Dra. Lezcano realizando procedimiento estético"
@@ -88,26 +97,35 @@ const Index = () => {
                 />
               </div>
             </div>
-            <div className="order-1 md:order-2">
+            <div className="order-1 md:order-2 animate-on-scroll">
               <h2 className="text-3xl md:text-4xl mb-6 font-seasons text-white">
                 Cirugía plástica con propósito.
               </h2>
-              <p className="text-xl animate-on-scroll">
+              <p className="text-xl text-reveal">
                 Resultados naturales, atención cercana y compromiso médico.
               </p>
             </div>
           </div>
         </div>
+        
+        {/* Elementos decorativos para parallax */}
+        <div className="absolute top-0 left-0 w-full h-full opacity-10">
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white rounded-full animate-float delay-100"></div>
+          <div className="absolute top-3/4 right-1/4 w-3 h-3 bg-white rounded-full animate-float delay-400"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-white rounded-full animate-float delay-200"></div>
+        </div>
       </section>
 
       {/* Featured Procedures */}
-      <section className="py-16" style={{ backgroundColor: 'rgb(233, 196, 186)' }}>
+      <section className="py-16 relative" style={{ backgroundColor: 'rgb(233, 196, 186)' }}>
         <div className="container-custom">
-          <SectionTitle 
-            title="Procedimientos destacados" 
-            subtitle="Tratamientos personalizados con los más altos estándares"
-            whiteText={true}
-          />
+          <div className="animate-on-scroll">
+            <SectionTitle 
+              title="Procedimientos destacados" 
+              subtitle="Tratamientos personalizados con los más altos estándares"
+              whiteText={true}
+            />
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="animate-on-scroll">
@@ -138,16 +156,21 @@ const Index = () => {
             </div>
           </div>
         </div>
+        
+        {/* Gradiente sutil */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white via-transparent opacity-5 animate-pulse-soft"></div>
       </section>
 
       {/* Featured Testimonial */}
-      <section className="py-16 bg-white bg-opacity-20">
+      <section className="py-16 bg-white bg-opacity-20 relative">
         <div className="container-custom">
-          <SectionTitle 
-            title="Lo que dicen mis pacientes" 
-          />
+          <div className="animate-on-scroll">
+            <SectionTitle 
+              title="Lo que dicen mis pacientes" 
+            />
+          </div>
           
-          <div className="max-w-3xl mx-auto animate-on-scroll">
+          <div className="max-w-3xl mx-auto animate-on-scroll animate-scale-in">
             <TestimonialCarousel 
               testimonials={testimonials}
               featured={true} 
@@ -157,21 +180,28 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-borgona text-white">
+      <section className="py-16 bg-borgona text-white relative overflow-hidden">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-seasons mb-6 text-white">
-            ¿Listo para dar el primer paso?
-          </h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Te invito a una consulta personalizada para evaluar juntos las mejores opciones para vos.
-          </p>
-          <NavLink 
-            to="/contacto" 
-            className="bg-white text-borgona py-2 px-6 rounded hover:bg-opacity-90 transition-all font-medium text-lg"
-          >
-            ¿En qué puedo ayudarte?
-          </NavLink>
+          <div className="animate-on-scroll">
+            <h2 className="text-3xl md:text-4xl font-seasons mb-6 text-white">
+              ¿Listo para dar el primer paso?
+            </h2>
+            <p className="text-lg mb-8 max-w-2xl mx-auto">
+              Te invito a una consulta personalizada para evaluar juntos las mejores opciones para vos.
+            </p>
+            <NavLink 
+              to="/contacto" 
+              className="bg-white text-borgona py-2 px-6 rounded hover:bg-opacity-90 transition-all font-medium text-lg inline-block transform hover:scale-105 hover:shadow-lg"
+            >
+              ¿En qué puedo ayudarte?
+            </NavLink>
+          </div>
         </div>
+        
+        {/* Elementos decorativos animados */}
+        <div className="absolute top-10 left-10 w-16 h-16 border border-white border-opacity-20 rounded-full animate-float"></div>
+        <div className="absolute bottom-10 right-10 w-24 h-24 border border-white border-opacity-10 rounded-full animate-float delay-300"></div>
+        <div className="absolute top-1/2 left-5 w-8 h-8 bg-white bg-opacity-5 rounded-full animate-float delay-500"></div>
       </section>
     </>
   );
