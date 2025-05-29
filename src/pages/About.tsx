@@ -31,34 +31,22 @@ const About = () => {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="pt-24 md:pt-32 pb-16 md:pb-24 bg-white relative overflow-hidden">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="order-2 md:order-1">
-              <h1 className="hero-quote mb-6 animate-fade-in-left">
-                Conocé mi historia y filosofía profesional.
-              </h1>
-              <p className="text-xl mb-8 animate-fade-in-left delay-200">
-                Soy médica cirujana plástica, segunda generación de profesionales en cirugía. 
-                Mi pasión es acompañar a cada paciente con un enfoque empático, ético y personalizado.
-              </p>
-              <div className="animate-fade-in-left delay-300">
-                <NavLink to="/contacto" className="btn-primary inline-block">
-                  Conversemos
-                </NavLink>
-              </div>
-            </div>
-            <div className="order-1 md:order-2 animate-slide-in">
-              <div className="aspect-[3/4] bg-white rounded-md overflow-hidden max-w-[320px] mx-auto image-container">
-                <img
-                  src="/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png"
-                  alt="Dra. Beatriz Lezcano atendiendo paciente"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
+      {/* Hero Section with Background Image */}
+      <section 
+        className="relative pt-32 pb-24 min-h-[60vh] flex items-center" 
+        style={{
+          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.8), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        }}
+      >
+        <div className="container-custom text-center relative z-10">
+          <h1 className="text-4xl md:text-6xl font-seasons mb-6 text-white">Sobre mí</h1>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto text-white">
+            Conocé mi historia y filosofía profesional como médica cirujana plástica, 
+            segunda generación de profesionales en cirugía.
+          </p>
+          <div className="h-1 w-24 bg-rosa-claro mx-auto mt-8"></div>
         </div>
       </section>
 
