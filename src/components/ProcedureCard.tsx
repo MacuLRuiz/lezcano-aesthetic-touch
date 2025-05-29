@@ -22,7 +22,7 @@ const ProcedureCard: React.FC<ProcedureCardProps> = ({
   return (
     <Card className="procedure-card group border-gris-neutro hover:shadow-md transition-all h-full flex flex-col">
       <div className="overflow-hidden">
-        <AspectRatio ratio={3/4} className="bg-gris-claro">
+        <AspectRatio ratio={4/3} className="bg-gris-claro">
           {imageSrc ? (
             <img 
               src={imageSrc} 
@@ -30,8 +30,11 @@ const ProcedureCard: React.FC<ProcedureCardProps> = ({
               className="w-full h-full object-cover"
             />
           ) : (
-            <div className="w-full h-full bg-gris-claro flex items-center justify-center">
-              {icon && <div className="text-borgona text-4xl">{icon}</div>}
+            <div className="w-full h-full bg-gradient-to-br from-gris-claro to-gray-200 flex items-center justify-center">
+              <div className="text-center">
+                {icon && <div className="text-borgona text-4xl mb-2">{icon}</div>}
+                <div className="text-gray-400 text-sm font-medium">Imagen próximamente</div>
+              </div>
             </div>
           )}
         </AspectRatio>

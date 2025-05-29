@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
@@ -135,11 +134,11 @@ const Index = () => {
             />
           </div>
           
-          <div className="animate-on-scroll">
+          <div className="animate-on-scroll relative">
             <Carousel
               plugins={[
                 Autoplay({
-                  delay: 3000,
+                  delay: 4000,
                   stopOnInteraction: true,
                   stopOnMouseEnter: true,
                 }),
@@ -148,11 +147,11 @@ const Index = () => {
                 align: "start",
                 loop: true,
               }}
-              className="w-full"
+              className="w-full max-w-7xl mx-auto"
             >
-              <CarouselContent className="h-[550px]">
+              <CarouselContent className="h-[580px]">
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-2 h-full">
+                  <div className="p-3 h-full">
                     <ProcedureCard
                       title="Rinoplastia"
                       description="Armoniza la forma y funcionalidad de la nariz, mejorando tanto la estética como la respiración."
@@ -163,7 +162,7 @@ const Index = () => {
                 </CarouselItem>
                 
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-2 h-full">
+                  <div className="p-3 h-full">
                     <ProcedureCard
                       title="Aumento mamario"
                       description="Realza el volumen y la forma de los senos para una apariencia más armónica y natural."
@@ -174,7 +173,7 @@ const Index = () => {
                 </CarouselItem>
                 
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-2 h-full">
+                  <div className="p-3 h-full">
                     <ProcedureCard
                       title="Botox"
                       description="Tratamiento no invasivo para suavizar líneas de expresión y prevenir signos de envejecimiento."
@@ -185,7 +184,7 @@ const Index = () => {
                 </CarouselItem>
 
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-2 h-full">
+                  <div className="p-3 h-full">
                     <ProcedureCard
                       title="Lipoescultura"
                       description="Remodela el contorno corporal eliminando acúmulos de grasa localizada para una silueta armónica."
@@ -196,7 +195,7 @@ const Index = () => {
                 </CarouselItem>
 
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-2 h-full">
+                  <div className="p-3 h-full">
                     <ProcedureCard
                       title="Blefaroplastia"
                       description="Rejuvenece la mirada eliminando el exceso de piel y grasa en los párpados superiores e inferiores."
@@ -207,7 +206,7 @@ const Index = () => {
                 </CarouselItem>
 
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-2 h-full">
+                  <div className="p-3 h-full">
                     <ProcedureCard
                       title="Cirugías plásticas faciales"
                       description="Lifting facial, ritidectomía y otros procedimientos para restaurar la juventud del rostro."
@@ -218,10 +217,8 @@ const Index = () => {
                 </CarouselItem>
               </CarouselContent>
               
-              <div className="flex justify-center gap-2 mt-6">
-                <CarouselPrevious className="relative static left-0 right-0 translate-y-0" />
-                <CarouselNext className="relative static left-0 right-0 translate-y-0" />
-              </div>
+              <CarouselPrevious className="left-4 bg-white/90 hover:bg-white border-borgona/20 text-borgona hover:text-borgona" />
+              <CarouselNext className="right-4 bg-white/90 hover:bg-white border-borgona/20 text-borgona hover:text-borgona" />
             </Carousel>
           </div>
         </div>
