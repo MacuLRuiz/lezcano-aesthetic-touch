@@ -77,7 +77,7 @@
 }
 
 .btn-primary {
-  @apply bg-verde-ingles text-white py-2 px-6 rounded hover:bg-opacity-90 transition-all font-medium text-lg;
+  @apply bg-bordo text-white py-2 px-6 rounded hover:bg-opacity-90 transition-all font-medium text-lg;
 }
 
 .btn-secondary {
