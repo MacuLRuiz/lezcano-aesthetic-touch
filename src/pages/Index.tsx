@@ -1,9 +1,15 @@
-
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
 import ProcedureCard from "@/components/ProcedureCard";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
+import { 
+  Carousel, 
+  CarouselContent, 
+  CarouselItem, 
+  CarouselNext, 
+  CarouselPrevious 
+} from "@/components/ui/carousel";
 
 const Index = () => {
   useEffect(() => {
@@ -116,7 +122,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Procedures */}
+      {/* Featured Procedures - Now as Carousel */}
       <section className="py-16 relative" style={{ backgroundColor: 'rgb(233, 196, 186)' }}>
         <div className="container-custom">
           <div className="animate-on-scroll">
@@ -127,33 +133,85 @@ const Index = () => {
             />
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="animate-on-scroll">
-              <ProcedureCard
-                title="Rinoplastia"
-                description="Armoniza la forma y funcionalidad de la nariz, mejorando tanto la estética como la respiración."
-                link="/procedimientos"
-                imageSrc="/lovable-uploads/4595e78e-5fb5-4554-af82-3b5386081e5a.png"
-              />
-            </div>
-            
-            <div className="animate-on-scroll">
-              <ProcedureCard
-                title="Aumento mamario"
-                description="Realza el volumen y la forma de los senos para una apariencia más armónica y natural."
-                link="/procedimientos"
-                imageSrc="/lovable-uploads/371b18e7-0749-4015-9787-163ab28fe24b.png"
-              />
-            </div>
-            
-            <div className="animate-on-scroll">
-              <ProcedureCard
-                title="Botox"
-                description="Tratamiento no invasivo para suavizar líneas de expresión y prevenir signos de envejecimiento."
-                link="/procedimientos"
-                imageSrc="/lovable-uploads/243dd21a-d6ab-44ce-9864-860c9ee44492.png"
-              />
-            </div>
+          <div className="animate-on-scroll">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-2">
+                    <ProcedureCard
+                      title="Rinoplastia"
+                      description="Armoniza la forma y funcionalidad de la nariz, mejorando tanto la estética como la respiración."
+                      link="/procedimientos"
+                      imageSrc="/lovable-uploads/4595e78e-5fb5-4554-af82-3b5386081e5a.png"
+                    />
+                  </div>
+                </CarouselItem>
+                
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-2">
+                    <ProcedureCard
+                      title="Aumento mamario"
+                      description="Realza el volumen y la forma de los senos para una apariencia más armónica y natural."
+                      link="/procedimientos"
+                      imageSrc="/lovable-uploads/371b18e7-0749-4015-9787-163ab28fe24b.png"
+                    />
+                  </div>
+                </CarouselItem>
+                
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-2">
+                    <ProcedureCard
+                      title="Botox"
+                      description="Tratamiento no invasivo para suavizar líneas de expresión y prevenir signos de envejecimiento."
+                      link="/procedimientos"
+                      imageSrc="/lovable-uploads/243dd21a-d6ab-44ce-9864-860c9ee44492.png"
+                    />
+                  </div>
+                </CarouselItem>
+
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-2">
+                    <ProcedureCard
+                      title="Lipoescultura"
+                      description="Remodela el contorno corporal eliminando acúmulos de grasa localizada para una silueta armónica."
+                      link="/procedimientos"
+                      imageSrc="/lovable-uploads/3980f895-566b-4465-8516-6c1cd83ab4d1.png"
+                    />
+                  </div>
+                </CarouselItem>
+
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-2">
+                    <ProcedureCard
+                      title="Blefaroplastia"
+                      description="Rejuvenece la mirada eliminando el exceso de piel y grasa en los párpados superiores e inferiores."
+                      link="/procedimientos"
+                    />
+                  </div>
+                </CarouselItem>
+
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-2">
+                    <ProcedureCard
+                      title="Cirugías plásticas faciales"
+                      description="Lifting facial, ritidectomía y otros procedimientos para restaurar la juventud del rostro."
+                      link="/procedimientos"
+                    />
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              
+              <div className="flex justify-center gap-2 mt-6">
+                <CarouselPrevious className="relative static left-0 right-0 translate-y-0" />
+                <CarouselNext className="relative static left-0 right-0 translate-y-0" />
+              </div>
+            </Carousel>
           </div>
         </div>
         
