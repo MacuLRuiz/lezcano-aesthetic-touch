@@ -142,7 +142,7 @@ const Index = () => {
             />
           </div>
           
-          <div className="animate-on-scroll relative px-16">
+          <div className="animate-on-scroll relative max-w-6xl mx-auto">
             <Carousel
               setApi={setApi}
               plugins={[
@@ -156,9 +156,9 @@ const Index = () => {
                 align: "start",
                 loop: true,
               }}
-              className="w-full max-w-7xl mx-auto"
+              className="w-full"
             >
-              <CarouselContent className="h-[580px]">
+              <CarouselContent className="h-[420px]">
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-3 h-full">
                     <ProcedureCard
@@ -226,8 +226,12 @@ const Index = () => {
                 </CarouselItem>
               </CarouselContent>
               
-              <CarouselPrevious className="-left-12 bg-white hover:bg-white/90 border-borgona/20 text-borgona hover:text-borgona shadow-lg" />
-              <CarouselNext className="-right-12 bg-white hover:bg-white/90 border-borgona/20 text-borgona hover:text-borgona shadow-lg" />
+              <div className="absolute top-1/2 -translate-y-1/2 -left-6 z-10">
+                <CarouselPrevious className="relative left-0 bg-white hover:bg-white/90 border-borgona/20 text-borgona hover:text-borgona shadow-lg h-10 w-10" />
+              </div>
+              <div className="absolute top-1/2 -translate-y-1/2 -right-6 z-10">
+                <CarouselNext className="relative right-0 bg-white hover:bg-white/90 border-borgona/20 text-borgona hover:text-borgona shadow-lg h-10 w-10" />
+              </div>
             </Carousel>
 
             {/* Indicadores de posición */}
