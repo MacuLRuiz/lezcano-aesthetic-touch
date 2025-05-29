@@ -1,5 +1,4 @@
-
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
 import ProcedureCard from "@/components/ProcedureCard";
@@ -9,11 +8,29 @@ import {
   CarouselContent, 
   CarouselItem, 
   CarouselNext, 
-  CarouselPrevious 
+  CarouselPrevious,
+  type CarouselApi
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 const Index = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
   useEffect(() => {
     window.scrollTo(0, 0);
     
@@ -126,6 +143,7 @@ const Index = () => {
           
           <div className="animate-on-scroll relative">
             <Carousel
+              setApi={setApi}
               plugins={[
                 Autoplay({
                   delay: 4000,
@@ -210,6 +228,22 @@ const Index = () => {
               <CarouselPrevious className="left-4 bg-white/90 hover:bg-white border-borgona/20 text-borgona hover:text-borgona" />
               <CarouselNext className="right-4 bg-white/90 hover:bg-white border-borgona/20 text-borgona hover:text-borgona" />
             </Carousel>
+
+            {/* Indicadores de posición */}
+            <div className="flex justify-center mt-6 space-x-2">
+              {Array.from({ length: count }, (_, index) => (
+                <button
+                  key={index}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    index + 1 === current 
+                      ? 'bg-borgona scale-110' 
+                      : 'bg-white/50 hover:bg-white/70'
+                  }`}
+                  onClick={() => api?.scrollTo(index)}
+                  aria-label={`Ir al slide ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
         
