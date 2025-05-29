@@ -106,7 +106,7 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-12 bg-gris-claro">
+      <section className="py-12 bg-rosa-suave">
         <div className="container-custom">
           <SectionTitle
             title="Mi enfoque"
