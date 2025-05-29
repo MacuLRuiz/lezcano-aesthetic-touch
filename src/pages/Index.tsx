@@ -102,7 +102,7 @@ const Index = () => {
       </section>
 
       {/* Featured Procedures */}
-      <section className="py-16">
+      <section className="py-16" style={{ backgroundColor: 'rgb(233, 196, 186)' }}>
         <div className="container-custom">
           <SectionTitle 
             title="Procedimientos destacados" 
