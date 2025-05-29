@@ -201,6 +201,7 @@ const Index = () => {
                       title="Blefaroplastia"
                       description="Rejuvenece la mirada eliminando el exceso de piel y grasa en los párpados superiores e inferiores."
                       link="/procedimientos"
+                      imageSrc="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=600&fit=crop"
                     />
                   </div>
                 </CarouselItem>
@@ -211,6 +212,7 @@ const Index = () => {
                       title="Cirugías plásticas faciales"
                       description="Lifting facial, ritidectomía y otros procedimientos para restaurar la juventud del rostro."
                       link="/procedimientos"
+                      imageSrc="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=600&fit=crop"
                     />
                   </div>
                 </CarouselItem>
