@@ -63,12 +63,19 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors based on the provided palette
-				"rosa-claro": "rgb(233, 196, 186)",
-				"borgona": "rgb(131, 72, 74)",
-				"beige": "rgb(185, 177, 160)",
-				"gris-claro": "rgb(240, 240, 240)",
-				"gris-neutro": "rgb(203, 203, 203)"
+				// Nueva paleta de colores actualizada
+				"bordo": "#5B1F28",
+				"rosa-suave": "#F9E7E7", 
+				"nude": "#F3DCD4",
+				"blanco": "#FFFFFF",
+				"neutro-claro": "#EFEFEF",
+				"verde-ingles": "#546C4C",
+				// Mantener colores antiguos como alias por compatibilidad
+				"rosa-claro": "#F9E7E7",
+				"borgona": "#5B1F28",
+				"beige": "#F3DCD4",
+				"gris-claro": "#EFEFEF",
+				"gris-neutro": "#EFEFEF"
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

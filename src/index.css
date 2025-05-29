@@ -22,35 +22,35 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    --primary: 358 29% 40%;  /* Borgoña rgb(131, 72, 74) */
+    --primary: 348 53% 23%;  /* Bordó #5B1F28 */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 19 37% 82%; /* Rosa claro rgb(233, 196, 186) */
+    --secondary: 0 21% 95%; /* Rosa Suave #F9E7E7 */
     --secondary-foreground: 0 0% 10%;
 
-    --muted: 24 12% 67%;     /* Beige/gris cálido rgb(185, 177, 160) */
+    --muted: 24 31% 89%;     /* Nude #F3DCD4 */
     --muted-foreground: 0 0% 10%;
 
-    --accent: 0 0% 94%;      /* Gris claro rgb(240, 240, 240) */
+    --accent: 0 0% 94%;      /* Neutro Claro #EFEFEF */
     --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 80%;      /* Gris neutro rgb(203, 203, 203) */
-    --input: 0 0% 80%;
-    --ring: 358 29% 40%;     /* Borgoña */
+    --border: 0 0% 94%;      /* Neutro Claro #EFEFEF */
+    --input: 0 0% 94%;
+    --ring: 348 53% 23%;     /* Bordó #5B1F28 */
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 358 29% 40%;
-    --sidebar-primary: 358 29% 40%;
+    --sidebar-foreground: 348 53% 23%;
+    --sidebar-primary: 348 53% 23%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 0 0% 94%;
-    --sidebar-accent-foreground: 358 29% 40%;
-    --sidebar-border: 0 0% 80%;
-    --sidebar-ring: 358 29% 40%;
+    --sidebar-accent-foreground: 348 53% 23%;
+    --sidebar-border: 0 0% 94%;
+    --sidebar-ring: 348 53% 23%;
   }
 }
 
@@ -64,12 +64,12 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-seasons text-borgona;
+    @apply font-seasons text-bordo;
   }
 }
 
 .hero-quote {
-  @apply font-seasons text-borgona text-3xl md:text-4xl lg:text-5xl leading-tight;
+  @apply font-seasons text-bordo text-3xl md:text-4xl lg:text-5xl leading-tight;
 }
 
 .container-custom {
@@ -77,15 +77,15 @@
 }
 
 .btn-primary {
-  @apply bg-borgona text-white py-2 px-6 rounded hover:bg-opacity-90 transition-all font-medium text-lg;
+  @apply bg-bordo text-white py-2 px-6 rounded hover:bg-opacity-90 transition-all font-medium text-lg;
 }
 
 .btn-secondary {
-  @apply bg-transparent border border-borgona text-borgona py-2 px-6 rounded hover:bg-borgona hover:bg-opacity-10 transition-all font-medium;
+  @apply bg-transparent border border-bordo text-bordo py-2 px-6 rounded hover:bg-bordo hover:bg-opacity-10 transition-all font-medium;
 }
 
 .procedure-card {
-  @apply bg-white p-6 rounded-md shadow-sm hover:shadow-md transition-all border border-gris-neutro;
+  @apply bg-white p-6 rounded-md shadow-sm hover:shadow-md transition-all border border-neutro-claro;
 }
 
 .animate-on-scroll {
