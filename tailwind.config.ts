@@ -69,6 +69,7 @@ export default {
 				"blanco": "#FFFFFF",
 				"neutro-claro": "#EFEFEF",
 				"verde-ingles": "#546C4C",
+				"verde-botones": "#127475", // Nuevo verde para botones
 				// Mantener colores antiguos como alias por compatibilidad
 				"rosa-claro": "#F9E7E7",
 				"borgona": "#83484A",  // Borgoña original

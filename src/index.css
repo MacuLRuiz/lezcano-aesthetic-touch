@@ -21,7 +21,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    --primary: 1 28% 40%;  /* Borgoña #83484A */
+    --primary: 181 73% 26%;  /* Verde #127475 */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 21% 95%; /* Rosa Suave #F9E7E7 */
@@ -38,18 +38,18 @@
 
     --border: 0 0% 94%;      /* Neutro Claro #EFEFEF */
     --input: 0 0% 94%;
-    --ring: 1 28% 40%;       /* Borgoña #83484A */
+    --ring: 181 73% 26%;     /* Verde #127475 */
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 1 28% 40%;
-    --sidebar-primary: 1 28% 40%;
+    --sidebar-foreground: 181 73% 26%;
+    --sidebar-primary: 181 73% 26%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 0 0% 94%;
-    --sidebar-accent-foreground: 1 28% 40%;
+    --sidebar-accent-foreground: 181 73% 26%;
     --sidebar-border: 0 0% 94%;
-    --sidebar-ring: 1 28% 40%;
+    --sidebar-ring: 181 73% 26%;
   }
 }
 
@@ -76,7 +76,7 @@
 }
 
 .btn-primary {
-  @apply bg-borgona text-white py-2 px-6 rounded hover:bg-opacity-90 transition-all font-medium text-lg;
+  @apply bg-verde-botones text-white py-2 px-6 rounded hover:bg-opacity-90 transition-all font-medium text-lg;
 }
 
 .btn-secondary {
