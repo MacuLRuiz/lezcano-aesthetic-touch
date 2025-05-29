@@ -68,7 +68,7 @@ const Index = () => {
               </div>
             </div>
             <div className="order-1 md:order-2 animate-fade-in-right delay-100">
-              <div className="aspect-[3/4] bg-white rounded-md overflow-hidden max-w-[320px] mx-auto image-container animate-float">
+              <div className="aspect-[3/4] bg-white rounded-md overflow-hidden max-w-[320px] mx-auto image-container">
                 <img
                   src="/lovable-uploads/d43af646-00e7-43e5-9241-53a24cb353f9.png"
                   alt="Dra. Beatriz Lezcano"
@@ -88,7 +88,7 @@ const Index = () => {
       <section className="py-16 bg-borgona text-white min-h-[70vh] flex items-center relative overflow-hidden">
         <div className="container-custom w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1 animate-on-scroll">
+            <div className="order-2 md:order-1 animate-on-scroll animate-fade-in-left">
               <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
                 <img
                   src="/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png"
