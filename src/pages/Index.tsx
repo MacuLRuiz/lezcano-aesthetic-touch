@@ -77,7 +77,7 @@ const Index = () => {
       </section>
 
       {/* Introduction */}
-      <section className="py-16 bg-borgona text-white min-h-[40vh] flex items-center">
+      <section className="py-16 bg-borgona text-white min-h-[70vh] flex items-center">
         <div className="container-custom w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
@@ -85,7 +85,7 @@ const Index = () => {
                 <img
                   src="/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png"
                   alt="Dra. Lezcano realizando procedimiento estético"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>
