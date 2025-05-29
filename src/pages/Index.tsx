@@ -85,7 +85,7 @@ const Index = () => {
                 <img
                   src="/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png"
                   alt="Dra. Lezcano realizando procedimiento estético"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             </div>
