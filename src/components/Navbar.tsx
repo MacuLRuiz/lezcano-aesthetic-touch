@@ -144,7 +144,7 @@ const Navbar = () => {
             href="/contacto" 
             className="btn-primary"
           >
-            Solicitar consulta
+            Hablemos
           </a>
         </div>
 
