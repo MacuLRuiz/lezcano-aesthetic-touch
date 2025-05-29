@@ -22,7 +22,7 @@ const ProcedureCard: React.FC<ProcedureCardProps> = ({
   return (
     <Card className="procedure-card group border-gris-neutro hover:shadow-md transition-all h-full flex flex-col">
       <div className="overflow-hidden">
-        <AspectRatio ratio={4/3} className="bg-gris-claro">
+        <AspectRatio ratio={4/5} className="bg-gris-claro">
           {imageSrc ? (
             <img 
               src={imageSrc} 
@@ -39,11 +39,11 @@ const ProcedureCard: React.FC<ProcedureCardProps> = ({
           )}
         </AspectRatio>
       </div>
-      <CardContent className="flex-grow p-6 flex flex-col">
-        <h3 className="text-xl font-seasons mb-3">{title}</h3>
-        <p className="text-gray-600 mb-6 flex-grow text-sm leading-relaxed">{description}</p>
+      <CardContent className="flex-grow p-4 flex flex-col">
+        <h3 className="text-lg font-seasons mb-2">{title}</h3>
+        <p className="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">{description}</p>
       </CardContent>
-      <CardFooter className="p-6 pt-0">
+      <CardFooter className="p-4 pt-0">
         <NavLink 
           to={link} 
           className="btn-secondary w-full text-center"
