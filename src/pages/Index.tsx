@@ -77,7 +77,7 @@ const Index = () => {
       </section>
 
       {/* Introduction */}
-      <section className="py-16 bg-borgona text-white min-h-[70vh] flex items-center">
+      <section className="py-16 bg-borgona text-white min-h-[60vh] flex items-center">
         <div className="container-custom w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
