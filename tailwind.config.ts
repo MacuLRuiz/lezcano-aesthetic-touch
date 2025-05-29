@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -64,7 +63,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				// Nueva paleta de colores actualizada
-				"bordo": "#5B1F28",
+				"bordo": "#83484A",  // Borgoña original
 				"rosa-suave": "#F9E7E7", 
 				"nude": "#F3DCD4",
 				"blanco": "#FFFFFF",
@@ -72,7 +71,7 @@ export default {
 				"verde-ingles": "#546C4C",
 				// Mantener colores antiguos como alias por compatibilidad
 				"rosa-claro": "#F9E7E7",
-				"borgona": "#5B1F28",
+				"borgona": "#83484A",  // Borgoña original
 				"beige": "#F3DCD4",
 				"gris-claro": "#EFEFEF",
 				"gris-neutro": "#EFEFEF"
