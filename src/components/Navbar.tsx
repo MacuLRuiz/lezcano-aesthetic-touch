@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -130,16 +131,6 @@ const Navbar = () => {
           >
             Resultados
           </NavLink>
-          <NavLink 
-            to="/contacto" 
-            className={({isActive}) => 
-              `font-medium hover:text-borgona transition-colors ${
-                isActive ? "text-borgona" : ""
-              }`
-            }
-          >
-            Contacto
-          </NavLink>
           <a 
             href="/contacto" 
             className="btn-primary"
@@ -195,17 +186,6 @@ const Navbar = () => {
                 onClick={closeMenu}
               >
                 Resultados
-              </NavLink>
-              <NavLink 
-                to="/contacto" 
-                className={({isActive}) => 
-                  `p-2 font-medium hover:bg-gris-claro rounded ${
-                    isActive ? "text-borgona" : ""
-                  }`
-                }
-                onClick={closeMenu}
-              >
-                Contacto
               </NavLink>
               <a 
                 href="/contacto" 
