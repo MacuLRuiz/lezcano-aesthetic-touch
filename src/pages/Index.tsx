@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
@@ -107,6 +106,7 @@ const Index = () => {
           <SectionTitle 
             title="Procedimientos destacados" 
             subtitle="Tratamientos personalizados con los más altos estándares"
+            whiteText={true}
           />
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
