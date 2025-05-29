@@ -32,10 +32,33 @@ const About = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-24 pb-12">
-        <div className="container-custom text-center">
-          <h1 className="text-4xl md:text-5xl font-seasons mb-6">Sobre mí</h1>
-          <div className="h-1 w-24 bg-rosa-claro mx-auto"></div>
+      <section className="pt-24 md:pt-32 pb-16 md:pb-24 bg-white relative overflow-hidden">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="order-2 md:order-1">
+              <h1 className="hero-quote mb-6 animate-fade-in-left">
+                Conocé mi historia y filosofía profesional.
+              </h1>
+              <p className="text-xl mb-8 animate-fade-in-left delay-200">
+                Soy médica cirujana plástica, segunda generación de profesionales en cirugía. 
+                Mi pasión es acompañar a cada paciente con un enfoque empático, ético y personalizado.
+              </p>
+              <div className="animate-fade-in-left delay-300">
+                <NavLink to="/contacto" className="btn-primary inline-block">
+                  Conversemos
+                </NavLink>
+              </div>
+            </div>
+            <div className="order-1 md:order-2 animate-slide-in">
+              <div className="aspect-[3/4] bg-white rounded-md overflow-hidden max-w-[320px] mx-auto image-container">
+                <img
+                  src="/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png"
+                  alt="Dra. Beatriz Lezcano atendiendo paciente"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -46,7 +69,7 @@ const About = () => {
             <div className="animate-on-scroll">
               <div className="aspect-[3/4] bg-gris-claro rounded-md overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3"
+                  src="/lovable-uploads/d43af646-00e7-43e5-9241-53a24cb353f9.png"
                   alt="Dra. Beatriz Lezcano"
                   className="w-full h-full object-cover"
                 />
