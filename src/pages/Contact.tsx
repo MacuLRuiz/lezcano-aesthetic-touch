@@ -35,10 +35,10 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="pt-24 pb-12">
         <div className="container-custom text-center">
-          <h1 className="text-4xl md:text-5xl font-seasons mb-6">Contacto</h1>
+          <h1 className="text-4xl md:text-5xl font-seasons mb-6">Escribime, ¿cómo te ayudo?</h1>
           <p className="text-lg max-w-2xl mx-auto">
-            Estoy aquí para responder tus consultas y acompañarte en tu proceso. 
-            No dudes en contactarme.
+            Estoy acá para responder todas tus consultas y acompañarte en tu proceso. 
+            No dudes en escribirme.
           </p>
           <div className="h-1 w-24 bg-rosa-claro mx-auto mt-6"></div>
         </div>

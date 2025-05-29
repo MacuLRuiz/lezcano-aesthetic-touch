@@ -59,7 +59,7 @@ const Index = () => {
                 Cirujana plástica y segunda generación de médicos. Trabajo con un enfoque personalizado, humano y profesional para que cada paciente se sienta acompañado y seguro.
               </p>
               <NavLink to="/contacto" className="btn-primary inline-block">
-                Solicitá tu consulta
+                ¡Hablemos!
               </NavLink>
             </div>
             <div className="order-1 md:order-2">
@@ -153,13 +153,13 @@ const Index = () => {
             ¿Listo para dar el primer paso?
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Te invito a una consulta personalizada para evaluar juntas las mejores opciones para ti.
+            Te invito a una consulta personalizada para evaluar juntos las mejores opciones para vos.
           </p>
           <NavLink 
             to="/contacto" 
             className="bg-white text-borgona py-2 px-6 rounded hover:bg-opacity-90 transition-all font-medium text-lg"
           >
-            Agenda tu consulta
+            ¿En qué puedo ayudarte?
           </NavLink>
         </div>
       </section>
