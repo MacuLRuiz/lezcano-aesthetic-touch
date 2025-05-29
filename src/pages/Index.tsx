@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
@@ -141,7 +142,7 @@ const Index = () => {
             />
           </div>
           
-          <div className="animate-on-scroll relative">
+          <div className="animate-on-scroll relative px-16">
             <Carousel
               setApi={setApi}
               plugins={[
@@ -225,8 +226,8 @@ const Index = () => {
                 </CarouselItem>
               </CarouselContent>
               
-              <CarouselPrevious className="left-4 bg-white/90 hover:bg-white border-borgona/20 text-borgona hover:text-borgona" />
-              <CarouselNext className="right-4 bg-white/90 hover:bg-white border-borgona/20 text-borgona hover:text-borgona" />
+              <CarouselPrevious className="-left-12 bg-white hover:bg-white/90 border-borgona/20 text-borgona hover:text-borgona shadow-lg" />
+              <CarouselNext className="-right-12 bg-white hover:bg-white/90 border-borgona/20 text-borgona hover:text-borgona shadow-lg" />
             </Carousel>
 
             {/* Indicadores de posición */}
