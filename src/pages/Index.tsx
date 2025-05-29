@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
@@ -85,10 +86,6 @@ const Index = () => {
             </div>
           </div>
         </div>
-        
-        {/* Elementos decorativos */}
-        <div className="absolute top-20 right-10 w-32 h-32 bg-rosa-suave rounded-full opacity-20 animate-float delay-500"></div>
-        <div className="absolute bottom-20 left-10 w-20 h-20 bg-nude rounded-full opacity-30 animate-float delay-300"></div>
       </section>
 
       {/* Introduction */}
@@ -113,13 +110,6 @@ const Index = () => {
               </p>
             </div>
           </div>
-        </div>
-        
-        {/* Elementos decorativos para parallax */}
-        <div className="absolute top-0 left-0 w-full h-full opacity-10">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white rounded-full animate-float delay-100"></div>
-          <div className="absolute top-3/4 right-1/4 w-3 h-3 bg-white rounded-full animate-float delay-400"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-white rounded-full animate-float delay-200"></div>
         </div>
       </section>
 
@@ -263,11 +253,6 @@ const Index = () => {
             </NavLink>
           </div>
         </div>
-        
-        {/* Elementos decorativos animados */}
-        <div className="absolute top-10 left-10 w-16 h-16 border border-white border-opacity-20 rounded-full animate-float"></div>
-        <div className="absolute bottom-10 right-10 w-24 h-24 border border-white border-opacity-10 rounded-full animate-float delay-300"></div>
-        <div className="absolute top-1/2 left-5 w-8 h-8 bg-white bg-opacity-5 rounded-full animate-float delay-500"></div>
       </section>
     </>
   );
