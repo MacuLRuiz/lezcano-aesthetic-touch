@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
@@ -76,10 +77,19 @@ const Index = () => {
       </section>
 
       {/* Introduction */}
-      <section className="py-16 bg-borgona text-white">
-        <div className="container-custom">
-          <div className="text-center">
-            <div className="max-w-xl mx-auto">
+      <section className="py-16 bg-borgona text-white min-h-[70vh] flex items-center">
+        <div className="container-custom w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <div className="aspect-[4/5] bg-gris-claro rounded-md overflow-hidden">
+                <img
+                  src="/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png"
+                  alt="Dra. Lezcano realizando procedimiento estético"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div className="order-1 md:order-2">
               <h2 className="text-3xl md:text-4xl mb-6 font-seasons text-white">
                 Cirugía plástica con propósito.
               </h2>
