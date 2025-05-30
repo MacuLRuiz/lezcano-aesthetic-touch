@@ -93,7 +93,7 @@ const Index = () => {
               </div>
             </div>
             <div className="order-1 md:order-2 animate-slide-in">
-              <div className="aspect-[3/4] bg-white rounded-md overflow-hidden max-w-[320px] mx-auto image-container">
+              <div className="aspect-[3/4] bg-white rounded-md overflow-hidden max-w-[360px] mx-auto image-container">
                 <img
                   src="/lovable-uploads/d43af646-00e7-43e5-9241-53a24cb353f9.png"
                   alt="Dra. Beatriz Lezcano"
@@ -120,10 +120,10 @@ const Index = () => {
             </div>
             <div className="order-1 md:order-2 animate-on-scroll">
               <h2 className="text-3xl md:text-4xl mb-6 font-seasons text-white">
-                Cirugía plástica con propósito.
+                Equipo Lezcano
               </h2>
               <p className="text-xl text-reveal">
-                Resultados naturales, atención cercana y compromiso médico.
+                Con más de 10 años de experiencia y el respaldo de una tradición familiar en cirugía plástica, lidero el Equipo Lezcano junto a mi padre, el Dr. Lezcano. Juntos brindamos atención personalizada, cálida y segura, priorizando la salud y bienestar de cada paciente.
               </p>
             </div>
           </div>
@@ -150,7 +150,7 @@ const Index = () => {
               }}
               className="w-full"
             >
-              <CarouselContent className="h-[420px]">
+              <CarouselContent className="h-[600px]">
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-6 h-full">
                     <ProcedureCard
