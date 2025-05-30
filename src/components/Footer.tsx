@@ -1,5 +1,6 @@
+
 import { NavLink } from "react-router-dom";
-import { Instagram, ArrowUp } from "lucide-react";
+import { Instagram, ArrowUp, MapPin } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -50,11 +51,31 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Contact information */}
+          {/* Contact information with offices */}
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-lg font-seasons mb-4">Contacto</h3>
-            <p className="mb-2">Lanús, Buenos Aires</p>
-            <div className="flex items-center space-x-4 mt-4">
+            <h3 className="text-lg font-seasons mb-4">Consultorios</h3>
+            
+            <div className="space-y-4 text-sm">
+              <div className="flex items-start space-x-2">
+                <MapPin size={16} className="text-borgona mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold">Lanús</p>
+                  <p>Av. Hipólito Yrigoyen 2570</p>
+                  <p>Lanús Oeste, Buenos Aires</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-2">
+                <MapPin size={16} className="text-borgona mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold">CABA</p>
+                  <p>Av. Corrientes 1302</p>
+                  <p>Ciudad Autónoma de Buenos Aires</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="flex items-center space-x-4 mt-6">
               <a 
                 href="https://instagram.com" 
                 target="_blank" 
