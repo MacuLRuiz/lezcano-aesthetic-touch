@@ -102,7 +102,7 @@ const Index = () => {
               </div>
             </div>
             <div className="order-1 md:order-2 animate-slide-in">
-              <div className="aspect-[3/4] bg-white rounded-md overflow-hidden max-w-[360px] mx-auto image-container">
+              <div className="aspect-[3/4] bg-white rounded-md overflow-hidden max-w-[260px] mx-auto image-container">
                 <img
                   src="/lovable-uploads/d43af646-00e7-43e5-9241-53a24cb353f9.png"
                   alt="Dra. Beatriz Lezcano"
