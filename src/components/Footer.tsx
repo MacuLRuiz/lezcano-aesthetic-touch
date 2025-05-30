@@ -1,6 +1,6 @@
 
 import { NavLink } from "react-router-dom";
-import { Instagram, ArrowUp, MapPin } from "lucide-react";
+import { Instagram, ArrowUp } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -55,38 +55,11 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-lg font-seasons mb-4">Consultorios</h3>
             
-            <div className="space-y-4 text-sm">
-              <div className="flex items-start space-x-2">
-                <MapPin size={16} className="text-borgona mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="font-semibold">Lanús</p>
-                  <p>Coronel Pringles 2454</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-2">
-                <MapPin size={16} className="text-borgona mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="font-semibold">Nordelta</p>
-                  <p>Estética Dardano</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-2">
-                <MapPin size={16} className="text-borgona mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="font-semibold">Hudson</p>
-                  <p>Rincón de Hudson</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-2">
-                <MapPin size={16} className="text-borgona mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="font-semibold">Quilmes</p>
-                  <p>Sarmiento 612</p>
-                </div>
-              </div>
+            <div className="space-y-2 text-sm">
+              <p>Lanús</p>
+              <p>Nordelta</p>
+              <p>Hudson</p>
+              <p>Quilmes</p>
             </div>
             
             <div className="flex items-center space-x-4 mt-6">
