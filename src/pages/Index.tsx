@@ -1,9 +1,9 @@
 
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Instagram, Facebook } from "lucide-react";
 import SectionTitle from "@/components/SectionTitle";
 import ProcedureCard from "@/components/ProcedureCard";
-import TestimonialCarousel from "@/components/TestimonialCarousel";
 import { 
   Carousel, 
   CarouselContent, 
@@ -57,21 +57,6 @@ const Index = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  const testimonials = [
-    {
-      quote: "La Dra. Lezcano es excelente profesional. Me sentí muy cómoda y segura durante todo el proceso. Los resultados fueron mejores de lo que esperaba, muy naturales.",
-      author: "Carolina S."
-    },
-    {
-      quote: "Después de muchas consultas con diferentes profesionales, elegí a la Dra. Lezcano por su calidez y profesionalismo. Su atención personalizada y seguimiento post operatorio fueron excepcionales.",
-      author: "Laura T."
-    },
-    {
-      quote: "Increíble experiencia desde la primera consulta. La Dra. explicó todo con paciencia y claridad. El procedimiento fue exactamente como lo habíamos planeado y la recuperación muy bien acompañada.",
-      author: "Mariana R."
-    }
-  ];
 
   return (
     <>
@@ -248,20 +233,77 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white via-transparent opacity-5 animate-pulse-soft"></div>
       </section>
 
-      {/* Featured Testimonial */}
+      {/* FAQ Section */}
       <section className="py-16 bg-white bg-opacity-20 relative">
         <div className="container-custom">
-          <div className="animate-on-scroll">
-            <SectionTitle 
-              title="Lo que dicen mis pacientes" 
-            />
+          <div className="animate-on-scroll text-center">
+            <h2 className="text-3xl md:text-4xl mb-6 font-seasons">
+              ¿Tenés dudas? Es normal.
+            </h2>
+            <p className="text-lg mb-12 max-w-3xl mx-auto">
+              Elegir un tratamiento estético es una decisión importante. Queremos que te sientas segura/o y bien informada/o en cada paso.
+            </p>
           </div>
           
-          <div className="max-w-3xl mx-auto animate-on-scroll animate-scale-in">
-            <TestimonialCarousel 
-              testimonials={testimonials}
-              featured={true} 
-            />
+          <div className="max-w-4xl mx-auto animate-on-scroll">
+            <h3 className="text-xl font-semibold mb-6 text-center">Preguntas destacadas:</h3>
+            
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h4 className="font-semibold mb-2">¿Los resultados son naturales?</h4>
+                <p className="text-gray-600 text-sm">Trabajamos para lograr resultados armónicos que respeten tu anatomía natural.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h4 className="font-semibold mb-2">¿Cuánto dura la recuperación?</h4>
+                <p className="text-gray-600 text-sm">Cada procedimiento tiene tiempos específicos que te explicamos en detalle.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h4 className="font-semibold mb-2">¿Qué respaldo tengo como paciente?</h4>
+                <p className="text-gray-600 text-sm">Te acompañamos durante todo el proceso, desde la consulta hasta la recuperación completa.</p>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <NavLink 
+                to="/contacto" 
+                className="bg-borgona text-white py-3 px-6 rounded hover:bg-borgona/90 transition-all font-medium inline-block transform hover:scale-105"
+              >
+                Ver todas las preguntas frecuentes
+              </NavLink>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Media Section */}
+      <section className="py-16 bg-rosa-claro relative">
+        <div className="container-custom text-center">
+          <div className="animate-on-scroll">
+            <h2 className="text-3xl md:text-4xl font-seasons mb-6">
+              ¡Seguime en mis redes!
+            </h2>
+            <p className="text-lg mb-8 max-w-2xl mx-auto">
+              En mis redes comparto información, novedades y reflexiones sobre el cuidado estético. ¡Te invito a acompañarme!
+            </p>
+            
+            <div className="flex justify-center gap-6">
+              <a 
+                href="#" 
+                className="bg-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-110 text-borgona hover:text-borgona/80"
+                aria-label="Seguir en Instagram"
+              >
+                <Instagram size={32} />
+              </a>
+              <a 
+                href="#" 
+                className="bg-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-110 text-borgona hover:text-borgona/80"
+                aria-label="Seguir en Facebook"
+              >
+                <Facebook size={32} />
+              </a>
+            </div>
           </div>
         </div>
       </section>
