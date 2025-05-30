@@ -55,7 +55,7 @@ const Contact = () => {
     <>
       {/* Hero Section */}
       <section 
-        className="relative pt-32 pb-16 min-h-[50vh] flex items-center" 
+        className="relative pt-32 pb-24 min-h-[90vh] flex items-center" 
         style={{
           backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.8), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/3289c88c-f7f0-4e63-b541-4f1fee5facac.png')",
           backgroundSize: "cover",
