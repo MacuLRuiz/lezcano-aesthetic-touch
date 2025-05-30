@@ -1,8 +1,13 @@
+
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
-import BeforeAfter from "@/components/BeforeAfter";
-import TestimonialCarousel from "@/components/TestimonialCarousel";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const Results = () => {
   useEffect(() => {
@@ -30,25 +35,56 @@ const Results = () => {
     };
   }, []);
 
-  const testimonials = [
+  const faqItems = [
     {
-      quote: "La Dra. Lezcano es excelente profesional. Me sentí muy cómoda y segura durante todo el proceso. Los resultados fueron mejores de lo que esperaba, muy naturales.",
-      author: "María P."
+      question: "¿Los resultados son naturales?",
+      answer: "Sí. Nuestro enfoque es lograr resultados armónicos y naturales, que respeten tu identidad y tu expresión personal."
     },
     {
-      quote: "Después de muchas consultas con diferentes profesionales, elegí a la Dra. Lezcano por su calidez y profesionalismo. Su atención personalizada y seguimiento post operatorio fueron excepcionales.",
-      author: "Laura S."
+      question: "¿Cómo es la recuperación después de la cirugía?",
+      answer: "Depende de cada procedimiento. Siempre te brindamos un plan personalizado de recuperación y seguimiento, adaptado a tus necesidades."
     },
     {
-      quote: "Increíble experiencia desde la primera consulta. La Dra. explicó todo con paciencia y claridad. El procedimiento fue exactamente como lo habíamos planeado y la recuperación muy bien acompañada.",
-      author: "Carolina M."
+      question: "¿Qué respaldo tengo como paciente?",
+      answer: "Trabajás con un equipo médico especializado, en espacios seguros, con atención personalizada en cada etapa del proceso."
+    },
+    {
+      question: "¿Cómo es la consulta inicial?",
+      answer: "La consulta es un espacio de escucha. Conversamos sobre tus expectativas, dudas y te explicamos las opciones de tratamiento de manera clara y realista."
+    },
+    {
+      question: "¿Dónde atiende la Dra. Beatriz Lezcano?",
+      answer: "Atiendo en los siguientes consultorios:\n\nLanús: Coronel Pringles 2454 (lunes y jueves)\n\nQuilmes: Sarmiento 612 (martes)\n\nNordelta: Estética Dardano, Barrio Puerto Escondido (viernes)\n\nHudson: Rincón de Hudson, Calle 137 (con turno previo)"
+    },
+    {
+      question: "¿Atienden por obra social?",
+      answer: "Actualmente la atención es de carácter privado. No trabajamos con obras sociales ni prepagas. Sin embargo, te brindamos toda la información para que puedas evaluar tus opciones con total claridad."
+    },
+    {
+      question: "¿Cuáles son las formas de pago?",
+      answer: "Se aceptan pagos en efectivo, transferencia bancaria y, en algunos casos, tarjetas. Consultá en tu primera entrevista para conocer las opciones disponibles."
+    },
+    {
+      question: "¿Qué tipo de procedimientos realiza la Dra. Lezcano?",
+      answer: "Realizo cirugías estéticas y reconstructivas, así como tratamientos no invasivos. Siempre con un enfoque ético y personalizado."
+    },
+    {
+      question: "¿Puedo hacer más de un procedimiento en una misma intervención?",
+      answer: "En algunos casos sí. Esto se evalúa en consulta, priorizando siempre la seguridad y bienestar de cada paciente."
+    },
+    {
+      question: "¿Es normal sentir temor antes de una cirugía?",
+      answer: "Sí, es absolutamente normal. Mi compromiso es brindarte toda la información que necesites para que tomes decisiones informadas y te sientas acompañada/o en todo el proceso."
+    },
+    {
+      question: "¿Qué diferencia al Equipo Lezcano?",
+      answer: "Nuestra filosofía es trabajar con ética, cercanía y resultados naturales. No promovemos estándares irreales ni modas pasajeras. Cada tratamiento es pensado para respetar la esencia y las necesidades de cada persona."
+    },
+    {
+      question: "¿Cómo puedo agendar una consulta?",
+      answer: "Podés contactarnos a través del formulario de la web, por WhatsApp o redes sociales. Tu consulta es confidencial y sin compromiso."
     }
   ];
-
-  const featuredTestimonial = {
-    quote: "Agradezco a la Dra. Beatriz por su dedicación y profesionalismo. El procedimiento de reconstrucción mamaria no solo cambió mi apariencia física, sino que me devolvió la confianza y me ayudó a cerrar un capítulo difícil de mi vida.",
-    author: "Gabriela T."
-  };
 
   return (
     <>
@@ -62,91 +98,90 @@ const Results = () => {
         }}
       >
         <div className="container-custom text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl font-seasons mb-6 text-white">Resultados y testimonios</h1>
+          <h1 className="text-4xl md:text-6xl font-seasons mb-6 text-white">Preguntas frecuentes</h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto text-white">
-            Historias reales y transformaciones naturales que reflejan mi compromiso con la 
-            excelencia y el bienestar de mis pacientes.
+            Encontrá respuestas a las dudas más comunes sobre cirugía plástica, 
+            procedimientos estéticos y mi forma de trabajo.
           </p>
           <div className="h-1 w-24 bg-rosa-claro mx-auto mt-8"></div>
         </div>
       </section>
 
-      {/* Before & After Gallery */}
-      <section className="py-12">
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
         <div className="container-custom">
-          <SectionTitle 
-            title="Antes y después"
-            subtitle="Resultados reales de mis pacientes"
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="animate-on-scroll">
-              <BeforeAfter
-                beforeImage="https://via.placeholder.com/300x300?text=Antes"
-                afterImage="https://via.placeholder.com/300x300?text=Después"
-                title="Rinoplastia"
-              />
+          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Imagen fija */}
+            <div className="order-2 md:order-1 self-start">
+              <div className="aspect-[4/3] bg-white rounded-lg overflow-hidden shadow-lg sticky top-8">
+                <img
+                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=450&fit=crop"
+                  alt="Consulta médica - Dra. Beatriz Lezcano atendiendo paciente"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
             
-            <div className="animate-on-scroll">
-              <BeforeAfter
-                beforeImage="https://via.placeholder.com/300x300?text=Antes"
-                afterImage="https://via.placeholder.com/300x300?text=Después"
-                title="Aumento mamario"
+            {/* Preguntas frecuentes como accordion */}
+            <div className="order-1 md:order-2 self-start animate-on-scroll">
+              <SectionTitle 
+                title="Todas tus dudas, resueltas"
+                subtitle="Información clara y transparente sobre cada aspecto de mi trabajo"
+                centered={false}
               />
-            </div>
-            
-            <div className="animate-on-scroll">
-              <BeforeAfter
-                beforeImage="https://via.placeholder.com/300x300?text=Antes"
-                afterImage="https://via.placeholder.com/300x300?text=Después"
-                title="Lipoescultura"
-              />
+              
+              <Accordion type="single" collapsible className="space-y-2">
+                {faqItems.map((item, index) => (
+                  <AccordionItem key={index} value={`item-${index}`} className="border border-gray-200 rounded-lg px-4">
+                    <AccordionTrigger className="text-left hover:no-underline py-4">
+                      <span className="font-medium text-borgona">{item.question}</span>
+                    </AccordionTrigger>
+                    <AccordionContent className="pb-4 text-gray-600 leading-relaxed">
+                      {item.answer.split('\n').map((line, lineIndex) => (
+                        <React.Fragment key={lineIndex}>
+                          {line}
+                          {lineIndex < item.answer.split('\n').length - 1 && <br />}
+                        </React.Fragment>
+                      ))}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </div>
           </div>
-          
-          <div className="text-center mt-12">
-            <p className="mb-6 text-gray-600 italic">
-              Todos los casos mostrados cuentan con el consentimiento expreso de los pacientes.
+        </div>
+      </section>
+
+      {/* Additional Information Section */}
+      <section className="py-16 bg-gris-claro">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-center animate-on-scroll">
+            <h2 className="text-3xl font-seasons mb-6">
+              ¿No encontraste lo que buscabas?
+            </h2>
+            <p className="text-lg mb-8">
+              Cada consulta es única y personal. Si tenés otras preguntas o querés conocer 
+              más detalles sobre algún procedimiento específico, no dudes en contactarme.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Patient Testimonials */}
-      <section className="py-12 bg-gris-claro">
-        <div className="container-custom">
-          <SectionTitle 
-            title="Experiencias de pacientes"
-            subtitle="Lo que dicen quienes confiaron en mi trabajo"
-          />
-          
-          <div className="animate-on-scroll max-w-4xl mx-auto">
-            <TestimonialCarousel testimonials={testimonials} />
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Testimonial */}
-      <section className="py-12">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto animate-on-scroll">
-            <TestimonialCarousel 
-              testimonials={[featuredTestimonial]} 
-              featured={true}
-            />
+            <NavLink 
+              to="/contacto" 
+              className="bg-borgona text-white py-3 px-8 rounded hover:bg-borgona/90 transition-all font-medium inline-block transform hover:scale-105 hover:shadow-lg"
+            >
+              Hacer una consulta personalizada
+            </NavLink>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 bg-rosa-claro bg-opacity-20">
+      <section className="py-16 bg-rosa-claro bg-opacity-20">
         <div className="container-custom text-center">
           <h2 className="text-3xl font-seasons mb-6">
-            ¿Lista para escribir tu propia historia de transformación?
+            ¿Lista para dar el primer paso?
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Da el primer paso hacia la versión que deseas de ti misma con una consulta personalizada.
+            Agendar una consulta es el primer paso para conocernos y evaluar juntos 
+            las mejores opciones para vos.
           </p>
           <NavLink 
             to="/contacto" 
