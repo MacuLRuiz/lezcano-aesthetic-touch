@@ -81,17 +81,19 @@ const Contact = () => {
       </section>
 
       {/* Sección principal - Formulario y Consultorios */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             
-            {/* Formulario de contacto - Columna más ancha */}
+            {/* Formulario de contacto - Columna más ancha con fondo */}
             <div className="lg:col-span-2 animate-on-scroll">
-              <SectionTitle 
-                title="Enviame tu consulta" 
-                centered={false}
-              />
-              <ContactForm />
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <SectionTitle 
+                  title="Enviame tu consulta" 
+                  centered={false}
+                />
+                <ContactForm />
+              </div>
             </div>
             
             {/* Consultorios - Columna más angosta */}
@@ -117,7 +119,7 @@ const Contact = () => {
       </section>
 
       {/* CTA Contacto adicional */}
-      <section className="py-12">
+      <section className="py-12 bg-gray-50">
         <div className="container-custom text-center">
           <h2 className="text-2xl font-seasons mb-8 text-borgona">¿Preferís contactarnos por otro medio?</h2>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
@@ -144,7 +146,7 @@ const Contact = () => {
       </section>
 
       {/* Mapa */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="container-custom">
           <h2 className="text-3xl font-seasons text-center mb-12 text-borgona">Ubicación de nuestros consultorios</h2>
           <div className="aspect-video bg-gris-claro rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
