@@ -110,44 +110,30 @@ const Results = () => {
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="container-custom">
-          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            {/* Imagen fija */}
-            <div className="order-2 md:order-1 self-start">
-              <div className="aspect-[4/3] bg-white rounded-lg overflow-hidden shadow-lg sticky top-8">
-                <img
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=450&fit=crop"
-                  alt="Consulta médica - Dra. Beatriz Lezcano atendiendo paciente"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
+          <div className="max-w-4xl mx-auto animate-on-scroll">
+            <SectionTitle 
+              title="Todas tus dudas, resueltas"
+              subtitle="Información clara y transparente sobre cada aspecto de mi trabajo"
+              centered={true}
+            />
             
-            {/* Preguntas frecuentes como accordion */}
-            <div className="order-1 md:order-2 self-start animate-on-scroll">
-              <SectionTitle 
-                title="Todas tus dudas, resueltas"
-                subtitle="Información clara y transparente sobre cada aspecto de mi trabajo"
-                centered={false}
-              />
-              
-              <Accordion type="single" collapsible className="space-y-2">
-                {faqItems.map((item, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="border border-gray-200 rounded-lg px-4">
-                    <AccordionTrigger className="text-left hover:no-underline py-4">
-                      <span className="font-medium text-borgona">{item.question}</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="pb-4 text-gray-600 leading-relaxed">
-                      {item.answer.split('\n').map((line, lineIndex) => (
-                        <React.Fragment key={lineIndex}>
-                          {line}
-                          {lineIndex < item.answer.split('\n').length - 1 && <br />}
-                        </React.Fragment>
-                      ))}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
+            <Accordion type="single" collapsible className="space-y-2 mt-12">
+              {faqItems.map((item, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="border border-gray-200 rounded-lg px-4">
+                  <AccordionTrigger className="text-left hover:no-underline py-4">
+                    <span className="font-medium text-borgona">{item.question}</span>
+                  </AccordionTrigger>
+                  <AccordionContent className="pb-4 text-gray-600 leading-relaxed">
+                    {item.answer.split('\n').map((line, lineIndex) => (
+                      <React.Fragment key={lineIndex}>
+                        {line}
+                        {lineIndex < item.answer.split('\n').length - 1 && <br />}
+                      </React.Fragment>
+                    ))}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>
