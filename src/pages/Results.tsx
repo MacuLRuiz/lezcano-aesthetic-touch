@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
@@ -183,25 +182,6 @@ const Results = () => {
               Hacer una consulta personalizada
             </NavLink>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 bg-rosa-claro bg-opacity-20">
-        <div className="container-custom text-center">
-          <h2 className="text-3xl font-seasons mb-6">
-            ¿Lista para dar el primer paso?
-          </h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Agendar una consulta es el primer paso para conocernos y evaluar juntos 
-            las mejores opciones para vos.
-          </p>
-          <NavLink 
-            to="/contacto" 
-            className="btn-primary"
-          >
-            Agendar consulta
-          </NavLink>
         </div>
       </section>
     </>
