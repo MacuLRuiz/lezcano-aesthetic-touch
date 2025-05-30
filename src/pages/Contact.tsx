@@ -1,7 +1,5 @@
 
 import React, { useEffect } from "react";
-import SectionTitle from "@/components/SectionTitle";
-import ContactForm from "@/components/ContactForm";
 import { Instagram, MapPin, Clock } from "lucide-react";
 
 const Contact = () => {
@@ -85,10 +83,10 @@ const Contact = () => {
         <div className="container-custom">
           <h2 className="text-3xl font-seasons text-center mb-12 text-borgona">Consultorios y horarios de atención</h2>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
             {/* Mapa */}
             <div className="animate-on-scroll">
-              <div className="aspect-video bg-gris-claro rounded-lg overflow-hidden shadow-lg">
+              <div className="h-[600px] bg-gris-claro rounded-lg overflow-hidden shadow-lg">
                 <iframe 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.38979239153!2d-58.414041799999996!3d-34.6992927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd2ca4bbda8d%3A9959a73122e24898!2sLan%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715670514518!5m2!1ses!2sar" 
                   width="100%" 
@@ -103,9 +101,9 @@ const Contact = () => {
             
             {/* Lista de Consultorios */}
             <div className="animate-on-scroll">
-              <div className="space-y-6">
+              <div className="h-[600px] flex flex-col justify-between space-y-6">
                 {consultoriosData.map((consultorio, index) => (
-                  <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                  <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex-1">
                     <h3 className="font-semibold text-borgona text-xl mb-3 flex items-center">
                       <MapPin size={20} className="text-borgona mr-2" />
                       {consultorio.location}
@@ -117,36 +115,22 @@ const Contact = () => {
                     </p>
                   </div>
                 ))}
+                
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <p className="text-sm text-gray-600 italic">
+                    Consultorios privados. Atención personalizada. Turnos con cita previa.
+                  </p>
+                </div>
               </div>
-              
-              <p className="text-sm text-gray-600 mt-6 italic bg-gray-50 p-4 rounded-lg">
-                Consultorios privados. Atención personalizada. Turnos con cita previa.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Sección de Formulario de Contacto */}
+      {/* CTA Contacto */}
       <section className="py-16 bg-gray-50">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white p-8 rounded-lg shadow-lg animate-on-scroll">
-              <SectionTitle 
-                title="Enviame tu consulta" 
-                subtitle="Contanos sobre tu consulta o procedimiento de interés"
-                centered={true}
-              />
-              <ContactForm />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Contacto adicional */}
-      <section className="py-12">
         <div className="container-custom text-center">
-          <h2 className="text-2xl font-seasons mb-8 text-borgona">¿Preferís contactarnos por otro medio?</h2>
+          <h2 className="text-3xl font-seasons mb-8 text-borgona">¿Querés contactarnos?</h2>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <a 
               href="https://wa.me/1234567890" 
