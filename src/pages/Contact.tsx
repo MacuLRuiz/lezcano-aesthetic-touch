@@ -124,31 +124,16 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Contacto */}
-      <section className="py-16 bg-gray-50">
-        <div className="container-custom text-center">
-          <h2 className="text-3xl font-seasons mb-8 text-borgona">¿Querés contactarnos?</h2>
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+          
+          {/* Botón WhatsApp debajo del mapa */}
+          <div className="text-center mt-12">
             <a 
               href="https://wa.me/1234567890" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-verde-ingles text-white px-8 py-3 rounded-md hover:bg-opacity-90 transition-colors flex items-center space-x-2 font-medium"
+              className="bg-verde-ingles text-white px-8 py-3 rounded-md hover:bg-opacity-90 transition-colors inline-flex items-center space-x-2 font-medium"
             >
               <span>Hablemos por WhatsApp</span>
-            </a>
-            <a 
-              href="https://instagram.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-borgona hover:text-opacity-80 transition-colors flex items-center space-x-2 font-medium"
-              aria-label="Instagram"
-            >
-              <Instagram size={24} />
-              <span>Instagram</span>
             </a>
           </div>
         </div>
