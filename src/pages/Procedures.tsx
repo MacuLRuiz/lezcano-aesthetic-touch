@@ -34,7 +34,7 @@ const Procedures = () => {
     <>
       {/* Hero Section with Background Image */}
       <section 
-        className="relative pt-32 pb-24 min-h-[60vh] flex items-center" 
+        className="relative pt-32 pb-24 min-h-[90vh] flex items-center" 
         style={{
           backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.8), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/371b18e7-0749-4015-9787-163ab28fe24b.png')",
           backgroundSize: "cover",
