@@ -16,21 +16,14 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-console.log("App component is loading");
-
 const App = () => {
-  console.log("App component is rendering");
-  
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <div className="flex flex-col min-h-screen bg-red-100" style={{ backgroundColor: 'lightblue', minHeight: '100vh' }}>
-            <div style={{ backgroundColor: 'yellow', padding: '10px' }}>
-              <h1>TESTING - Si ves esto, React está funcionando</h1>
-            </div>
+          <div className="flex flex-col min-h-screen">
             <Navbar />
             <main className="flex-grow">
               <Routes>
