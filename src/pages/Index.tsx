@@ -1,5 +1,4 @@
 
-
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Instagram, Facebook } from "lucide-react";
@@ -24,6 +23,11 @@ const Index = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
+  
+  // API para el carrusel de Equipo Lezcano
+  const [equipoApi, setEquipoApi] = useState<CarouselApi>();
+  const [equipoCurrent, setEquipoCurrent] = useState(0);
+  const [equipoCount, setEquipoCount] = useState(0);
 
   useEffect(() => {
     if (!api) {
@@ -37,6 +41,19 @@ const Index = () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
   }, [api]);
+
+  useEffect(() => {
+    if (!equipoApi) {
+      return;
+    }
+
+    setEquipoCount(equipoApi.scrollSnapList().length);
+    setEquipoCurrent(equipoApi.selectedScrollSnap() + 1);
+
+    equipoApi.on("select", () => {
+      setEquipoCurrent(equipoApi.selectedScrollSnap() + 1);
+    });
+  }, [equipoApi]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -103,6 +120,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 animate-on-scroll animate-slide-in">
               <Carousel
+                setApi={setEquipoApi}
                 opts={{
                   align: "start",
                   loop: true,
@@ -147,14 +165,23 @@ const Index = () => {
                     </div>
                   </CarouselItem>
                 </CarouselContent>
-                
-                <div className="absolute top-1/2 -translate-y-1/2 -left-4 z-10">
-                  <CarouselPrevious className="relative left-0 bg-white/80 hover:bg-white border-white/50 text-borgona hover:text-borgona shadow-lg h-8 w-8" />
-                </div>
-                <div className="absolute top-1/2 -translate-y-1/2 -right-4 z-10">
-                  <CarouselNext className="relative right-0 bg-white/80 hover:bg-white border-white/50 text-borgona hover:text-borgona shadow-lg h-8 w-8" />
-                </div>
               </Carousel>
+              
+              {/* Indicadores de posición */}
+              <div className="flex justify-center mt-6 space-x-2">
+                {Array.from({ length: equipoCount }, (_, index) => (
+                  <button
+                    key={index}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                      index + 1 === equipoCurrent 
+                        ? 'bg-white scale-110' 
+                        : 'bg-white/50 hover:bg-white/70'
+                    }`}
+                    onClick={() => equipoApi?.scrollTo(index)}
+                    aria-label={`Ir al slide ${index + 1}`}
+                  />
+                ))}
+              </div>
             </div>
             <div className="order-1 md:order-2 animate-on-scroll">
               <h2 className="text-3xl md:text-4xl mb-6 font-seasons text-white">
