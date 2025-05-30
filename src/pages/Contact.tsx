@@ -131,7 +131,7 @@ const Contact = () => {
               href="https://wa.me/1234567890" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-verde-ingles text-white px-8 py-3 rounded-md hover:bg-opacity-90 transition-colors inline-flex items-center space-x-2 font-medium"
+              className="bg-verde-botones text-white px-8 py-3 rounded-md hover:bg-opacity-90 transition-colors inline-flex items-center space-x-2 font-medium"
             >
               <span>Hablemos por WhatsApp</span>
             </a>
