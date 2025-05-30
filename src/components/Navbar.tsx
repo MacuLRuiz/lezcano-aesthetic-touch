@@ -131,12 +131,12 @@ const Navbar = () => {
           >
             Preguntas
           </NavLink>
-          <NavLink 
-            to="/contacto" 
-            className="font-medium hover:text-borgona transition-colors"
+          <a 
+            href="/contacto" 
+            className="btn-primary"
           >
             Hablemos
-          </NavLink>
+          </a>
         </div>
 
         {/* Mobile menu panel */}
@@ -187,13 +187,13 @@ const Navbar = () => {
               >
                 Preguntas
               </NavLink>
-              <NavLink 
-                to="/contacto" 
-                className="p-2 font-medium hover:bg-gris-claro rounded"
+              <a 
+                href="/contacto" 
+                className="btn-primary my-2 text-center"
                 onClick={closeMenu}
               >
                 Solicitar consulta
-              </NavLink>
+              </a>
             </div>
           </div>
         )}
