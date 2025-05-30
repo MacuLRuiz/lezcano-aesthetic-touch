@@ -80,37 +80,46 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Sección principal - Formulario y Consultorios */}
+      {/* Sección de Consultorios y Mapa */}
       <section className="py-16">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            
-            {/* Formulario de contacto - Columna más ancha con fondo */}
-            <div className="lg:col-span-2 animate-on-scroll">
-              <div className="bg-white p-8 rounded-lg shadow-lg">
-                <SectionTitle 
-                  title="Enviame tu consulta" 
-                  centered={false}
-                />
-                <ContactForm />
+          <h2 className="text-3xl font-seasons text-center mb-12 text-borgona">Consultorios y horarios de atención</h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Mapa */}
+            <div className="animate-on-scroll">
+              <div className="aspect-video bg-gris-claro rounded-lg overflow-hidden shadow-lg">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.38979239153!2d-58.414041799999996!3d-34.6992927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd2ca4bbda8d%3A9959a73122e24898!2sLan%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715670514518!5m2!1ses!2sar" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen={false} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
             
-            {/* Consultorios - Columna más angosta */}
+            {/* Lista de Consultorios */}
             <div className="animate-on-scroll">
-              <h2 className="text-2xl font-seasons mb-8 text-borgona">Consultorios y horarios de atención</h2>
-              
               <div className="space-y-6">
                 {consultoriosData.map((consultorio, index) => (
-                  <div key={index} className="pb-4 border-b border-gray-200 last:border-b-0">
-                    <h3 className="font-semibold text-borgona text-lg mb-2">{consultorio.location}</h3>
-                    <p className="text-gray-700 mb-1">{consultorio.address}</p>
-                    <p className="text-gray-600 text-sm">{consultorio.schedule}</p>
+                  <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 className="font-semibold text-borgona text-xl mb-3 flex items-center">
+                      <MapPin size={20} className="text-borgona mr-2" />
+                      {consultorio.location}
+                    </h3>
+                    <p className="text-gray-700 mb-2 text-lg">{consultorio.address}</p>
+                    <p className="text-gray-600 flex items-center">
+                      <Clock size={16} className="mr-2" />
+                      {consultorio.schedule}
+                    </p>
                   </div>
                 ))}
               </div>
               
-              <p className="text-sm text-gray-600 mt-6 italic">
+              <p className="text-sm text-gray-600 mt-6 italic bg-gray-50 p-4 rounded-lg">
                 Consultorios privados. Atención personalizada. Turnos con cita previa.
               </p>
             </div>
@@ -118,8 +127,24 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Sección de Formulario de Contacto */}
+      <section className="py-16 bg-gray-50">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white p-8 rounded-lg shadow-lg animate-on-scroll">
+              <SectionTitle 
+                title="Enviame tu consulta" 
+                subtitle="Contanos sobre tu consulta o procedimiento de interés"
+                centered={true}
+              />
+              <ContactForm />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Contacto adicional */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12">
         <div className="container-custom text-center">
           <h2 className="text-2xl font-seasons mb-8 text-borgona">¿Preferís contactarnos por otro medio?</h2>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
@@ -141,24 +166,6 @@ const Contact = () => {
               <Instagram size={24} />
               <span>Instagram</span>
             </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Mapa */}
-      <section className="py-16">
-        <div className="container-custom">
-          <h2 className="text-3xl font-seasons text-center mb-12 text-borgona">Ubicación de nuestros consultorios</h2>
-          <div className="aspect-video bg-gris-claro rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.38979239153!2d-58.414041799999996!3d-34.6992927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd2ca4bbda8d%3A9959a73122e24898!2sLan%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715670514518!5m2!1ses!2sar" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen={false} 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
           </div>
         </div>
       </section>
