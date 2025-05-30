@@ -86,6 +86,11 @@ const Results = () => {
     }
   ];
 
+  // Split FAQ items into two columns
+  const midpoint = Math.ceil(faqItems.length / 2);
+  const firstColumn = faqItems.slice(0, midpoint);
+  const secondColumn = faqItems.slice(midpoint);
+
   return (
     <>
       {/* Hero Section with Background Image */}
@@ -110,30 +115,52 @@ const Results = () => {
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto animate-on-scroll">
+          <div className="max-w-6xl mx-auto animate-on-scroll">
             <SectionTitle 
               title="Todas tus dudas, resueltas"
               subtitle="Información clara y transparente sobre cada aspecto de mi trabajo"
               centered={true}
             />
             
-            <Accordion type="single" collapsible className="space-y-2 mt-12">
-              {faqItems.map((item, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="border border-gray-200 rounded-lg px-4">
-                  <AccordionTrigger className="text-left hover:no-underline py-4">
-                    <span className="font-medium text-borgona">{item.question}</span>
-                  </AccordionTrigger>
-                  <AccordionContent className="pb-4 text-gray-600 leading-relaxed">
-                    {item.answer.split('\n').map((line, lineIndex) => (
-                      <React.Fragment key={lineIndex}>
-                        {line}
-                        {lineIndex < item.answer.split('\n').length - 1 && <br />}
-                      </React.Fragment>
-                    ))}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+            <div className="grid md:grid-cols-2 gap-8 mt-12">
+              {/* First Column */}
+              <Accordion type="single" collapsible className="space-y-2">
+                {firstColumn.map((item, index) => (
+                  <AccordionItem key={index} value={`item-${index}`} className="border border-gray-200 rounded-lg px-4">
+                    <AccordionTrigger className="text-left hover:no-underline py-4">
+                      <span className="font-medium text-borgona">{item.question}</span>
+                    </AccordionTrigger>
+                    <AccordionContent className="pb-4 text-gray-600 leading-relaxed">
+                      {item.answer.split('\n').map((line, lineIndex) => (
+                        <React.Fragment key={lineIndex}>
+                          {line}
+                          {lineIndex < item.answer.split('\n').length - 1 && <br />}
+                        </React.Fragment>
+                      ))}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+
+              {/* Second Column */}
+              <Accordion type="single" collapsible className="space-y-2">
+                {secondColumn.map((item, index) => (
+                  <AccordionItem key={`second-${index}`} value={`item-second-${index}`} className="border border-gray-200 rounded-lg px-4">
+                    <AccordionTrigger className="text-left hover:no-underline py-4">
+                      <span className="font-medium text-borgona">{item.question}</span>
+                    </AccordionTrigger>
+                    <AccordionContent className="pb-4 text-gray-600 leading-relaxed">
+                      {item.answer.split('\n').map((line, lineIndex) => (
+                        <React.Fragment key={lineIndex}>
+                          {line}
+                          {lineIndex < item.answer.split('\n').length - 1 && <br />}
+                        </React.Fragment>
+                      ))}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
           </div>
         </div>
       </section>
