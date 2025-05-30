@@ -20,6 +20,8 @@ import {
 } from "@/components/ui/accordion";
 
 const Index = () => {
+  console.log("Index component is rendering");
+  
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -30,6 +32,8 @@ const Index = () => {
   const [equipoCount, setEquipoCount] = useState(0);
 
   useEffect(() => {
+    console.log("Index component mounted successfully");
+    
     if (!api) {
       return;
     }
@@ -81,6 +85,8 @@ const Index = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  console.log("Rendering Index component JSX");
 
   return (
     <>

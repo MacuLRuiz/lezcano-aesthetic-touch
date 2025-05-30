@@ -16,30 +16,36 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <div className="flex flex-col min-h-screen">
-          <Navbar />
-          <main className="flex-grow">
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/sobre-mi" element={<About />} />
-              <Route path="/procedimientos" element={<Procedures />} />
-              <Route path="/resultados-y-testimonios" element={<Results />} />
-              <Route path="/contacto" element={<Contact />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-        <WhatsAppButton />
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+console.log("App component is loading");
+
+const App = () => {
+  console.log("App component is rendering");
+  
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <div className="flex flex-col min-h-screen">
+            <Navbar />
+            <main className="flex-grow">
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/sobre-mi" element={<About />} />
+                <Route path="/procedimientos" element={<Procedures />} />
+                <Route path="/resultados-y-testimonios" element={<Results />} />
+                <Route path="/contacto" element={<Contact />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </main>
+            <Footer />
+          </div>
+          <WhatsAppButton />
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
