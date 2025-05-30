@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Instagram, Facebook } from "lucide-react";
@@ -250,10 +251,10 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto animate-on-scroll">
-            {/* Imagen placeholder */}
-            <div className="order-2 md:order-1">
-              <div className="aspect-[4/3] bg-white rounded-lg overflow-hidden shadow-lg">
+          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto animate-on-scroll">
+            {/* Imagen fija */}
+            <div className="order-2 md:order-1 self-start">
+              <div className="aspect-[4/3] bg-white rounded-lg overflow-hidden shadow-lg sticky top-8">
                 <img
                   src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=450&fit=crop"
                   alt="Consulta médica - Dra. Lezcano con paciente"
@@ -263,7 +264,7 @@ const Index = () => {
             </div>
             
             {/* Preguntas como accordion */}
-            <div className="order-1 md:order-2">
+            <div className="order-1 md:order-2 self-start">
               <h3 className="text-xl font-semibold mb-6">Preguntas destacadas:</h3>
               
               <Accordion type="single" collapsible className="mb-8">
