@@ -1,8 +1,7 @@
-
 import React, { useEffect } from "react";
 import SectionTitle from "@/components/SectionTitle";
 import ContactForm from "@/components/ContactForm";
-import { Instagram } from "lucide-react";
+import { Instagram, MapPin, Clock } from "lucide-react";
 
 const Contact = () => {
   useEffect(() => {
@@ -29,6 +28,29 @@ const Contact = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const consultoriosData = [
+    {
+      location: "Lanús",
+      address: "Coronel Pringles 2454",
+      schedule: "Lunes y jueves de 15 a 19 hs"
+    },
+    {
+      location: "Quilmes",
+      address: "Sarmiento 612",
+      schedule: "Martes 14 a 18 hs"
+    },
+    {
+      location: "Nordelta",
+      address: "Estética Dardano, Barrio Puerto Escondido local 4001",
+      schedule: "Viernes 16 a 19 hs"
+    },
+    {
+      location: "Hudson",
+      address: "Rincón de Hudson Calle 137 N6313",
+      schedule: "Con turno previo"
+    }
+  ];
 
   return (
     <>
@@ -71,13 +93,25 @@ const Contact = () => {
                 centered={false}
               />
               
-              <div className="space-y-6">
+              <div className="space-y-8">
+                {/* Consultorios */}
                 <div>
-                  <h3 className="text-xl font-seasons mb-2">Consultorio</h3>
-                  <p className="mb-1">Lanús, Buenos Aires</p>
-                  <p className="text-gray-600">
-                    Horario de atención: Lunes a Viernes de 9:00 a 18:00hs
-                  </p>
+                  <h3 className="text-xl font-seasons mb-4">Consultorios</h3>
+                  <div className="space-y-4">
+                    {consultoriosData.map((consultorio, index) => (
+                      <div key={index} className="border border-gray-200 rounded-lg p-4 bg-gray-50">
+                        <h4 className="font-semibold text-borgona text-lg mb-2">{consultorio.location}</h4>
+                        <div className="flex items-start space-x-2 mb-2">
+                          <MapPin size={16} className="text-gray-600 mt-1 flex-shrink-0" />
+                          <p className="text-gray-700">{consultorio.address}</p>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <Clock size={16} className="text-gray-600 flex-shrink-0" />
+                          <p className="text-gray-600">{consultorio.schedule}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 
                 <div>
@@ -107,7 +141,7 @@ const Contact = () => {
                   <h3 className="text-xl font-seasons mb-4">Ubicación</h3>
                   <div className="aspect-video bg-gris-claro rounded-md overflow-hidden">
                     <iframe 
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.38979239153!2d-58.414041799999996!3d-34.6992927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd2ca4bbda8d%3A0x9959a73122e24898!2sLan%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715670514518!5m2!1ses!2sar" 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.38979239153!2d-58.414041799999996!3d-34.6992927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd2ca4bbda8d%3A9959a73122e24898!2sLan%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715670514518!5m2!1ses!2sar" 
                       width="100%" 
                       height="100%" 
                       style={{ border: 0 }} 
