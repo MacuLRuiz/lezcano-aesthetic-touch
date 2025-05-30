@@ -1,4 +1,5 @@
 
+
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Instagram, Facebook } from "lucide-react";
@@ -310,7 +311,7 @@ const Index = () => {
       </section>
 
       {/* Social Media Section */}
-      <section className="py-16 bg-rosa-claro relative">
+      <section className="py-16 bg-rosa-claro relative self-start">
         <div className="container-custom text-center">
           <div className="animate-on-scroll">
             <h2 className="text-3xl md:text-4xl font-seasons mb-6">
