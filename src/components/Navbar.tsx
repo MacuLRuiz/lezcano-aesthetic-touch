@@ -129,7 +129,7 @@ const Navbar = () => {
               }`
             }
           >
-            Resultados
+            Preguntas
           </NavLink>
           <a 
             href="/contacto" 
@@ -185,7 +185,7 @@ const Navbar = () => {
                 }
                 onClick={closeMenu}
               >
-                Resultados
+                Preguntas
               </NavLink>
               <a 
                 href="/contacto" 
