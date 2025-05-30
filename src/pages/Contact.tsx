@@ -77,56 +77,6 @@ const Contact = () => {
       {/* Main Content */}
       <section className="py-16">
         <div className="container-custom">
-          
-          {/* Primera fila: Consultorios y Mapa */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
-            
-            {/* Consultorios */}
-            <div className="animate-on-scroll">
-              <SectionTitle 
-                title="Mis consultorios" 
-                centered={false}
-              />
-              <div className="space-y-4">
-                {consultoriosData.map((consultorio, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg p-5 bg-gray-50 hover:shadow-md transition-shadow">
-                    <h3 className="font-semibold text-borgona text-lg mb-3">{consultorio.location}</h3>
-                    <div className="space-y-2">
-                      <div className="flex items-start space-x-3">
-                        <MapPin size={18} className="text-gray-600 mt-0.5 flex-shrink-0" />
-                        <p className="text-gray-700">{consultorio.address}</p>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <Clock size={18} className="text-gray-600 flex-shrink-0" />
-                        <p className="text-gray-600">{consultorio.schedule}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-            {/* Mapa */}
-            <div className="animate-on-scroll">
-              <SectionTitle 
-                title="Ubicación principal" 
-                centered={false}
-              />
-              <div className="aspect-video bg-gris-claro rounded-lg overflow-hidden shadow-sm">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.38979239153!2d-58.414041799999996!3d-34.6992927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd2ca4bbda8d%3A9959a73122e24898!2sLan%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715670514518!5m2!1ses!2sar" 
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }} 
-                  allowFullScreen={false} 
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-
-          {/* Segunda fila: Formulario y Contacto directo */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
             {/* Contact Form */}
@@ -138,31 +88,70 @@ const Contact = () => {
               <ContactForm />
             </div>
             
-            {/* Vías de contacto */}
-            <div className="animate-on-scroll">
-              <SectionTitle 
-                title="Contacto directo" 
-                centered={false}
-              />
-              <div className="flex items-center space-x-6">
-                <a 
-                  href="https://wa.me/1234567890" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="btn-primary flex items-center space-x-2"
-                >
-                  <span>WhatsApp</span>
-                </a>
-                <a 
-                  href="https://instagram.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-borgona hover:text-opacity-80 transition-colors flex items-center space-x-2"
-                  aria-label="Instagram"
-                >
-                  <Instagram size={24} />
-                  <span>Instagram</span>
-                </a>
+            {/* Contact Information */}
+            <div className="animate-on-scroll space-y-12">
+              
+              {/* Consultorios */}
+              <div>
+                <h2 className="text-2xl font-seasons mb-6 text-borgona">Mis consultorios</h2>
+                <div className="space-y-4">
+                  {consultoriosData.map((consultorio, index) => (
+                    <div key={index} className="border border-gray-200 rounded-lg p-5 bg-gray-50 hover:shadow-md transition-shadow">
+                      <h3 className="font-semibold text-borgona text-lg mb-3">{consultorio.location}</h3>
+                      <div className="space-y-2">
+                        <div className="flex items-start space-x-3">
+                          <MapPin size={18} className="text-gray-600 mt-0.5 flex-shrink-0" />
+                          <p className="text-gray-700">{consultorio.address}</p>
+                        </div>
+                        <div className="flex items-center space-x-3">
+                          <Clock size={18} className="text-gray-600 flex-shrink-0" />
+                          <p className="text-gray-600">{consultorio.schedule}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
+              {/* Contact Methods */}
+              <div>
+                <h2 className="text-2xl font-seasons mb-6 text-borgona">Contacto directo</h2>
+                <div className="flex items-center space-x-6">
+                  <a 
+                    href="https://wa.me/1234567890" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn-primary flex items-center space-x-2"
+                  >
+                    <span>WhatsApp</span>
+                  </a>
+                  <a 
+                    href="https://instagram.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-borgona hover:text-opacity-80 transition-colors flex items-center space-x-2"
+                    aria-label="Instagram"
+                  >
+                    <Instagram size={24} />
+                    <span>Instagram</span>
+                  </a>
+                </div>
+              </div>
+              
+              {/* Map */}
+              <div>
+                <h2 className="text-2xl font-seasons mb-6 text-borgona">Ubicación principal</h2>
+                <div className="aspect-video bg-gris-claro rounded-lg overflow-hidden shadow-sm">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.38979239153!2d-58.414041799999996!3d-34.6992927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd2ca4bbda8d%3A9959a73122e24898!2sLan%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715670514518!5m2!1ses!2sar" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }} 
+                    allowFullScreen={false} 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
