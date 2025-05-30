@@ -7,9 +7,11 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   
-  // Check if current route is in results or procedures pages
-  const isSpecialPage = location.pathname === "/procedimientos" || 
-                        location.pathname === "/resultados-y-testimonios";
+  // Check if current route should have white background
+  const isWhiteBackgroundPage = location.pathname === "/sobre-mi" || 
+                                location.pathname === "/contacto" || 
+                                location.pathname === "/procedimientos" || 
+                                location.pathname === "/resultados-y-testimonios";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,12 +36,10 @@ const Navbar = () => {
 
   // Determine the background color based on scroll state and current page
   const getBgColor = () => {
-    if (isScrolled) {
+    if (isScrolled || isWhiteBackgroundPage) {
       return "bg-white shadow-md"; 
-    } else if (isSpecialPage) {
-      return "bg-white bg-opacity-90"; // Light background for special pages even when not scrolled
     } else {
-      return "bg-transparent"; // Transparent for other pages when not scrolled
+      return "bg-transparent"; // Transparent for home page when not scrolled
     }
   };
 
