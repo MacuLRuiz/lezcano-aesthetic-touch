@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Instagram, Facebook } from "lucide-react";
@@ -344,8 +345,8 @@ const Index = () => {
             <div className="order-2 md:order-1 self-start">
               <div className="aspect-[4/3] bg-white rounded-lg overflow-hidden shadow-lg sticky top-8">
                 <img
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=450&fit=crop"
-                  alt="Consulta médica - Dra. Lezcano con paciente"
+                  src="/lovable-uploads/5c7e72cc-bdeb-4027-89b9-414c6309f0d2.png"
+                  alt="Dra. Beatriz Lezcano en consulta médica"
                   className="w-full h-full object-cover"
                 />
               </div>
