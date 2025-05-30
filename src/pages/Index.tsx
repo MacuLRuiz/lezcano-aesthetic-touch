@@ -12,7 +12,6 @@ import {
   CarouselPrevious,
   type CarouselApi
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 
 const Index = () => {
   const [api, setApi] = useState<CarouselApi>();
@@ -145,13 +144,6 @@ const Index = () => {
           <div className="animate-on-scroll relative max-w-6xl mx-auto">
             <Carousel
               setApi={setApi}
-              plugins={[
-                Autoplay({
-                  delay: 4000,
-                  stopOnInteraction: true,
-                  stopOnMouseEnter: true,
-                }),
-              ]}
               opts={{
                 align: "start",
                 loop: true,
