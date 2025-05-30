@@ -160,7 +160,7 @@ const Index = () => {
             >
               <CarouselContent className="h-[420px]">
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-3 h-full">
+                  <div className="p-6 h-full">
                     <ProcedureCard
                       title="Rinoplastia"
                       description="Armoniza la forma y funcionalidad de la nariz, mejorando tanto la estética como la respiración."
@@ -171,7 +171,7 @@ const Index = () => {
                 </CarouselItem>
                 
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-3 h-full">
+                  <div className="p-6 h-full">
                     <ProcedureCard
                       title="Aumento mamario"
                       description="Realza el volumen y la forma de los senos para una apariencia más armónica y natural."
@@ -182,7 +182,7 @@ const Index = () => {
                 </CarouselItem>
                 
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-3 h-full">
+                  <div className="p-6 h-full">
                     <ProcedureCard
                       title="Botox"
                       description="Tratamiento no invasivo para suavizar líneas de expresión y prevenir signos de envejecimiento."
@@ -193,7 +193,7 @@ const Index = () => {
                 </CarouselItem>
 
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-3 h-full">
+                  <div className="p-6 h-full">
                     <ProcedureCard
                       title="Lipoescultura"
                       description="Remodela el contorno corporal eliminando acúmulos de grasa localizada para una silueta armónica."
@@ -204,7 +204,7 @@ const Index = () => {
                 </CarouselItem>
 
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-3 h-full">
+                  <div className="p-6 h-full">
                     <ProcedureCard
                       title="Blefaroplastia"
                       description="Rejuvenece la mirada eliminando el exceso de piel y grasa en los párpados superiores e inferiores."
@@ -215,7 +215,7 @@ const Index = () => {
                 </CarouselItem>
 
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-3 h-full">
+                  <div className="p-6 h-full">
                     <ProcedureCard
                       title="Cirugías plásticas faciales"
                       description="Lifting facial, ritidectomía y otros procedimientos para restaurar la juventud del rostro."
