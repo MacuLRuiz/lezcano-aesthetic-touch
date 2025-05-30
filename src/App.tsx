@@ -27,7 +27,10 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <div className="flex flex-col min-h-screen">
+          <div className="flex flex-col min-h-screen bg-red-100" style={{ backgroundColor: 'lightblue', minHeight: '100vh' }}>
+            <div style={{ backgroundColor: 'yellow', padding: '10px' }}>
+              <h1>TESTING - Si ves esto, React está funcionando</h1>
+            </div>
             <Navbar />
             <main className="flex-grow">
               <Routes>
