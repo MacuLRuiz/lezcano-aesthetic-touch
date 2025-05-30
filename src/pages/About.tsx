@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
@@ -54,7 +55,7 @@ const About = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="animate-on-scroll">
-              <div className="aspect-[3/4] bg-gris-claro rounded-md overflow-hidden">
+              <div className="aspect-[3/4] bg-gris-claro rounded-md overflow-hidden max-w-sm mx-auto">
                 <img
                   src="/lovable-uploads/d43af646-00e7-43e5-9241-53a24cb353f9.png"
                   alt="Dra. Beatriz Lezcano"
