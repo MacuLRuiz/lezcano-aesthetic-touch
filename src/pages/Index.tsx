@@ -102,13 +102,59 @@ const Index = () => {
         <div className="container-custom w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 animate-on-scroll animate-slide-in">
-              <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
-                <img
-                  src="/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png"
-                  alt="Dra. Lezcano realizando procedimiento estético"
-                  className="w-full h-full object-cover object-center"
-                />
-              </div>
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full"
+              >
+                <CarouselContent>
+                  <CarouselItem>
+                    <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
+                      <img
+                        src="/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png"
+                        alt="Dra. Lezcano realizando procedimiento estético"
+                        className="w-full h-full object-cover object-center"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
+                      <img
+                        src="/lovable-uploads/d43af646-00e7-43e5-9241-53a24cb353f9.png"
+                        alt="Equipo Lezcano - Dra. Beatriz Lezcano"
+                        className="w-full h-full object-cover object-center"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
+                      <img
+                        src="/lovable-uploads/b0a16dc1-62b5-439d-961b-a68098a55c04.png"
+                        alt="Equipo Lezcano - Instalaciones"
+                        className="w-full h-full object-cover object-center"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
+                      <img
+                        src="/lovable-uploads/3f23d7ac-a31a-4ca5-81c0-6bdb7971560c.png"
+                        alt="Equipo Lezcano - Consulta médica"
+                        className="w-full h-full object-cover object-center"
+                      />
+                    </div>
+                  </CarouselItem>
+                </CarouselContent>
+                
+                <div className="absolute top-1/2 -translate-y-1/2 -left-4 z-10">
+                  <CarouselPrevious className="relative left-0 bg-white/80 hover:bg-white border-white/50 text-borgona hover:text-borgona shadow-lg h-8 w-8" />
+                </div>
+                <div className="absolute top-1/2 -translate-y-1/2 -right-4 z-10">
+                  <CarouselNext className="relative right-0 bg-white/80 hover:bg-white border-white/50 text-borgona hover:text-borgona shadow-lg h-8 w-8" />
+                </div>
+              </Carousel>
             </div>
             <div className="order-1 md:order-2 animate-on-scroll">
               <h2 className="text-3xl md:text-4xl mb-6 font-seasons text-white">
