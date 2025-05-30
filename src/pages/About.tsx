@@ -79,21 +79,13 @@ const About = () => {
                 respetando la individualidad de cada persona.
               </p>
               
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="bg-gris-claro p-4 rounded-md">
-                  <h3 className="font-seasons text-xl mb-2">Formación</h3>
-                  <ul className="list-disc list-inside space-y-1">
-                    <li>Universidad de Buenos Aires</li>
-                    <li>Especialidad en Cirugía Plástica</li>
-                    <li>Postgrado en Estética Avanzada</li>
-                  </ul>
-                </div>
-                <div className="bg-gris-claro p-4 rounded-md">
-                  <h3 className="font-seasons text-xl mb-2">Filosofía</h3>
-                  <p>
-                    La belleza natural y el equilibrio son los principios que guían mi trabajo como cirujana plástica.
-                  </p>
-                </div>
+              <div className="bg-gris-claro p-4 rounded-md mb-8">
+                <h3 className="font-seasons text-xl mb-2">Formación</h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Universidad de Buenos Aires</li>
+                  <li>Especialidad en Cirugía Plástica</li>
+                  <li>Postgrado en Estética Avanzada</li>
+                </ul>
               </div>
               
               <NavLink to="/contacto" className="btn-primary">
