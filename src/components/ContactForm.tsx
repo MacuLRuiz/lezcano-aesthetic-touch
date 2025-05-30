@@ -1,6 +1,11 @@
 
 import React, { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { Card, CardContent } from "@/components/ui/card";
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -43,70 +48,76 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <div>
-        <label htmlFor="name" className="block text-sm font-medium mb-1">
-          Nombre completo
-        </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          className="w-full p-3 border border-gris-neutro rounded-md focus:outline-none focus:ring-2 focus:ring-borgona"
-          required
-        />
+    <form onSubmit={handleSubmit} className="space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="space-y-2">
+          <Label htmlFor="name" className="text-borgona font-medium">
+            Nombre completo *
+          </Label>
+          <Input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            className="focus:ring-2 focus:ring-borgona focus:border-borgona"
+            placeholder="Tu nombre completo"
+            required
+          />
+        </div>
+        
+        <div className="space-y-2">
+          <Label htmlFor="phone" className="text-borgona font-medium">
+            Teléfono
+          </Label>
+          <Input
+            type="tel"
+            id="phone"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            className="focus:ring-2 focus:ring-borgona focus:border-borgona"
+            placeholder="Tu número de teléfono"
+          />
+        </div>
       </div>
       
-      <div>
-        <label htmlFor="email" className="block text-sm font-medium mb-1">
-          Correo electrónico
-        </label>
-        <input
+      <div className="space-y-2">
+        <Label htmlFor="email" className="text-borgona font-medium">
+          Correo electrónico *
+        </Label>
+        <Input
           type="email"
           id="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className="w-full p-3 border border-gris-neutro rounded-md focus:outline-none focus:ring-2 focus:ring-borgona"
+          className="focus:ring-2 focus:ring-borgona focus:border-borgona"
+          placeholder="tu@email.com"
           required
         />
       </div>
       
-      <div>
-        <label htmlFor="phone" className="block text-sm font-medium mb-1">
-          Teléfono (opcional)
-        </label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-          className="w-full p-3 border border-gris-neutro rounded-md focus:outline-none focus:ring-2 focus:ring-borgona"
-        />
-      </div>
-      
-      <div>
-        <label htmlFor="message" className="block text-sm font-medium mb-1">
-          Mensaje
-        </label>
-        <textarea
+      <div className="space-y-2">
+        <Label htmlFor="message" className="text-borgona font-medium">
+          Mensaje *
+        </Label>
+        <Textarea
           id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
           rows={5}
-          className="w-full p-3 border border-gris-neutro rounded-md focus:outline-none focus:ring-2 focus:ring-borgona"
+          className="focus:ring-2 focus:ring-borgona focus:border-borgona resize-none"
+          placeholder="Contanos sobre tu consulta o procedimiento de interés..."
           required
-        ></textarea>
+        />
       </div>
       
-      <button
+      <Button
         type="submit"
         disabled={isSubmitting}
-        className="btn-primary w-full flex justify-center items-center"
+        className="w-full bg-verde-botones hover:bg-verde-botones/90 text-white py-3 text-lg font-medium"
       >
         {isSubmitting ? (
           <>
@@ -119,7 +130,7 @@ const ContactForm = () => {
         ) : (
           "Enviar mensaje"
         )}
-      </button>
+      </Button>
     </form>
   );
 };
