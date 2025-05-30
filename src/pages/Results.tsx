@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
@@ -164,23 +165,37 @@ const Results = () => {
         </div>
       </section>
 
-      {/* Additional Information Section */}
+      {/* Additional Information Section with Image */}
       <section className="py-16 bg-gris-claro">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center animate-on-scroll">
-            <h2 className="text-3xl font-seasons mb-6">
-              ¿No encontraste lo que buscabas?
-            </h2>
-            <p className="text-lg mb-8">
-              Cada consulta es única y personal. Si tenés otras preguntas o querés conocer 
-              más detalles sobre algún procedimiento específico, no dudes en contactarme.
-            </p>
-            <NavLink 
-              to="/contacto" 
-              className="bg-borgona text-white py-3 px-8 rounded hover:bg-borgona/90 transition-all font-medium inline-block transform hover:scale-105 hover:shadow-lg"
-            >
-              Hacer una consulta personalizada
-            </NavLink>
+          <div className="max-w-5xl mx-auto animate-on-scroll">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              {/* Text Content */}
+              <div>
+                <h2 className="text-3xl font-seasons mb-6">
+                  ¿Tenés dudas? Es normal
+                </h2>
+                <p className="text-lg mb-8">
+                  Cada consulta es única y personal. Si tenés otras preguntas o querés conocer 
+                  más detalles sobre algún procedimiento específico, no dudes en contactarme.
+                </p>
+                <NavLink 
+                  to="/contacto" 
+                  className="bg-borgona text-white py-3 px-8 rounded hover:bg-borgona/90 transition-all font-medium inline-block transform hover:scale-105 hover:shadow-lg"
+                >
+                  Hacer una consulta personalizada
+                </NavLink>
+              </div>
+              
+              {/* Image */}
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/5c7e72cc-bdeb-4027-89b9-414c6309f0d2.png" 
+                  alt="Dra. Beatriz Lezcano en consulta médica" 
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
