@@ -60,17 +60,31 @@ const Footer = () => {
                 <MapPin size={16} className="text-borgona mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-semibold">Lanús</p>
-                  <p>Av. Hipólito Yrigoyen 2570</p>
-                  <p>Lanús Oeste, Buenos Aires</p>
+                  <p>Coronel Pringles 2454</p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-2">
                 <MapPin size={16} className="text-borgona mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold">CABA</p>
-                  <p>Av. Corrientes 1302</p>
-                  <p>Ciudad Autónoma de Buenos Aires</p>
+                  <p className="font-semibold">Nordelta</p>
+                  <p>Estética Dardano</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-2">
+                <MapPin size={16} className="text-borgona mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold">Hudson</p>
+                  <p>Rincón de Hudson</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-2">
+                <MapPin size={16} className="text-borgona mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold">Quilmes</p>
+                  <p>Sarmiento 612</p>
                 </div>
               </div>
             </div>
