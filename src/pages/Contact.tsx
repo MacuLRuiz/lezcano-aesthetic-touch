@@ -83,10 +83,10 @@ const Contact = () => {
         <div className="container-custom">
           <h2 className="text-3xl font-seasons text-center mb-12 text-borgona">Consultorios y horarios de atención</h2>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Mapa */}
             <div className="animate-on-scroll">
-              <div className="h-[600px] bg-gris-claro rounded-lg overflow-hidden shadow-lg">
+              <div className="h-[500px] bg-gris-claro rounded-lg overflow-hidden shadow-lg">
                 <iframe 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.38979239153!2d-58.414041799999996!3d-34.6992927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd2ca4bbda8d%3A9959a73122e24898!2sLan%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715670514518!5m2!1ses!2sar" 
                   width="100%" 
@@ -101,22 +101,22 @@ const Contact = () => {
             
             {/* Lista de Consultorios */}
             <div className="animate-on-scroll">
-              <div className="h-[600px] flex flex-col justify-between space-y-6">
+              <div className="h-[500px] flex flex-col justify-start space-y-4">
                 {consultoriosData.map((consultorio, index) => (
-                  <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex-1">
-                    <h3 className="font-semibold text-borgona text-xl mb-3 flex items-center">
-                      <MapPin size={20} className="text-borgona mr-2" />
+                  <div key={index} className="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
+                    <h3 className="font-semibold text-borgona text-lg mb-2 flex items-center">
+                      <MapPin size={18} className="text-borgona mr-2" />
                       {consultorio.location}
                     </h3>
-                    <p className="text-gray-700 mb-2 text-lg">{consultorio.address}</p>
-                    <p className="text-gray-600 flex items-center">
-                      <Clock size={16} className="mr-2" />
+                    <p className="text-gray-700 mb-2">{consultorio.address}</p>
+                    <p className="text-gray-600 flex items-center text-sm">
+                      <Clock size={14} className="mr-2" />
                       {consultorio.schedule}
                     </p>
                   </div>
                 ))}
                 
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <div className="bg-gray-50 p-4 rounded-lg mt-4">
                   <p className="text-sm text-gray-600 italic">
                     Consultorios privados. Atención personalizada. Turnos con cita previa.
                   </p>
