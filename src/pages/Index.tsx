@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Instagram, Facebook } from "lucide-react";
@@ -137,8 +136,8 @@ const Index = () => {
                   <CarouselItem>
                     <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
                       <img
-                        src="/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png"
-                        alt="Dra. Lezcano realizando procedimiento estético"
+                        src="/lovable-uploads/eae0ec0e-793a-4123-bf82-b60a3c561b45.png"
+                        alt="Dra. Beatriz Lezcano en su consultorio - Equipo Lezcano"
                         className="w-full h-full object-cover object-center"
                       />
                     </div>
@@ -146,8 +145,8 @@ const Index = () => {
                   <CarouselItem>
                     <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
                       <img
-                        src="/lovable-uploads/d43af646-00e7-43e5-9241-53a24cb353f9.png"
-                        alt="Equipo Lezcano - Dra. Beatriz Lezcano"
+                        src="/lovable-uploads/c090dfe1-61a0-4dbe-9ed6-74c907526ca4.png"
+                        alt="Dra. Lezcano trabajando en consulta - Planificación de procedimientos"
                         className="w-full h-full object-cover object-center"
                       />
                     </div>
@@ -155,8 +154,8 @@ const Index = () => {
                   <CarouselItem>
                     <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
                       <img
-                        src="/lovable-uploads/b0a16dc1-62b5-439d-961b-a68098a55c04.png"
-                        alt="Equipo Lezcano - Instalaciones"
+                        src="/lovable-uploads/18f2e586-f072-4f7c-8b62-d726d1c69d34.png"
+                        alt="Consulta personalizada - Dra. Lezcano con paciente"
                         className="w-full h-full object-cover object-center"
                       />
                     </div>
@@ -164,8 +163,17 @@ const Index = () => {
                   <CarouselItem>
                     <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
                       <img
-                        src="/lovable-uploads/3f23d7ac-a31a-4ca5-81c0-6bdb7971560c.png"
-                        alt="Equipo Lezcano - Consulta médica"
+                        src="/lovable-uploads/9333fc54-a3ca-4127-9a8d-7304461af630.png"
+                        alt="Tratamiento estético en consultorio - Equipo Lezcano"
+                        className="w-full h-full object-cover object-center"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
+                      <img
+                        src="/lovable-uploads/8c544c54-ad63-40f4-ae85-83893ca7b777.png"
+                        alt="Instalaciones modernas - Sala de tratamientos Equipo Lezcano"
                         className="w-full h-full object-cover object-center"
                       />
                     </div>
