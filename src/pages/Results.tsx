@@ -54,7 +54,7 @@ const Results = () => {
     <>
       {/* Hero Section with Background Image */}
       <section 
-        className="relative pt-32 pb-24 min-h-[60vh] flex items-center" 
+        className="relative pt-32 pb-24 min-h-[90vh] flex items-center" 
         style={{
           backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.8), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/f72977be-199b-44c5-9d93-d89c703d51e2.png')",
           backgroundSize: "cover",
