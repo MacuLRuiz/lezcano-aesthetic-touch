@@ -35,9 +35,9 @@ const About = () => {
       <section 
         className="relative pt-32 pb-24 min-h-[90vh] flex items-center" 
         style={{
-          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.8), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png')",
+          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.8), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/sobremi.JPG')",
           backgroundSize: "cover",
-          backgroundPosition: "center"
+          backgroundPosition: "left"
         }}
       >
         <div className="container-custom text-center relative z-10">
@@ -57,7 +57,7 @@ const About = () => {
             <div className="animate-on-scroll">
               <div className="aspect-[3/4] bg-gris-claro rounded-md overflow-hidden max-w-sm mx-auto">
                 <img
-                  src="/lovable-uploads/d43af646-00e7-43e5-9241-53a24cb353f9.png"
+                  src="/lovable-uploads/diploma.JPG"
                   alt="Dra. Beatriz Lezcano"
                   className="w-full h-full object-cover"
                 />

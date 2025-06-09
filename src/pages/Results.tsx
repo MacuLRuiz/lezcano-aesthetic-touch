@@ -97,9 +97,9 @@ const Results = () => {
       <section 
         className="relative pt-32 pb-24 min-h-[90vh] flex items-center" 
         style={{
-          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.8), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/f72977be-199b-44c5-9d93-d89c703d51e2.png')",
+          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.8), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/Preguntas.JPG')",
           backgroundSize: "cover",
-          backgroundPosition: "center"
+          backgroundPosition: "end"
         }}
       >
         <div className="container-custom text-center relative z-10">

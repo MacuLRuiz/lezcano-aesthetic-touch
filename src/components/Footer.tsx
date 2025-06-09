@@ -57,9 +57,9 @@ const Footer = () => {
             
             <div className="space-y-2 text-sm">
               <p>Lanús</p>
+              <p>Quilmes</p>
               <p>Nordelta</p>
               <p>Hudson</p>
-              <p>Quilmes</p>
             </div>
             
             <div className="flex items-center space-x-4 mt-6">

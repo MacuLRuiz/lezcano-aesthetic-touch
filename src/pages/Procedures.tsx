@@ -36,7 +36,7 @@ const Procedures = () => {
       <section 
         className="relative pt-32 pb-24 min-h-[90vh] flex items-center" 
         style={{
-          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.8), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/371b18e7-0749-4015-9787-163ab28fe24b.png')",
+          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.8), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
