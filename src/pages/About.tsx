@@ -36,7 +36,7 @@ const About = () => {
         style={{
           backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.8), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/sobremi.JPG')",
           backgroundSize: "cover",
-          backgroundPosition: "center bottom"
+          backgroundPosition: "center top"
         }}
       >
         <div className="container-custom text-center relative z-10">
