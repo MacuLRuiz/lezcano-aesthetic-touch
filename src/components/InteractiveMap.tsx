@@ -43,7 +43,7 @@ const InteractiveMap: React.FC<InteractiveMapProps> = ({
   }, []);
 
   useEffect(() => {
-    if (!isLoaded || !mapRef.current) return;
+    if (!isLoaded || !mapRef.current || typeof google === 'undefined') return;
 
     // Crear el mapa centrado en Buenos Aires
     const mapInstance = new google.maps.Map(mapRef.current, {
@@ -108,7 +108,7 @@ const InteractiveMap: React.FC<InteractiveMapProps> = ({
   }, [isLoaded, consultorios, onConsultorioSelect]);
 
   useEffect(() => {
-    if (!map || selectedConsultorio === undefined) return;
+    if (!map || selectedConsultorio === undefined || typeof google === 'undefined') return;
 
     const consultorio = consultorios[selectedConsultorio];
     if (!consultorio) return;
