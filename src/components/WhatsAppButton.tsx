@@ -24,7 +24,7 @@ const WhatsAppButton = () => {
       href="https://wa.me/5491159633340"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg transition-all transform z-50 hover:scale-110 animate-bounce hover:bg-green-600"
+      className="fixed bottom-6 right-6 bg-verde-botones text-white p-4 rounded-full shadow-lg transition-all transform z-50 hover:scale-110 animate-bounce hover:bg-opacity-90"
       aria-label="Contactar por WhatsApp"
     >
       <svg 
