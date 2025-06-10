@@ -82,17 +82,6 @@ const Contact = () => {
           />
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Foto de Beatriz */}
-            <div className="animate-on-scroll">
-              <div className="relative">
-                <img 
-                  src="/lovable-uploads/sobremi.JPG" 
-                  alt="Dra. Beatriz López Valle" 
-                  className="w-full h-[400px] object-cover rounded-lg shadow-lg"
-                />
-              </div>
-            </div>
-            
             {/* Información de contacto */}
             <div className="animate-on-scroll space-y-6">
               <div className="space-y-4">
@@ -126,6 +115,17 @@ const Contact = () => {
                 >
                   <span>Contactar por WhatsApp</span>
                 </a>
+              </div>
+            </div>
+            
+            {/* Foto de Beatriz */}
+            <div className="animate-on-scroll">
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/sobremi.JPG" 
+                  alt="Dra. Beatriz López Valle" 
+                  className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+                />
               </div>
             </div>
           </div>
