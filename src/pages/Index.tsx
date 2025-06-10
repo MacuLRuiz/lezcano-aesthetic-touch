@@ -281,21 +281,11 @@ const Index = () => {
                       title="Blefaroplastia"
                       description="Rejuvenece la mirada eliminando el exceso de piel y grasa en los párpados superiores e inferiores."
                       link="/procedimientos"
-                      imageSrc="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=600&fit=crop"
+                      imageSrc="/lovable-uploads/bleferoplastia.jpg"
                     />
                   </div>
                 </CarouselItem>
 
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-6 h-full">
-                    <ProcedureCard
-                      title="Cirugías plásticas faciales"
-                      description="Lifting facial, ritidectomía y otros procedimientos para restaurar la juventud del rostro."
-                      link="/procedimientos"
-                      imageSrc="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=600&fit=crop"
-                    />
-                  </div>
-                </CarouselItem>
               </CarouselContent>
               
               <div className="absolute top-1/2 -translate-y-1/2 -left-6 z-10">

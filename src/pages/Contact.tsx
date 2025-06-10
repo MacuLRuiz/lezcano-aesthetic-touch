@@ -57,26 +57,21 @@ const Contact = () => {
       <section 
         className="relative pt-32 pb-24 min-h-[90vh] flex items-center" 
         style={{
-          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.8), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/3289c88c-f7f0-4e63-b541-4f1fee5facac.png')",
+          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.66), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/3289c88c-f7f0-4e63-b541-4f1fee5facac.png')",
           backgroundSize: "cover",
-          backgroundPosition: "center"
+          backgroundPosition: "50% 20%"
         }}
       >
         <div className="container-custom text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-seasons mb-6 text-white">Estamos para escucharte</h1>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto text-white leading-relaxed">
+            Si querés más información o agendar tu consulta personalizada, podés contactarnos por el medio que prefieras. 
+            Tu consulta es confidencial y sin compromiso.
+          </p>
           <div className="h-1 w-24 bg-rosa-claro mx-auto mt-8"></div>
         </div>
       </section>
 
-      {/* Introducción */}
-      <section className="py-12">
-        <div className="container-custom text-center">
-          <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-700 leading-relaxed">
-            Si querés más información o agendar tu consulta personalizada, podés contactarnos por el medio que prefieras. 
-            Tu consulta es confidencial y sin compromiso.
-          </p>
-        </div>
-      </section>
 
       {/* Sección de Consultorios y Mapa */}
       <section className="py-16">

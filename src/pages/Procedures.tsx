@@ -36,7 +36,7 @@ const Procedures = () => {
       <section 
         className="relative pt-32 pb-24 min-h-[90vh] flex items-center" 
         style={{
-          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.8), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png')",
+          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.71), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
@@ -121,8 +121,8 @@ const Procedures = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 bg-borgona text-white">
-        <div className="container-custom text-center">
+      <section className="py-12 bg-borgona text-white min-h-[50vh] content-center">
+        <div className="text-center">
           <h2 className="text-3xl font-seasons mb-6 text-white">
             ¿Tienes dudas sobre qué procedimiento es adecuado para ti?
           </h2>

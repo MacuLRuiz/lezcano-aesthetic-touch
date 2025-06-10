@@ -34,9 +34,9 @@ const About = () => {
       <section 
         className="relative pt-32 pb-24 min-h-[90vh] flex items-center" 
         style={{
-          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.8), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/sobremi.JPG')",
+          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.39), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/sobremi.JPG')",
           backgroundSize: "cover",
-          backgroundPosition: "center top"
+          backgroundPosition: "top"
         }}
       >
         <div className="container-custom text-center relative z-10">
@@ -79,7 +79,7 @@ const About = () => {
                 respetando la individualidad de cada persona.
               </p>
               
-              <div className="bg-gris-claro p-4 rounded-md mb-8">
+              <div className="border border-gray-200 p-4 rounded-md mb-8">
                 <h3 className="font-seasons text-xl mb-2">Formación</h3>
                 <ul className="list-disc list-inside space-y-1">
                   <li>Universidad de Buenos Aires</li>
@@ -97,7 +97,7 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-12 bg-rosa-suave">
+      <section className="py-12 bg-rosa-suave min-h-[75vh] content-center">
         <div className="container-custom">
           <SectionTitle
             title="Mi enfoque"
