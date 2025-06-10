@@ -1,4 +1,5 @@
 
+
 import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -131,8 +132,20 @@ const Navbar = () => {
           >
             Preguntas
           </NavLink>
+          <NavLink 
+            to="/contacto" 
+            className={({isActive}) => 
+              `font-medium hover:text-borgona transition-colors ${
+                isActive ? "text-borgona" : ""
+              }`
+            }
+          >
+            Contáctame
+          </NavLink>
           <a 
-            href="/contacto" 
+            href="https://wa.me/1234567890" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary"
           >
             Hablemos
@@ -187,12 +200,25 @@ const Navbar = () => {
               >
                 Preguntas
               </NavLink>
+              <NavLink 
+                to="/contacto" 
+                className={({isActive}) => 
+                  `p-2 font-medium hover:bg-gris-claro rounded ${
+                    isActive ? "text-borgona" : ""
+                  }`
+                }
+                onClick={closeMenu}
+              >
+                Contáctame
+              </NavLink>
               <a 
-                href="/contacto" 
+                href="https://wa.me/1234567890"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary my-2 text-center"
                 onClick={closeMenu}
               >
-                Solicitar consulta
+                Hablemos
               </a>
             </div>
           </div>
@@ -203,3 +229,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
