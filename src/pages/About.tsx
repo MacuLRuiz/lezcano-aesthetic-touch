@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
@@ -135,18 +136,16 @@ const About = () => {
       {/* CTA Section */}
       <section className="py-12 bg-bordo">
         <div className="container-custom text-center">
-          <div className="bg-white bg-opacity-10 p-8 rounded-lg max-w-3xl mx-auto">
-            <h2 className="text-2xl font-seasons mb-4 text-white">
-              Te invito a conocernos en persona
-            </h2>
-            <p className="mb-6 text-white">
-              En una consulta inicial podremos conversar sobre tus inquietudes y expectativas,
-              evaluando juntas las mejores opciones para ti.
-            </p>
-            <NavLink to="/contacto" className="btn-primary">
-              Solicitar consulta
-            </NavLink>
-          </div>
+          <h2 className="text-2xl font-seasons mb-4 text-white">
+            Te invito a conocernos en persona
+          </h2>
+          <p className="mb-6 text-white max-w-3xl mx-auto">
+            En una consulta inicial podremos conversar sobre tus inquietudes y expectativas,
+            evaluando juntas las mejores opciones para ti.
+          </p>
+          <NavLink to="/contacto" className="btn-primary">
+            Solicitar consulta
+          </NavLink>
         </div>
       </section>
     </>
