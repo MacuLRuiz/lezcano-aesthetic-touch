@@ -22,7 +22,7 @@ const WhatsAppButton = () => {
       href="https://wa.me/1234567890"
       target="_blank"
       rel="noopener noreferrer"
-      className={`fixed bottom-6 right-6 bg-borgona text-white p-3 rounded-full shadow-lg transition-all transform z-50 ${
+      className={`fixed bottom-6 right-6 bg-borgona text-white p-4 rounded-full shadow-lg transition-all transform z-50 hover:scale-110 animate-pulse ${
         isVisible 
           ? "translate-y-0 opacity-100" 
           : "translate-y-10 opacity-0 pointer-events-none"
@@ -30,8 +30,8 @@ const WhatsAppButton = () => {
       aria-label="Contactar por WhatsApp"
     >
       <svg
-        width="24"
-        height="24"
+        width="32"
+        height="32"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
