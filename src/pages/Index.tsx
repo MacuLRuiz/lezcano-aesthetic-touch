@@ -216,7 +216,6 @@ const Index = () => {
             <SectionTitle 
               title="Procedimientos destacados" 
               subtitle="Tratamientos personalizados con los más altos estándares"
-              whiteText={true}
             />
           </div>
           
