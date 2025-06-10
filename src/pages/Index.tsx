@@ -136,9 +136,9 @@ const Index = () => {
                   <CarouselItem>
                     <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
                       <img
-                        src="/lovable-uploads/eae0ec0e-793a-4123-bf82-b60a3c561b45.png"
+                        src="/lovable-uploads/NLV_3160.png"
                         alt="Dra. Beatriz Lezcano en su consultorio - Equipo Lezcano"
-                        className="w-full h-full object-cover object-center"
+                        className="w-full h-full object-cover object-top"
                       />
                     </div>
                   </CarouselItem>
