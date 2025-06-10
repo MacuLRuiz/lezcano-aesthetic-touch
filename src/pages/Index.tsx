@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Instagram, Facebook } from "lucide-react";
@@ -108,7 +107,7 @@ const Index = () => {
               </div>
             </div>
             <div className="order-1 md:order-2 animate-slide-in">
-              <div className="aspect-[3/4] bg-white rounded-md overflow-hidden max-w-[400px] mx-auto image-container shadow-lg rounded-lg">
+              <div className="aspect-[3/4] bg-white rounded-md overflow-hidden max-w-[400px] mx-auto image-container shadow-2xl rounded-lg">
                 <img
                   src="/lovable-uploads/home.JPG"
                   alt="Dra. Beatriz Lezcano"
