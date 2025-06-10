@@ -77,8 +77,8 @@ const Contact = () => {
       <section className="py-16 bg-white">
         <div className="container-custom">
           <SectionTitle 
-            title="Escríbeme" 
-            subtitle="Estoy aquí para responder todas tus consultas"
+            title="Escribime" 
+            subtitle="Estoy acá para responder todas tus consultas"
           />
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
