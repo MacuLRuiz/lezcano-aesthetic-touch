@@ -192,7 +192,7 @@ const Results = () => {
                 <img 
                   src="/lovable-uploads/5c7e72cc-bdeb-4027-89b9-414c6309f0d2.png" 
                   alt="Dra. Beatriz Lezcano en consulta médica" 
-                  className="w-full h-auto rounded-lg shadow-lg"
+                  className="w-full h-auto rounded-lg shadow-lg animate-on-scroll animate-slide-in-left overflow-hidden"
                 />
               </div>
             </div>

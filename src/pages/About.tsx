@@ -59,7 +59,7 @@ const About = () => {
                 <img
                   src="/lovable-uploads/diploma.JPG"
                   alt="Dra. Beatriz Lezcano"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover animate-on-scroll animate-slide-in-left"
                 />
               </div>
             </div>

@@ -108,7 +108,7 @@ const Index = () => {
               </div>
             </div>
             <div className="order-1 md:order-2 animate-slide-in">
-              <div className="aspect-[3/4] bg-white rounded-md overflow-hidden max-w-[400px] mx-auto image-container">
+              <div className="aspect-[3/4] bg-white rounded-md overflow-hidden max-w-[400px] mx-auto image-container shadow-lg rounded-lg">
                 <img
                   src="/lovable-uploads/home.JPG"
                   alt="Dra. Beatriz Lezcano"
@@ -213,7 +213,7 @@ const Index = () => {
       {/* Featured Procedures - Now as Carousel */}
       <section className="py-16 relative" style={{ backgroundColor: 'rgb(233, 196, 186)' }}>
         <div className="container-custom">
-          <div className="animate-on-scroll">
+          <div className="animate-on-scroll text-">
             <SectionTitle 
               title="Procedimientos destacados" 
               subtitle="Tratamientos personalizados con los más altos estándares"

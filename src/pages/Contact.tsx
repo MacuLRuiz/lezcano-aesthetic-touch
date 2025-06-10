@@ -123,7 +123,7 @@ const Contact = () => {
           {/* Botón WhatsApp debajo del mapa */}
           <div className="text-left mt-12">
             <a 
-              href="https://wa.me/1234567890" 
+              href="https://wa.me/5491159633340" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-verde-botones text-white px-8 py-3 rounded-md hover:bg-opacity-90 transition-colors inline-flex items-center space-x-2 font-medium"
