@@ -210,12 +210,13 @@ const Index = () => {
       </section>
 
       {/* Featured Procedures - Now as Carousel */}
-      <section className="py-16 relative" style={{ backgroundColor: 'rgb(233, 196, 186)' }}>
+      <section className="py-16 relative bg-rosa-claro">
         <div className="container-custom">
           <div className="animate-on-scroll text-">
             <SectionTitle 
               title="Procedimientos destacados" 
               subtitle="Tratamientos personalizados con los más altos estándares"
+              hideLine={true}
             />
           </div>
           

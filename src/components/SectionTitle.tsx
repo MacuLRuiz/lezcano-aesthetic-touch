@@ -6,13 +6,15 @@ interface SectionTitleProps {
   subtitle?: string;
   centered?: boolean;
   whiteText?: boolean;
+  hideLine?: boolean;
 }
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ 
   title, 
   subtitle,
   centered = true,
-  whiteText = false
+  whiteText = false,
+  hideLine = false
 }) => {
   return (
     <div className={`mb-12 ${centered ? 'text-center' : ''}`}>
@@ -20,7 +22,9 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
       {subtitle && (
         <p className={`text-lg ${whiteText ? 'text-white' : 'text-foreground'}`}>{subtitle}</p>
       )}
-      <div className={`w-24 h-1 bg-rosa-claro mt-4 ${centered ? 'mx-auto' : ''}`}></div>
+      {!hideLine && (
+        <div className={`w-24 h-1 bg-rosa-claro mt-4 ${centered ? 'mx-auto' : ''}`}></div>
+      )}
     </div>
   );
 };
