@@ -1,6 +1,7 @@
 
 import React, { useEffect } from "react";
-import { Instagram, MapPin, Clock } from "lucide-react";
+import { Instagram, MapPin, Clock, Mail, Phone } from "lucide-react";
+import SectionTitle from "../components/SectionTitle";
 
 const Contact = () => {
   useEffect(() => {
@@ -72,6 +73,64 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Sección Escríbeme */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <SectionTitle 
+            title="Escríbeme" 
+            subtitle="Estoy aquí para responder todas tus consultas"
+          />
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Foto de Beatriz */}
+            <div className="animate-on-scroll">
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/sobremi.JPG" 
+                  alt="Dra. Beatriz López Valle" 
+                  className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+            
+            {/* Información de contacto */}
+            <div className="animate-on-scroll space-y-6">
+              <div className="space-y-4">
+                <div className="flex items-center space-x-4 p-4 bg-rosa-claro rounded-lg">
+                  <Mail className="text-borgona" size={24} />
+                  <div>
+                    <p className="text-sm text-gray-600">Email</p>
+                    <a href="mailto:info@beatrizlopezvalle.com" className="text-borgona font-medium hover:underline">
+                      info@beatrizlopezvalle.com
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="flex items-center space-x-4 p-4 bg-rosa-claro rounded-lg">
+                  <Phone className="text-borgona" size={24} />
+                  <div>
+                    <p className="text-sm text-gray-600">Teléfono</p>
+                    <a href="tel:+5491159633340" className="text-borgona font-medium hover:underline">
+                      +54 9 11 5963 3340
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="pt-4">
+                <a 
+                  href="https://wa.me/5491159633340" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-verde-botones text-white px-8 py-3 rounded-md hover:bg-opacity-90 transition-colors inline-flex items-center space-x-2 font-medium w-full justify-center lg:w-auto"
+                >
+                  <span>Contactar por WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Sección de Consultorios y Mapa */}
       <section className="py-16">
