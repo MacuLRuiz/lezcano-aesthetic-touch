@@ -27,21 +27,6 @@ const CirugiaFacial = () => {
         </div>
       </section>
 
-      {/* Hero Image Section */}
-      <section className="py-16 bg-rosa-claro">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
-              <img
-                src="/lovable-uploads/9e66102f-0ff3-4cdc-bcda-d636441fcf03.png"
-                alt="Cirugía Facial - Resultados naturales y armoniosos"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Lifting de Cara y Cuello */}
       <section className="py-16 bg-white">
         <div className="container-custom">
@@ -101,7 +86,7 @@ const CirugiaFacial = () => {
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="/lovable-uploads/b5431484-4ace-47c0-abec-0d4acc7aa870.png"
+                  src="/lovable-uploads/home.JPG"
                   alt="Rinoplastia (Nariz)"
                   className="w-full h-full object-cover"
                 />
