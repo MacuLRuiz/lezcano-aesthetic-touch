@@ -8,14 +8,28 @@ const HeroSection = () => {
   
   useEffect(() => {
     let index = 0;
-    const timer = setInterval(() => {
-      if (index <= animatedWord.length) {
+    let isDeleting = false;
+    
+    const typeWriter = () => {
+      if (!isDeleting && index <= animatedWord.length) {
         setDisplayText(animatedWord.slice(0, index));
         index++;
-      } else {
-        clearInterval(timer);
+      } else if (!isDeleting && index > animatedWord.length) {
+        // Pause before starting to delete
+        setTimeout(() => {
+          isDeleting = true;
+        }, 2000);
+      } else if (isDeleting && index > 0) {
+        index--;
+        setDisplayText(animatedWord.slice(0, index));
+      } else if (isDeleting && index === 0) {
+        // Reset for next cycle
+        isDeleting = false;
+        index = 0;
       }
-    }, 80);
+    };
+
+    const timer = setInterval(typeWriter, isDeleting ? 50 : 80);
 
     return () => clearInterval(timer);
   }, []);
