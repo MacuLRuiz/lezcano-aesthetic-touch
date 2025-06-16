@@ -86,7 +86,7 @@ const CirugiaFacial = () => {
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="/lovable-uploads/4595e78e-5fb5-4554-af82-3b5386081e5a.png"
+                  src="/lovable-uploads/b5431484-4ace-47c0-abec-0d4acc7aa870.png"
                   alt="Rinoplastia (Nariz)"
                   className="w-full h-full object-cover"
                 />
@@ -109,7 +109,7 @@ const CirugiaFacial = () => {
             <div className="md:order-1">
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?w=600&h=450&fit=crop"
+                  src="/lovable-uploads/65323b41-0e75-400d-bcd7-a28231d35f5f.png"
                   alt="Mentoplastia (Mentón)"
                   className="w-full h-full object-cover"
                 />
