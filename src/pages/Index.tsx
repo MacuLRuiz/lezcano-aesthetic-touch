@@ -30,6 +30,16 @@ const Index = () => {
   const [equipoCurrent, setEquipoCurrent] = useState(0);
   const [equipoCount, setEquipoCount] = useState(0);
 
+  // Estados para el efecto de máquina de escribir
+  const [displayText, setDisplayText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [showCursor, setShowCursor] = useState(true);
+
+  const fullText = "con propósito";
+  const typingSpeed = 100;
+  const deletingSpeed = 50;
+  const pauseTime = 2000;
+
   useEffect(() => {
     console.log("Index component mounted successfully");
     
@@ -57,6 +67,42 @@ const Index = () => {
       setEquipoCurrent(equipoApi.selectedScrollSnap() + 1);
     });
   }, [equipoApi]);
+
+  // Efecto para la animación de máquina de escribir
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (!isDeleting && displayText === fullText) {
+        // Pausa antes de empezar a borrar
+        setTimeout(() => setIsDeleting(true), pauseTime);
+        return;
+      }
+
+      if (isDeleting && displayText === "") {
+        // Pausa antes de empezar a escribir de nuevo
+        setIsDeleting(false);
+        return;
+      }
+
+      if (isDeleting) {
+        // Borrando texto
+        setDisplayText(prev => prev.slice(0, -1));
+      } else {
+        // Escribiendo texto
+        setDisplayText(prev => fullText.slice(0, prev.length + 1));
+      }
+    }, isDeleting ? deletingSpeed : typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, fullText]);
+
+  // Efecto para el cursor parpadeante
+  useEffect(() => {
+    const cursorInterval = setInterval(() => {
+      setShowCursor(prev => !prev);
+    }, 500);
+
+    return () => clearInterval(cursorInterval);
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -95,7 +141,11 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
               <h1 className="hero-quote mb-6 animate-fade-in-left">
-                Hola, soy la Dra. Beatriz Lezcano.
+                Cirugía plástica{" "}
+                <span className="relative">
+                  {displayText}
+                  <span className={`inline-block w-0.5 h-8 bg-borgona ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`}></span>
+                </span>
               </h1>
               <p className="text-xl mb-8 animate-fade-in-left delay-200">
                 Cirujana plástica y segunda generación de médicos. Trabajo con un enfoque personalizado, humano y profesional para que cada paciente se sienta acompañado y seguro.
