@@ -13,6 +13,10 @@ import Procedures from "./pages/Procedures";
 import Results from "./pages/Results";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import CirugiaFacial from "./pages/CirugiaFacial";
+import CirugiaCorporal from "./pages/CirugiaCorporal";
+import CirugiaMamaria from "./pages/CirugiaMamaria";
+import EsteticaNoQuirurgica from "./pages/EsteticaNoQuirurgica";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +36,10 @@ const App = () => {
                 <Route path="/procedimientos" element={<Procedures />} />
                 <Route path="/resultados-y-testimonios" element={<Results />} />
                 <Route path="/contacto" element={<Contact />} />
+                <Route path="/cirugia-facial" element={<CirugiaFacial />} />
+                <Route path="/cirugia-corporal" element={<CirugiaCorporal />} />
+                <Route path="/cirugia-mamaria" element={<CirugiaMamaria />} />
+                <Route path="/estetica-no-quirurgica" element={<EsteticaNoQuirurgica />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
