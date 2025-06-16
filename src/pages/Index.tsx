@@ -257,7 +257,7 @@ const Index = () => {
                 Equipo Lezcano
               </h2>
               <p className="text-xl text-reveal">
-                Con más de 10 años de experiencia y el respaldo de una tradición familiar en cirugía plástica, conformamos junto a mi padre, el Dr Horacio Lezcano, el equipo quirúrgico. Juntos brindamos atención personalizada, cálida y segura, priorizando la salud y bienestar de cada paciente.
+                Con más de 10 años de experiencia y el respaldo de una tradición familiar en cirugía plástica, conformamos el equipo quirúrgico junto a mi padre el Dr. Horacio Lezcano. Juntos brindamos una atención personalizada, segura y de calidad, priorizando la salud y bienestar de cada paciente.
               </p>
             </div>
           </div>
