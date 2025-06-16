@@ -86,7 +86,7 @@ const CirugiaFacial = () => {
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=450&fit=crop"
+                  src="/lovable-uploads/4595e78e-5fb5-4554-af82-3b5386081e5a.png"
                   alt="Rinoplastia (Nariz)"
                   className="w-full h-full object-cover"
                 />
