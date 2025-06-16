@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Instagram, Facebook } from "lucide-react";
@@ -35,7 +36,7 @@ const Index = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [showCursor, setShowCursor] = useState(true);
 
-  const fullText = "con propósito";
+  const fullText = "propósito";
   const typingSpeed = 100;
   const deletingSpeed = 50;
   const pauseTime = 2000;
@@ -141,7 +142,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
               <h1 className="hero-quote mb-6 animate-fade-in-left">
-                Cirugía plástica{" "}
+                Cirugía plástica con{" "}
                 <span className="relative">
                   {displayText}
                   <span className={`inline-block w-0.5 h-8 bg-borgona ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`}></span>
