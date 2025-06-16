@@ -47,22 +47,28 @@ const CirugiaFacial = () => {
             subtitle="Tratamientos personalizados para cada paciente"
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             <ProcedureCard
-              title="Rinoplastia"
-              description="Armoniza la forma y funcionalidad de la nariz, mejorando tanto la estética como la respiración."
+              title="Lifting de cara y cuello"
+              description="Restaura la firmeza y juventud del rostro y cuello, eliminando la flacidez y redefiniendo los contornos faciales con técnicas avanzadas."
               link="/procedimientos"
               imageSrc="/lovable-uploads/4595e78e-5fb5-4554-af82-3b5386081e5a.png"
             />
             <ProcedureCard
-              title="Blefaroplastia"
-              description="Rejuvenece la mirada eliminando el exceso de piel y grasa en los párpados."
+              title="Blefaroplastia (Párpados)"
+              description="Rejuvenece la mirada eliminando el exceso de piel y grasa en los párpados superiores e inferiores para una apariencia más fresca y descansada."
               link="/procedimientos"
               imageSrc="/lovable-uploads/bleferoplastia.jpg"
             />
             <ProcedureCard
-              title="Lifting facial"
-              description="Restaura la firmeza y juventud del rostro con técnicas avanzadas."
+              title="Rinoplastia (Nariz)"
+              description="Armoniza la forma y funcionalidad de la nariz, mejorando tanto la estética facial como la función respiratoria según las necesidades de cada paciente."
+              link="/procedimientos"
+              imageSrc="/lovable-uploads/4595e78e-5fb5-4554-af82-3b5386081e5a.png"
+            />
+            <ProcedureCard
+              title="Mentoplastia (Mentón)"
+              description="Mejora la proporción y armonía facial mediante la corrección del mentón, logrando un perfil más equilibrado y estético."
               link="/procedimientos"
             />
           </div>
