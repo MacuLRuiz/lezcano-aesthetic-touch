@@ -13,27 +13,16 @@ const CirugiaFacial = () => {
       {/* Hero Section */}
       <section className="pt-24 md:pt-32 pb-16 md:pb-24 bg-white relative overflow-hidden">
         <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl mb-6 font-seasons text-borgona">
-                Cirugía Facial
-              </h1>
-              <p className="text-xl mb-8">
-                Cirugías faciales que realzan tu belleza natural respetando tus rasgos únicos. Con técnicas avanzadas y un enfoque personalizado, cada procedimiento está diseñado para lograr resultados armoniosos y de aspecto natural.
-              </p>
-              <NavLink to="/contacto" className="btn-primary inline-block">
-                Consultar
-              </NavLink>
-            </div>
-            <div>
-              <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=600&h=450&fit=crop"
-                  alt="Cirugía facial - Dra. Beatriz Lezcano"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl mb-6 font-seasons text-borgona">
+              Cirugía Facial
+            </h1>
+            <p className="text-xl mb-8">
+              Cirugías faciales que realzan tu belleza natural respetando tus rasgos únicos. Con técnicas avanzadas y un enfoque personalizado, cada procedimiento está diseñado para lograr resultados armoniosos y de aspecto natural.
+            </p>
+            <NavLink to="/contacto" className="btn-primary inline-block">
+              Consultar
+            </NavLink>
           </div>
         </div>
       </section>
