@@ -20,7 +20,7 @@ const CirugiaFacial = () => {
                 Cirugía Facial
               </h1>
               <p className="text-xl mb-8">
-                Procedimientos especializados para armonizar y rejuvenecer el rostro con técnicas avanzadas y resultados naturales.
+                Cirugías faciales que realzan tu belleza natural respetando tus rasgos únicos. Con técnicas avanzadas y un enfoque personalizado, cada procedimiento está diseñado para lograr resultados armoniosos y de aspecto natural.
               </p>
               <NavLink to="/contacto" className="btn-primary inline-block">
                 Consultar
@@ -47,30 +47,70 @@ const CirugiaFacial = () => {
             subtitle="Tratamientos personalizados para cada paciente"
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-            <ProcedureCard
-              title="Lifting de cara y cuello"
-              description="Restaura la firmeza y juventud del rostro y cuello, eliminando la flacidez y redefiniendo los contornos faciales con técnicas avanzadas."
-              link="/procedimientos"
-              imageSrc="/lovable-uploads/4595e78e-5fb5-4554-af82-3b5386081e5a.png"
-            />
-            <ProcedureCard
-              title="Blefaroplastia (Párpados)"
-              description="Rejuvenece la mirada eliminando el exceso de piel y grasa en los párpados superiores e inferiores para una apariencia más fresca y descansada."
-              link="/procedimientos"
-              imageSrc="/lovable-uploads/bleferoplastia.jpg"
-            />
-            <ProcedureCard
-              title="Rinoplastia (Nariz)"
-              description="Armoniza la forma y funcionalidad de la nariz, mejorando tanto la estética facial como la función respiratoria según las necesidades de cada paciente."
-              link="/procedimientos"
-              imageSrc="/lovable-uploads/4595e78e-5fb5-4554-af82-3b5386081e5a.png"
-            />
-            <ProcedureCard
-              title="Mentoplastia (Mentón)"
-              description="Mejora la proporción y armonía facial mediante la corrección del mentón, logrando un perfil más equilibrado y estético."
-              link="/procedimientos"
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+              <div className="aspect-[4/3] bg-gray-100">
+                <img
+                  src="https://images.unsplash.com/photo-1594824704347-ca73ac882479?w=600&h=450&fit=crop"
+                  alt="Lifting de cara y cuello"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-seasons mb-3 text-borgona">Lifting de Cara y Cuello</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Rejuvenece tu rostro y cuello eliminando la flacidez y las arrugas profundas. Este procedimiento reposiciona los tejidos faciales para lograr un aspecto más joven y descansado, manteniendo la expresión natural de tu rostro. Ideal para combatir los signos del envejecimiento en mejillas, mandíbula y cuello.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+              <div className="aspect-[4/3] bg-gray-100">
+                <img
+                  src="/lovable-uploads/bleferoplastia.jpg"
+                  alt="Blefaroplastia (Párpados)"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-seasons mb-3 text-borgona">Blefaroplastia (Párpados)</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Corrige párpados caídos y elimina las bolsas bajo los ojos que te dan aspecto de cansancio. La blefaroplastia rejuvenece la mirada, abriendo los ojos y proporcionando una expresión más alerta y juvenil. Procedimiento con recuperación rápida y resultados muy naturales.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+              <div className="aspect-[4/3] bg-gray-100">
+                <img
+                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=450&fit=crop"
+                  alt="Rinoplastia (Nariz)"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-seasons mb-3 text-borgona">Rinoplastia (Nariz)</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Mejora la forma y función de tu nariz para lograr armonía facial perfecta. La rinoplastia no solo embellece tu rostro, sino que también puede corregir problemas respiratorios. Cada cirugía se personaliza según tus rasgos faciales para mantener tu identidad única.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+              <div className="aspect-[4/3] bg-gray-100">
+                <img
+                  src="https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?w=600&h=450&fit=crop"
+                  alt="Mentoplastia (Mentón)"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-seasons mb-3 text-borgona">Mentoplastia (Mentón)</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Define y equilibra tu perfil con una mentoplastia que armoniza las proporciones faciales. Este procedimiento puede aumentar o reducir el mentón para crear un balance perfecto con la nariz y otros rasgos faciales, mejorando significativamente tu perfil.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -79,10 +119,10 @@ const CirugiaFacial = () => {
       <section className="py-16 bg-borgona text-white">
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-seasons mb-6">
-            ¿Querés saber más sobre cirugía facial?
+            ¿Tienes dudas sobre algún procedimiento?
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Te invito a una consulta personalizada para evaluar las mejores opciones para vos.
+            Agenda una consulta personalizada para evaluar tu caso específico y conocer todas las opciones disponibles.
           </p>
           <NavLink 
             to="/contacto" 
