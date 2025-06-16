@@ -153,7 +153,7 @@ const Index = () => {
                 </span>
               </h1>
               <p className="text-xl mb-8 animate-fade-in-left delay-200">
-                Cirujana plástica y segunda generación de médicos. Trabajo con un enfoque personalizado, humano y profesional para que cada paciente se sienta acompañado y seguro.
+                Soy la Dra. Beatriz Lezcano. Cirujana plástica y segunda generación de médicos. Trabajo con un enfoque personalizado, humano y profesional para que cada paciente se sienta acompañado y seguro.
               </p>
               <div className="animate-fade-in-left delay-300">
                 <NavLink to="/contacto" className="btn-primary inline-block">
@@ -257,7 +257,7 @@ const Index = () => {
                 Equipo Lezcano
               </h2>
               <p className="text-xl text-reveal">
-                Con más de 10 años de experiencia y el respaldo de una tradición familiar en cirugía plástica, lidero el Equipo Lezcano junto a mi padre, el Dr. Lezcano. Juntos brindamos atención personalizada, cálida y segura, priorizando la salud y bienestar de cada paciente.
+                Con más de 10 años de experiencia y el respaldo de una tradición familiar en cirugía plástica, conformamos junto a mi padre, el Dr Horacio Lezcano, el equipo quirúrgico. Juntos brindamos atención personalizada, cálida y segura, priorizando la salud y bienestar de cada paciente.
               </p>
             </div>
           </div>
