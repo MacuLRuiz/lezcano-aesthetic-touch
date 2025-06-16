@@ -264,6 +264,60 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Especialidades Section */}
+      <section className="py-16 bg-white relative">
+        <div className="container-custom">
+          <div className="animate-on-scroll text-center">
+            <SectionTitle 
+              title="Especialidades" 
+              subtitle="Tratamientos especializados con técnicas avanzadas"
+            />
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 animate-on-scroll">
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-borgona rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-borgona/90 transition-all">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                  <div className="w-4 h-4 bg-borgona rounded-full"></div>
+                </div>
+              </div>
+              <h3 className="text-xl font-seasons mb-2 text-borgona">Cirugía facial</h3>
+              <p className="text-gray-600">Procedimientos especializados para armonizar y rejuvenecer el rostro</p>
+            </div>
+            
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-borgona rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-borgona/90 transition-all">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                  <div className="w-4 h-4 bg-borgona rounded-full"></div>
+                </div>
+              </div>
+              <h3 className="text-xl font-seasons mb-2 text-borgona">Cirugía corporal</h3>
+              <p className="text-gray-600">Remodelación y contorneado del cuerpo para una silueta armónica</p>
+            </div>
+            
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-borgona rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-borgona/90 transition-all">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                  <div className="w-4 h-4 bg-borgona rounded-full"></div>
+                </div>
+              </div>
+              <h3 className="text-xl font-seasons mb-2 text-borgona">Cirugía mamaria</h3>
+              <p className="text-gray-600">Procedimientos especializados para realzar y armonizar el busto</p>
+            </div>
+            
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-borgona rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-borgona/90 transition-all">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                  <div className="w-4 h-4 bg-borgona rounded-full"></div>
+                </div>
+              </div>
+              <h3 className="text-xl font-seasons mb-2 text-borgona">Estética no quirúrgica</h3>
+              <p className="text-gray-600">Tratamientos mínimamente invasivos para rejuvenecer sin cirugía</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Procedures - Now as Carousel */}
       <section className="py-16 relative bg-rosa-claro">
         <div className="container-custom">
