@@ -1,8 +1,6 @@
 
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import SectionTitle from "@/components/SectionTitle";
-import ProcedureCard from "@/components/ProcedureCard";
 
 const EsteticaNoQuirurgica = () => {
   useEffect(() => {
@@ -14,23 +12,35 @@ const EsteticaNoQuirurgica = () => {
       {/* Hero Section */}
       <section className="pt-24 md:pt-32 pb-16 md:pb-24 bg-white relative overflow-hidden">
         <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl mb-6 font-seasons text-borgona">
+              Estética No Quirúrgica
+            </h1>
+            <p className="text-xl mb-8">
+              Tratamientos mínimamente invasivos para rejuvenecer y embellecer sin cirugía. Con técnicas avanzadas y resultados naturales, cada procedimiento está diseñado para realzar tu belleza de manera segura y efectiva.
+            </p>
+            <NavLink to="/contacto" className="btn-primary inline-block">
+              Consultar
+            </NavLink>
+          </div>
+        </div>
+      </section>
+
+      {/* Botox */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl mb-6 font-seasons text-borgona">
-                Estética No Quirúrgica
-              </h1>
-              <p className="text-xl mb-8">
-                Tratamientos mínimamente invasivos para rejuvenecer y embellecer sin cirugía, con resultados naturales.
+              <h2 className="text-3xl font-seasons mb-6 text-borgona">Botox</h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Suaviza las líneas de expresión y previene los signos del envejecimiento de manera natural. El botox es ideal para tratar arrugas en la frente, patas de gallo y entrecejo. Este tratamiento mínimamente invasivo proporciona resultados visibles en pocos días, manteniendo la expresión natural del rostro.
               </p>
-              <NavLink to="/contacto" className="btn-primary inline-block">
-                Consultar
-              </NavLink>
             </div>
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=600&h=450&fit=crop"
-                  alt="Estética no quirúrgica - Dra. Beatriz Lezcano"
+                  src="/lovable-uploads/243dd21a-d6ab-44ce-9864-860c9ee44492.png"
+                  alt="Botox - Tratamiento de líneas de expresión"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -39,31 +49,48 @@ const EsteticaNoQuirurgica = () => {
         </div>
       </section>
 
-      {/* Procedures Section */}
+      {/* Rellenos con Ácido Hialurónico */}
       <section className="py-16 bg-rosa-claro">
         <div className="container-custom">
-          <SectionTitle 
-            title="Tratamientos de Estética No Quirúrgica" 
-            subtitle="Procedimientos mínimamente invasivos con máximos resultados"
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ProcedureCard
-              title="Botox"
-              description="Tratamiento para suavizar líneas de expresión y prevenir signos de envejecimiento."
-              link="/procedimientos"
-              imageSrc="/lovable-uploads/243dd21a-d6ab-44ce-9864-860c9ee44492.png"
-            />
-            <ProcedureCard
-              title="Rellenos con ácido hialurónico"
-              description="Hidrata y da volumen a labios, mejillas y otras áreas del rostro."
-              link="/procedimientos"
-            />
-            <ProcedureCard
-              title="Hilos tensores"
-              description="Lifting no quirúrgico para reafirmar y elevar la piel."
-              link="/procedimientos"
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="md:order-2">
+              <h2 className="text-3xl font-seasons mb-6 text-borgona">Rellenos con Ácido Hialurónico</h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Hidrata y da volumen a labios, mejillas y otras áreas del rostro para lograr un aspecto juvenil y natural. Los rellenos con ácido hialurónico son perfectos para restaurar volumen perdido, definir contornos faciales y mejorar la hidratación de la piel. Resultados inmediatos y de larga duración.
+              </p>
+            </div>
+            <div className="md:order-1">
+              <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=600&h=450&fit=crop"
+                  alt="Rellenos con Ácido Hialurónico"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hilos Tensores */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-seasons mb-6 text-borgona">Hilos Tensores</h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Lifting no quirúrgico para reafirmar y elevar la piel del rostro y cuello. Los hilos tensores proporcionan un efecto lifting inmediato, estimulando la producción natural de colágeno. Ideal para tratar la flacidez facial, definir el óvalo facial y lograr un aspecto más joven sin cirugía.
+              </p>
+            </div>
+            <div>
+              <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=450&fit=crop"
+                  alt="Hilos Tensores - Lifting no quirúrgico"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -72,10 +99,10 @@ const EsteticaNoQuirurgica = () => {
       <section className="py-16 bg-borgona text-white">
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-seasons mb-6">
-            ¿Querés saber más sobre estética no quirúrgica?
+            ¿Tienes dudas sobre algún procedimiento?
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Te invito a una consulta personalizada para evaluar las mejores opciones para vos.
+            Agenda una consulta personalizada para evaluar tu caso específico y conocer todas las opciones disponibles.
           </p>
           <NavLink 
             to="/contacto" 
