@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Instagram, Facebook } from "lucide-react";
@@ -143,9 +142,14 @@ const Index = () => {
             <div className="order-2 md:order-1">
               <h1 className="hero-quote mb-6 animate-fade-in-left">
                 Cirugía plástica con{" "}
-                <span className="relative">
-                  {displayText}
-                  <span className={`inline-block w-0.5 h-8 bg-borgona ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`}></span>
+                <span className="relative inline-block">
+                  {/* Texto invisible para reservar espacio */}
+                  <span className="invisible" aria-hidden="true">{fullText}</span>
+                  {/* Texto visible con animación */}
+                  <span className="absolute left-0 top-0">
+                    {displayText}
+                    <span className={`inline-block w-0.5 h-8 bg-borgona ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`}></span>
+                  </span>
                 </span>
               </h1>
               <p className="text-xl mb-8 animate-fade-in-left delay-200">
