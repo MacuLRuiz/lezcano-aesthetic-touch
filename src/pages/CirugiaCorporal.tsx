@@ -26,21 +26,6 @@ const CirugiaCorporal = () => {
         </div>
       </section>
 
-      {/* Hero Image Section */}
-      <section className="py-16 bg-rosa-claro">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
-              <img
-                src="/lovable-uploads/3980f895-566b-4465-8516-6c1cd83ab4d1.png"
-                alt="Cirugía Corporal - Resultados naturales y armoniosos"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Abdominoplastia */}
       <section className="py-16 bg-white">
         <div className="container-custom">
@@ -77,7 +62,7 @@ const CirugiaCorporal = () => {
             <div className="md:order-1">
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=450&fit=crop"
+                  src="/lovable-uploads/3980f895-566b-4465-8516-6c1cd83ab4d1.png"
                   alt="Lipoescultura"
                   className="w-full h-full object-cover"
                 />
