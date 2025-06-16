@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
-import ProcedureCard from "@/components/ProcedureCard";
 
 const CirugiaFacial = () => {
   useEffect(() => {
@@ -39,76 +38,92 @@ const CirugiaFacial = () => {
         </div>
       </section>
 
-      {/* Procedures Section */}
-      <section className="py-16 bg-rosa-claro">
+      {/* Lifting de Cara y Cuello */}
+      <section className="py-16 bg-white">
         <div className="container-custom">
-          <SectionTitle 
-            title="Procedimientos de Cirugía Facial" 
-            subtitle="Tratamientos personalizados para cada paciente"
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
-              <div className="aspect-[4/3] bg-gray-100">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-seasons mb-6 text-borgona">Lifting de Cara y Cuello</h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Rejuvenece tu rostro y cuello eliminando la flacidez y las arrugas profundas. Este procedimiento reposiciona los tejidos faciales para lograr un aspecto más joven y descansado, manteniendo la expresión natural de tu rostro. Ideal para combatir los signos del envejecimiento en mejillas, mandíbula y cuello.
+              </p>
+            </div>
+            <div>
+              <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1594824704347-ca73ac882479?w=600&h=450&fit=crop"
                   alt="Lifting de cara y cuello"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-seasons mb-3 text-borgona">Lifting de Cara y Cuello</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Rejuvenece tu rostro y cuello eliminando la flacidez y las arrugas profundas. Este procedimiento reposiciona los tejidos faciales para lograr un aspecto más joven y descansado, manteniendo la expresión natural de tu rostro. Ideal para combatir los signos del envejecimiento en mejillas, mandíbula y cuello.
-                </p>
-              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
-              <div className="aspect-[4/3] bg-gray-100">
+      {/* Blefaroplastia */}
+      <section className="py-16 bg-rosa-claro">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="md:order-2">
+              <h2 className="text-3xl font-seasons mb-6 text-borgona">Blefaroplastia (Párpados)</h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Corrige párpados caídos y elimina las bolsas bajo los ojos que te dan aspecto de cansancio. La blefaroplastia rejuvenece la mirada, abriendo los ojos y proporcionando una expresión más alerta y juvenil. Procedimiento con recuperación rápida y resultados muy naturales.
+              </p>
+            </div>
+            <div className="md:order-1">
+              <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
                   src="/lovable-uploads/bleferoplastia.jpg"
                   alt="Blefaroplastia (Párpados)"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-seasons mb-3 text-borgona">Blefaroplastia (Párpados)</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Corrige párpados caídos y elimina las bolsas bajo los ojos que te dan aspecto de cansancio. La blefaroplastia rejuvenece la mirada, abriendo los ojos y proporcionando una expresión más alerta y juvenil. Procedimiento con recuperación rápida y resultados muy naturales.
-                </p>
-              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
-              <div className="aspect-[4/3] bg-gray-100">
+      {/* Rinoplastia */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-seasons mb-6 text-borgona">Rinoplastia (Nariz)</h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Mejora la forma y función de tu nariz para lograr armonía facial perfecta. La rinoplastia no solo embellece tu rostro, sino que también puede corregir problemas respiratorios. Cada cirugía se personaliza según tus rasgos faciales para mantener tu identidad única.
+              </p>
+            </div>
+            <div>
+              <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=450&fit=crop"
                   alt="Rinoplastia (Nariz)"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-seasons mb-3 text-borgona">Rinoplastia (Nariz)</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Mejora la forma y función de tu nariz para lograr armonía facial perfecta. La rinoplastia no solo embellece tu rostro, sino que también puede corregir problemas respiratorios. Cada cirugía se personaliza según tus rasgos faciales para mantener tu identidad única.
-                </p>
-              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
-              <div className="aspect-[4/3] bg-gray-100">
+      {/* Mentoplastia */}
+      <section className="py-16 bg-rosa-claro">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="md:order-2">
+              <h2 className="text-3xl font-seasons mb-6 text-borgona">Mentoplastia (Mentón)</h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Define y equilibra tu perfil con una mentoplastia que armoniza las proporciones faciales. Este procedimiento puede aumentar o reducir el mentón para crear un balance perfecto con la nariz y otros rasgos faciales, mejorando significativamente tu perfil.
+              </p>
+            </div>
+            <div className="md:order-1">
+              <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?w=600&h=450&fit=crop"
                   alt="Mentoplastia (Mentón)"
                   className="w-full h-full object-cover"
                 />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-seasons mb-3 text-borgona">Mentoplastia (Mentón)</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Define y equilibra tu perfil con una mentoplastia que armoniza las proporciones faciales. Este procedimiento puede aumentar o reducir el mentón para crear un balance perfecto con la nariz y otros rasgos faciales, mejorando significativamente tu perfil.
-                </p>
               </div>
             </div>
           </div>
