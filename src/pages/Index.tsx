@@ -146,7 +146,7 @@ const Index = () => {
                   {/* Texto invisible para reservar espacio */}
                   <span className="invisible" aria-hidden="true">{fullText}</span>
                   {/* Texto visible con animación */}
-                  <span className="absolute left-0 top-0">
+                  <span className="absolute left-0 top-0 flex items-baseline">
                     {displayText}
                     <span className={`inline-block w-0.5 h-8 bg-borgona ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`}></span>
                   </span>
