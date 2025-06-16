@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Instagram, Facebook, Scissors, User, Heart, Sparkles } from "lucide-react";
@@ -396,7 +395,7 @@ const Index = () => {
                       title="Botox"
                       description="Tratamiento no invasivo para suavizar líneas de expresión y prevenir signos de envejecimiento."
                       link="/procedimientos"
-                      imageSrc="/lovable-uploads/243dd21a-d6ab-44ce-9864-860c9ee44492.png"
+                      imageSrc="/lovable-uploads/00472de7-6b8d-441f-ab84-6d52d2dd899e.png"
                     />
                   </div>
                 </CarouselItem>
