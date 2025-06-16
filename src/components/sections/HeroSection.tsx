@@ -39,9 +39,12 @@ const HeroSection = () => {
       <div className="container-custom relative z-10 pt-24 md:pt-32 pb-16 md:pb-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-seasons text-borgona leading-tight mb-6 min-h-[1.2em]">
-              Cirugía plástica con {displayText}
-              <span className="animate-pulse">|</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-seasons text-borgona leading-tight mb-6">
+              Cirugía plástica con{" "}
+              <span className="inline-block min-w-[200px]">
+                {displayText}
+                <span className="animate-pulse text-borgona">|</span>
+              </span>
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed max-w-2xl">
