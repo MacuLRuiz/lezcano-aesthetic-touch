@@ -40,7 +40,7 @@ const CirugiaFacial = () => {
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1594824704347-ca73ac882479?w=600&h=450&fit=crop"
+                  src="/lovable-uploads/d1a1bea7-d779-4c9b-a95a-adedf1acd15c.png"
                   alt="Lifting de cara y cuello"
                   className="w-full h-full object-cover"
                 />
