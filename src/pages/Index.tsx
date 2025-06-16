@@ -275,89 +275,73 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 animate-on-scroll">
-            <div className="text-center group bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all">
-              <div className="aspect-square w-32 h-32 mx-auto mb-4 rounded-lg overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=400&h=400&fit=crop"
-                  alt="Cirugía facial"
-                  className="w-full h-full object-cover"
-                />
+            <NavLink 
+              to="/cirugia-facial" 
+              className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=400&h=600&fit=crop"
+                alt="Cirugía facial"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all"></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <h3 className="text-xl md:text-2xl font-seasons text-white text-center px-4">
+                  Cirugía facial
+                </h3>
               </div>
-              <div className="mb-4">
-                <Scissors className="w-8 h-8 text-borgona mx-auto mb-2" />
-                <h3 className="text-xl font-seasons mb-2 text-borgona">Cirugía facial</h3>
-                <p className="text-gray-600 text-sm mb-4">Procedimientos especializados para armonizar y rejuvenecer el rostro</p>
-              </div>
-              <NavLink 
-                to="/cirugia-facial" 
-                className="btn-secondary inline-block w-full text-center"
-              >
-                Ver más
-              </NavLink>
-            </div>
+            </NavLink>
             
-            <div className="text-center group bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all">
-              <div className="aspect-square w-32 h-32 mx-auto mb-4 rounded-lg overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1466721591366-2d5fba72006d?w=400&h=400&fit=crop"
-                  alt="Cirugía corporal"
-                  className="w-full h-full object-cover"
-                />
+            <NavLink 
+              to="/cirugia-corporal" 
+              className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1466721591366-2d5fba72006d?w=400&h=600&fit=crop"
+                alt="Cirugía corporal"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all"></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <h3 className="text-xl md:text-2xl font-seasons text-white text-center px-4">
+                  Cirugía corporal
+                </h3>
               </div>
-              <div className="mb-4">
-                <User className="w-8 h-8 text-borgona mx-auto mb-2" />
-                <h3 className="text-xl font-seasons mb-2 text-borgona">Cirugía corporal</h3>
-                <p className="text-gray-600 text-sm mb-4">Remodelación y contorneado del cuerpo para una silueta armónica</p>
-              </div>
-              <NavLink 
-                to="/cirugia-corporal" 
-                className="btn-secondary inline-block w-full text-center"
-              >
-                Ver más
-              </NavLink>
-            </div>
+            </NavLink>
             
-            <div className="text-center group bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all">
-              <div className="aspect-square w-32 h-32 mx-auto mb-4 rounded-lg overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=400&fit=crop"
-                  alt="Cirugía mamaria"
-                  className="w-full h-full object-cover"
-                />
+            <NavLink 
+              to="/cirugia-mamaria" 
+              className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=600&fit=crop"
+                alt="Cirugía mamaria"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all"></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <h3 className="text-xl md:text-2xl font-seasons text-white text-center px-4">
+                  Cirugía mamaria
+                </h3>
               </div>
-              <div className="mb-4">
-                <Heart className="w-8 h-8 text-borgona mx-auto mb-2" />
-                <h3 className="text-xl font-seasons mb-2 text-borgona">Cirugía mamaria</h3>
-                <p className="text-gray-600 text-sm mb-4">Procedimientos especializados para realzar y armonizar el busto</p>
-              </div>
-              <NavLink 
-                to="/cirugia-mamaria" 
-                className="btn-secondary inline-block w-full text-center"
-              >
-                Ver más
-              </NavLink>
-            </div>
+            </NavLink>
             
-            <div className="text-center group bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all">
-              <div className="aspect-square w-32 h-32 mx-auto mb-4 rounded-lg overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=400&fit=crop"
-                  alt="Estética no quirúrgica"
-                  className="w-full h-full object-cover"
-                />
+            <NavLink 
+              to="/estetica-no-quirurgica" 
+              className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=600&fit=crop"
+                alt="Estética no quirúrgica"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all"></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <h3 className="text-xl md:text-2xl font-seasons text-white text-center px-4">
+                  Estética no quirúrgica
+                </h3>
               </div>
-              <div className="mb-4">
-                <Sparkles className="w-8 h-8 text-borgona mx-auto mb-2" />
-                <h3 className="text-xl font-seasons mb-2 text-borgona">Estética no quirúrgica</h3>
-                <p className="text-gray-600 text-sm mb-4">Tratamientos mínimamente invasivos para rejuvenecer sin cirugía</p>
-              </div>
-              <NavLink 
-                to="/estetica-no-quirurgica" 
-                className="btn-secondary inline-block w-full text-center"
-              >
-                Ver más
-              </NavLink>
-            </div>
+            </NavLink>
           </div>
         </div>
       </section>
