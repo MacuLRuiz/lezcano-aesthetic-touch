@@ -49,7 +49,7 @@ const EsteticaNoQuirurgica = () => {
         </div>
       </section>
 
-      {/* Rellenos con Ácido Hialurónico */}
+      {/* Rellenos */}
       <section className="py-16 bg-rosa-claro">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -64,6 +64,52 @@ const EsteticaNoQuirurgica = () => {
                 <img
                   src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=600&h=450&fit=crop"
                   alt="Rellenos con Ácido Hialurónico"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bioestimulación */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-seasons mb-6 text-borgona">Bioestimulación</h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Estimula la producción natural de colágeno para rejuvenecer la piel desde adentro. La bioestimulación con inductores de colágeno mejora la textura, firmeza y luminosidad de la piel de manera gradual y natural. Ideal para prevenir y tratar los signos del envejecimiento facial y corporal.
+              </p>
+            </div>
+            <div>
+              <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=450&fit=crop"
+                  alt="Bioestimulación - Estimulación natural de colágeno"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Plasma Rico en Plaquetas */}
+      <section className="py-16 bg-rosa-claro">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="md:order-2">
+              <h2 className="text-3xl font-seasons mb-6 text-borgona">Plasma Rico en Plaquetas (PRP)</h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Utiliza los factores de crecimiento de tu propia sangre para regenerar y rejuvenecer la piel. El PRP estimula la renovación celular, mejora la textura y luminosidad, y reduce líneas finas. Un tratamiento completamente natural que utiliza el poder regenerativo de tu propio organismo.
+              </p>
+            </div>
+            <div className="md:order-1">
+              <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=450&fit=crop"
+                  alt="Plasma Rico en Plaquetas (PRP)"
                   className="w-full h-full object-cover"
                 />
               </div>
