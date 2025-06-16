@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom";
 
 const HeroSection = () => {
   const [displayText, setDisplayText] = useState("");
-  const fullText = "Cirugía plástica con propósito";
+  const animatedWord = "propósito";
   
   useEffect(() => {
     let index = 0;
     const timer = setInterval(() => {
-      if (index <= fullText.length) {
-        setDisplayText(fullText.slice(0, index));
+      if (index <= animatedWord.length) {
+        setDisplayText(animatedWord.slice(0, index));
         index++;
       } else {
         clearInterval(timer);
@@ -26,7 +26,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-seasons text-borgona leading-tight mb-6 min-h-[1.2em]">
-              {displayText}
+              Cirugía plástica con {displayText}
               <span className="animate-pulse">|</span>
             </h1>
 
