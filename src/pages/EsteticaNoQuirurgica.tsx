@@ -62,7 +62,7 @@ const EsteticaNoQuirurgica = () => {
             <div className="md:order-1">
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=600&h=450&fit=crop"
+                  src="\lovable-uploads\relleno acido hialuronico.jpg"
                   alt="Rellenos con Ácido Hialurónico"
                   className="w-full h-full object-cover"
                 />
@@ -85,7 +85,7 @@ const EsteticaNoQuirurgica = () => {
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=450&fit=crop"
+                  src="lovable-uploads\Bioestimulacion.jpg"
                   alt="Bioestimulación - Estimulación natural de colágeno"
                   className="w-full h-full object-cover"
                 />
@@ -108,7 +108,7 @@ const EsteticaNoQuirurgica = () => {
             <div className="md:order-1">
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=450&fit=crop"
+                  src="lovable-uploads\plasma rico en plaquetas.jpg"
                   alt="Plasma Rico en Plaquetas (PRP)"
                   className="w-full h-full object-cover"
                 />
@@ -131,7 +131,7 @@ const EsteticaNoQuirurgica = () => {
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=450&fit=crop"
+                  src="lovable-uploads\hilostensores.jpg"
                   alt="Hilos Tensores - Lifting no quirúrgico"
                   className="w-full h-full object-cover"
                 />

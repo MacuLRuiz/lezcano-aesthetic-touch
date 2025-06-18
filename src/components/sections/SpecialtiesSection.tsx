@@ -20,7 +20,7 @@ const SpecialtiesSection = () => {
             className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
           >
             <img
-              src="https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=400&h=600&fit=crop"
+              src="lovable-uploads\cirugia facial.jpg"
               alt="Cirugía facial"
               className="w-full h-full object-cover"
             />
@@ -37,7 +37,7 @@ const SpecialtiesSection = () => {
             className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
           >
             <img
-              src="https://images.unsplash.com/photo-1466721591366-2d5fba72006d?w=400&h=600&fit=crop"
+              src="lovable-uploads\cirugia corporal.jpg"
               alt="Cirugía corporal"
               className="w-full h-full object-cover"
             />
@@ -54,7 +54,7 @@ const SpecialtiesSection = () => {
             className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
           >
             <img
-              src="https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=600&fit=crop"
+              src="lovable-uploads\Mastopexia.jpg"
               alt="Cirugía mamaria"
               className="w-full h-full object-cover"
             />
@@ -71,7 +71,7 @@ const SpecialtiesSection = () => {
             className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
           >
             <img
-              src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=600&fit=crop"
+              src="lovable-uploads\Bioestimulacion.jpg"
               alt="Estética no quirúrgica"
               className="w-full h-full object-cover"
             />

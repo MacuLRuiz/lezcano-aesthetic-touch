@@ -39,7 +39,7 @@ const CirugiaCorporal = () => {
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=450&fit=crop"
+                  src="public\lovable-uploads\abdominoplastia.jpg"
                   alt="Abdominoplastia"
                   className="w-full h-full object-cover"
                 />
@@ -85,7 +85,7 @@ const CirugiaCorporal = () => {
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1594824763280-6c65e7ac0bd7?w=600&h=450&fit=crop"
+                  src="/lovable-uploads/braquioplastia.jpg"
                   alt="Braquioplastia (Dermolipectomía de Brazos)"
                   className="w-full h-full object-cover"
                 />

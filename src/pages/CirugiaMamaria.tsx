@@ -62,7 +62,7 @@ const CirugiaMamaria = () => {
             <div className="md:order-1">
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=450&fit=crop"
+                  src="/lovable-uploads/reduccion mamaria.jpg"
                   alt="Reducción Mamaria"
                   className="w-full h-full object-cover"
                 />
@@ -85,7 +85,7 @@ const CirugiaMamaria = () => {
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1500673922987-e212871fec22?w=600&h=450&fit=crop"
+                  src="/lovable-uploads/Mastopexia.jpg"
                   alt="Mastopexia (Levantamiento de Senos)"
                   className="w-full h-full object-cover"
                 />
