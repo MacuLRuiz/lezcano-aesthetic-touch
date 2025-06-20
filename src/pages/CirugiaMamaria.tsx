@@ -39,7 +39,7 @@ const CirugiaMamaria = () => {
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="/lovable-uploads/371b18e7-0749-4015-9787-163ab28fe24b.png"
+                  src="/lovable-uploads/aumentomamario.jpg"
                   alt="Aumento Mamario con Implantes"
                   className="w-full h-full object-cover"
                 />

@@ -74,7 +74,7 @@ const Procedures = () => {
                 title="Aumento mamario"
                 description="Realza el volumen y la forma de los senos para una apariencia más armónica y natural, adaptada a tu proporción corporal y expectativas."
                 link="/contacto"
-                imageSrc="/lovable-uploads/e6eedc63-27ba-47db-8ad4-5882dadeb566.png"
+                imageSrc="/lovable-uploads/aumentomamario.jpg"
               />
             </div>
             
@@ -104,7 +104,7 @@ const Procedures = () => {
                 title="Botox"
                 description="Tratamiento para suavizar líneas de expresión y prevenir signos de envejecimiento, especialmente en frente, entrecejo y patas de gallo. Proporciona un aspecto rejuvenecido y natural."
                 link="/contacto"
-                imageSrc="/lovable-uploads/b5431484-4ace-47c0-abec-0d4acc7aa870.png"
+                imageSrc="/lovable-uploads/00472de7-6b8d-441f-ab84-6d52d2dd899e.png"
               />
             </div>
             

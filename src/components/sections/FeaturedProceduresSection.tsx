@@ -67,7 +67,7 @@ const FeaturedProceduresSection = () => {
                     title="Aumento mamario"
                     description="Realza el volumen y la forma de los senos para una apariencia más armónica y natural."
                     link="/procedimientos"
-                    imageSrc="/lovable-uploads/371b18e7-0749-4015-9787-163ab28fe24b.png"
+                    imageSrc="/lovable-uploads/aumentomamario.jpg"
                   />
                 </div>
               </CarouselItem>
