@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { Instagram, MapPin, Clock, Mail, Phone } from "lucide-react";
 import SectionTitle from "../components/SectionTitle";
@@ -33,7 +32,7 @@ const Contact = () => {
     {
       location: "Lanús",
       address: "Coronel Pringles 2454",
-      schedule: "Lunes y jueves de 15 a 19 hs"
+      schedule: "Lunes y jueves: 15 a 19:00 hs"
     },
     {
       location: "Quilmes",
@@ -43,7 +42,7 @@ const Contact = () => {
     {
       location: "Nordelta",
       address: "Estética Dardano – Barrio Puerto Escondido, local 4001",
-      schedule: "Viernes de 16 a 19 hs"
+      schedule: "Viernes de 15 a 18 hs"
     },
     {
       location: "Hudson",
