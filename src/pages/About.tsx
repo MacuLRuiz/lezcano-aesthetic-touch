@@ -67,31 +67,88 @@ const About = () => {
             <div className="animate-on-scroll">
               <h2 className="text-3xl font-seasons mb-6">Dra. Beatriz Lezcano</h2>
               <p className="text-lg mb-4">
-                Médica cirujana plástica. Segunda generación de profesionales en cirugía.
+                Médica cirujana plástica y reparadora. Segunda generación de profesionales en cirugía.
               </p>
               <p className="mb-4">
-                Me especializo en tratamientos estéticos y reconstructivos con un enfoque empático y ético.
-                Acompaño a cada paciente con compromiso humano y técnico.
+                Me especializo en cirugía estética y reconstructiva, con una mirada integral que combina técnica, sensibilidad y compromiso humano. Acompaño a cada paciente con escucha atenta, priorizando su bienestar físico y emocional.
               </p>
               <p className="mb-6">
-                Mi práctica se caracteriza por el cuidado personalizado y la atención a los detalles, 
-                priorizando siempre la salud y bienestar de mis pacientes por encima de todo.
-                Creo firmemente que la cirugía plástica debe potenciar la belleza natural y la confianza,
-                respetando la individualidad de cada persona.
+                Mi enfoque se basa en potenciar la belleza natural de cada persona, respetando su individualidad y fomentando la confianza en sí misma. Creo en una cirugía plástica ética, empática y profundamente personalizada.
               </p>
-              
-              <div className="border border-gray-200 p-4 rounded-md mb-8">
-                <h3 className="font-seasons text-xl mb-2">Formación</h3>
-                <ul className="list-disc list-inside space-y-1">
-                  <li>Universidad de Buenos Aires</li>
-                  <li>Especialidad en Cirugía Plástica</li>
-                  <li>Postgrado en Estética Avanzada</li>
-                </ul>
-              </div>
               
               <NavLink to="/contacto" className="btn-primary">
                 Agendar consulta
               </NavLink>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Formation and Professional Memberships Section */}
+      <section className="py-12 bg-white">
+        <div className="container-custom">
+          <SectionTitle
+            title="Formación y membresías profesionales"
+            subtitle="Educación especializada y participación en organizaciones profesionales"
+          />
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Education */}
+            <div className="animate-on-scroll">
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h3 className="text-xl font-seasons mb-4 text-borgona">Formación Académica</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-rosa-claro rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Médica egresada de la Facultad de Medicina, Universidad de Buenos Aires (UBA)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-rosa-claro rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Especialista Jerarquizada en Cirugía Plástica y Reparadora (UBA)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-rosa-claro rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Especialista en Clínica Quirúrgica</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-rosa-claro rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Especialista en Medicina Estética (UBA)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-rosa-claro rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Especialista en Administración y Gestión Sanitaria (Ministerio de Salud, Distrito III)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Professional Memberships */}
+            <div className="animate-on-scroll">
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h3 className="text-xl font-seasons mb-4 text-borgona">Membresías Profesionales</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-rosa-claro rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Miembro titular de la Sociedad de Cirugía Plástica de Buenos Aires (SCPBA)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-rosa-claro rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Miembro titular de la Sociedad Argentina de Cirugía Plástica, Estética y Reparadora (SACPER)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-rosa-claro rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Miembro de la American Society of Plastic Surgeons (ASPS)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-rosa-claro rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Miembro de la Sociedad Argentina de Rinología Estética y Funcional (SAREF)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-rosa-claro rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Miembro de la Asociación Argentina de Cirugía Estética (AACE)</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
