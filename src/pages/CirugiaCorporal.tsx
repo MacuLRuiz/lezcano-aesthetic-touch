@@ -39,7 +39,7 @@ const CirugiaCorporal = () => {
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="public\lovable-uploads\abdominoplastia.jpg"
+                  src="/lovable-uploads/abdominoplastia.jpg"
                   alt="Abdominoplastia"
                   className="w-full h-full object-cover"
                 />
