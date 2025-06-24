@@ -54,7 +54,7 @@ const SpecialtiesSection = () => {
             className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
           >
             <img
-              src="lovable-uploads\Mastopexia.jpg"
+              src="/lovable-uploads/Mastopexia.jpg"
               alt="Cirugía mamaria"
               className="w-full h-full object-cover"
             />
@@ -71,7 +71,7 @@ const SpecialtiesSection = () => {
             className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
           >
             <img
-              src="lovable-uploads\Bioestimulacion.jpg"
+              src="/lovable-uploads/Bioestimulacion.jpg"
               alt="Estética no quirúrgica"
               className="w-full h-full object-cover"
             />
