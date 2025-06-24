@@ -98,7 +98,7 @@ const CirugiaMamaria = () => {
       {/* CTA Section */}
       <section className="py-16 bg-borgona text-white">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-seasons mb-6">
+          <h2 className="text-3xl md:text-4xl font-seasons mb-6 text-white">
             ¿Tienes dudas sobre algún procedimiento?
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
