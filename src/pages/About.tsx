@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
@@ -57,7 +56,7 @@ const About = () => {
             <div className="animate-on-scroll">
               <div className="aspect-[3/4] bg-gris-claro rounded-md overflow-hidden max-w-sm mx-auto">
                 <img
-                  src="/lovable-uploads/diploma.JPG"
+                  src="/lovable-uploads/6816f2fa-1162-4d1b-88e3-baf0f5855ff6.png"
                   alt="Dra. Beatriz Lezcano"
                   className="w-full h-full object-cover animate-on-scroll animate-slide-in-left"
                 />
