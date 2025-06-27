@@ -20,7 +20,7 @@ const SpecialtiesSection = () => {
             className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
           >
             <img
-              src="lovable-uploads/cirugiafacial.jpg"
+              src="/lovable-uploads/cirugiafacial.jpg"
               alt="Cirugía facial"
               className="w-full h-full object-cover"
             />
@@ -37,7 +37,7 @@ const SpecialtiesSection = () => {
             className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
           >
             <img
-              src="lovable-uploads/cirugiacorporal.jpg"
+              src="/lovable-uploads/cirugiacorporal.jpg"
               alt="Cirugía corporal"
               className="w-full h-full object-cover"
             />
@@ -54,7 +54,7 @@ const SpecialtiesSection = () => {
             className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
           >
             <img
-              src="/lovable-uploads/Mastopexia.jpg"
+              src="/lovable-uploads/e289bad1-8ea7-4cf5-b269-53d46fb35896.png"
               alt="Cirugía mamaria"
               className="w-full h-full object-cover"
             />
