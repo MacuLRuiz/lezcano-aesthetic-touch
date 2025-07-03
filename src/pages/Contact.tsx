@@ -100,8 +100,8 @@ const Contact = () => {
                   <Phone className="text-borgona" size={24} />
                   <div>
                     <p className="text-sm text-gray-600">Teléfono</p>
-                    <a href="tel:+5491159633340" className="text-borgona font-medium hover:underline">
-                      +54 9 11 5963 3340
+                    <a href="tel:+5491127096450" className="text-borgona font-medium hover:underline">
+                      +54 9 11 2709 6450
                     </a>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ const Contact = () => {
               
               <div className="pt-4">
                 <a 
-                  href="https://wa.me/5491159633340" 
+                  href="https://wa.me/5491127096450" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-verde-botones text-white px-8 py-3 rounded-md hover:bg-opacity-90 transition-colors inline-flex items-center space-x-2 font-medium w-full justify-center lg:w-auto"
@@ -178,7 +178,7 @@ const Contact = () => {
                   
                   {/* Botón WhatsApp */}
                   <a 
-                    href="https://wa.me/5491159633340" 
+                    href="https://wa.me/5491127096450" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-verde-botones text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition-colors inline-flex items-center space-x-2 font-medium w-full justify-center"
