@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { Instagram, MapPin, Clock, Mail, Phone } from "lucide-react";
 import SectionTitle from "../components/SectionTitle";
@@ -169,25 +170,23 @@ const Contact = () => {
                   </div>
                 ))}
                 
-                <div className="bg-gray-50 p-4 rounded-lg mt-4">
-                  <p className="text-sm text-gray-600 italic">
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <p className="text-sm text-gray-600 italic mb-4">
                     Consultorios privados. Atención personalizada. Turnos con cita previa.
                   </p>
+                  
+                  {/* Botón WhatsApp movido aquí */}
+                  <a 
+                    href="https://wa.me/5491159633340" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-verde-botones text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition-colors inline-flex items-center space-x-2 font-medium w-full justify-center"
+                  >
+                    <span>Hablemos por WhatsApp</span>
+                  </a>
                 </div>
               </div>
             </div>
-          </div>
-          
-          {/* Botón WhatsApp debajo del mapa */}
-          <div className="text-left mt-12">
-            <a 
-              href="https://wa.me/5491159633340" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-verde-botones text-white px-8 py-3 rounded-md hover:bg-opacity-90 transition-colors inline-flex items-center space-x-2 font-medium"
-            >
-              <span>Hablemos por WhatsApp</span>
-            </a>
           </div>
         </div>
       </section>
