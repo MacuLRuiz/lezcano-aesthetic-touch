@@ -143,7 +143,7 @@ const Navbar = () => {
             Contactame
           </NavLink>
           <a 
-            href="https://wa.me/1234567890" 
+            href="https://wa.me/5491127096450" 
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
@@ -209,10 +209,10 @@ const Navbar = () => {
                 }
                 onClick={closeMenu}
               >
-                Contáctame
+                Contactame
               </NavLink>
               <a 
-                href="https://wa.me/5491159633340"
+                href="https://wa.me/5491127096450"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary my-2 text-center"
