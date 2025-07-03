@@ -1,4 +1,5 @@
 
+
 import React, { useEffect } from "react";
 import { Instagram, MapPin, Clock, Mail, Phone } from "lucide-react";
 import SectionTitle from "../components/SectionTitle";
@@ -155,7 +156,7 @@ const Contact = () => {
             
             {/* Lista de Consultorios */}
             <div className="animate-on-scroll">
-              <div className="h-[500px] flex flex-col justify-start space-y-4">
+              <div className="flex flex-col justify-start space-y-4">
                 {consultoriosData.map((consultorio, index) => (
                   <div key={index} className="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
                     <h3 className="font-semibold text-borgona text-lg mb-2 flex items-center">
@@ -175,7 +176,7 @@ const Contact = () => {
                     Consultorios privados. Atención personalizada. Turnos con cita previa.
                   </p>
                   
-                  {/* Botón WhatsApp movido aquí */}
+                  {/* Botón WhatsApp */}
                   <a 
                     href="https://wa.me/5491159633340" 
                     target="_blank" 
@@ -195,3 +196,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
