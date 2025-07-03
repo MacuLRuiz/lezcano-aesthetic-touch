@@ -1,9 +1,11 @@
 
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import OptimizedImage from "@/components/OptimizedImage";
 
 const HeroSection = () => {
   const [displayText, setDisplayText] = useState("");
+  const [imageLoaded, setImageLoaded] = useState(false);
   const animatedWord = "propósito";
   
   useEffect(() => {
@@ -70,11 +72,18 @@ const HeroSection = () => {
 
           <div className="order-1 md:order-2">
             <div className="relative">
-              <div className="relative aspect-[3/4] bg-white rounded-2xl overflow-hidden max-w-[450px] mx-auto shadow-2xl">
-                <img
+              <div className={`relative aspect-[3/4] bg-white rounded-2xl overflow-hidden max-w-[450px] mx-auto shadow-2xl transition-all duration-1000 ease-out ${
+                imageLoaded ? 'animate-slide-in-left opacity-100' : 'opacity-0 transform translate-x-12'
+              }`}>
+                <OptimizedImage
                   src="/lovable-uploads/home.JPG"
                   alt="Dra. Beatriz Lezcano - Cirujana Plástica"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
+                  width={450}
+                  height={600}
+                  quality={90}
+                  lazy={false}
+                  onLoad={() => setImageLoaded(true)}
                 />
               </div>
             </div>
