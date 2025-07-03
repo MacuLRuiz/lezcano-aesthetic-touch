@@ -3,6 +3,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import OptimizedImage from "./OptimizedImage";
 
 interface ProcedureCardProps {
   title: string;
@@ -24,10 +25,12 @@ const ProcedureCard: React.FC<ProcedureCardProps> = ({
       <div className="overflow-hidden">
         <AspectRatio ratio={4/5} className="bg-gris-claro">
           {imageSrc ? (
-            <img 
+            <OptimizedImage 
               src={imageSrc} 
               alt={title} 
-              className="w-full h-full object-cover"
+              className="w-full h-full"
+              quality={85}
+              lazy={true}
             />
           ) : (
             <div className="w-full h-full bg-gradient-to-br from-gris-claro to-gray-200 flex items-center justify-center">

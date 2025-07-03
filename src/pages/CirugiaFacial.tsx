@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
+import OptimizedImage from "@/components/OptimizedImage";
 
 const CirugiaFacial = () => {
   useEffect(() => {
@@ -39,10 +40,12 @@ const CirugiaFacial = () => {
             </div>
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
-                <img
+                <OptimizedImage
                   src="/lovable-uploads/d1a1bea7-d779-4c9b-a95a-adedf1acd15c.png"
                   alt="Lifting de cara y cuello"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
+                  quality={85}
+                  lazy={true}
                 />
               </div>
             </div>
@@ -62,10 +65,12 @@ const CirugiaFacial = () => {
             </div>
             <div className="md:order-1">
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
-                <img
+                <OptimizedImage
                   src="/lovable-uploads/bleferoplastia.jpg"
                   alt="Blefaroplastia (Párpados)"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
+                  quality={85}
+                  lazy={true}
                 />
               </div>
             </div>
@@ -85,10 +90,12 @@ const CirugiaFacial = () => {
             </div>
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
-                <img
+                <OptimizedImage
                   src="/lovable-uploads/4595e78e-5fb5-4554-af82-3b5386081e5a.png"
                   alt="Rinoplastia (Nariz)"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
+                  quality={85}
+                  lazy={true}
                 />
               </div>
             </div>
@@ -108,10 +115,12 @@ const CirugiaFacial = () => {
             </div>
             <div className="md:order-1">
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
-                <img
+                <OptimizedImage
                   src="/lovable-uploads/65323b41-0e75-400d-bcd7-a28231d35f5f.png"
                   alt="Mentoplastia (Mentón)"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
+                  quality={85}
+                  lazy={true}
                 />
               </div>
             </div>

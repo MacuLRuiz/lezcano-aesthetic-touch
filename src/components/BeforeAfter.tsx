@@ -1,5 +1,6 @@
 
 import React from "react";
+import OptimizedImage from "./OptimizedImage";
 
 interface BeforeAfterProps {
   beforeImage: string;
@@ -17,20 +18,24 @@ const BeforeAfter: React.FC<BeforeAfterProps> = ({
       <div className="grid grid-cols-2 gap-4">
         <div>
           <div className="aspect-square bg-gris-claro rounded overflow-hidden">
-            <img 
+            <OptimizedImage 
               src={beforeImage} 
               alt={`Antes - ${title}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full"
+              quality={90}
+              lazy={true}
             />
           </div>
           <p className="text-center text-sm mt-2 font-medium">Antes</p>
         </div>
         <div>
           <div className="aspect-square bg-gris-claro rounded overflow-hidden">
-            <img 
+            <OptimizedImage 
               src={afterImage} 
               alt={`Después - ${title}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full"
+              quality={90}
+              lazy={true}
             />
           </div>
           <p className="text-center text-sm mt-2 font-medium">Después</p>
