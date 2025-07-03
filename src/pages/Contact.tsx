@@ -1,5 +1,3 @@
-
-
 import React, { useEffect } from "react";
 import { Instagram, MapPin, Clock, Mail, Phone } from "lucide-react";
 import SectionTitle from "../components/SectionTitle";
@@ -90,8 +88,8 @@ const Contact = () => {
                   <Mail className="text-borgona" size={24} />
                   <div>
                     <p className="text-sm text-gray-600">Email</p>
-                    <a href="mailto:beatrizlezcano@live.com" className="text-borgona font-medium hover:underline">
-                      beatrizlezcano@live.com
+                    <a href="mailto:lezcanocirugiaplastica@gmail.com" className="text-borgona font-medium hover:underline">
+                      lezcanocirugiaplastica@gmail.com
                     </a>
                   </div>
                 </div>
@@ -196,4 +194,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
