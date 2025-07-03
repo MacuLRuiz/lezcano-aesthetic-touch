@@ -64,7 +64,7 @@ const Footer = () => {
             
             <div className="flex items-center space-x-4 mt-6">
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/dra.beatrizlezcano" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-borgona hover:text-opacity-80 transition-colors"
@@ -74,7 +74,7 @@ const Footer = () => {
               </a>
 
                <a
-                href="https://wa.me/5491159633340"
+                href="https://www.linkedin.com/in/dra-beatriz-lezcano-8095a935a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-borgona hover:text-opacity-80 transition-color"
@@ -86,10 +86,30 @@ const Footer = () => {
                 height="24" 
                 fill="currentColor">
                   
-                  <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                  <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                </svg>
               </a>
+              
               <a
-                href="https://wa.me/5491159633340"
+                href="https://www.tiktok.com/@drabeatrizlezcano?_t=ZM-8xj1pGxgVKH&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-borgona hover:text-opacity-80 transition-color"
+                aria-label="TikTok"
+              >
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  viewBox="0 0 448 512" 
+                  width="24" 
+                  height="24" 
+                  fill="currentColor"
+                >
+                  <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
+                </svg>
+              </a>
+              
+              <a
+                href="https://wa.me/5491127096450"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-borgona hover:text-opacity-80 transition-color"
