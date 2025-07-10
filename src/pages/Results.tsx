@@ -190,7 +190,7 @@ const Results = () => {
               {/* Image */}
               <div className="relative">
                 <img 
-                  src="/lovable-uploads/5c7e72cc-bdeb-4027-89b9-414c6309f0d2.png" 
+                  src="/lovable-uploads/5c7e72cc-bdeb-4027-89b9-414c6309f0d2.jpg" 
                   alt="Dra. Beatriz Lezcano en consulta médica" 
                   className="w-full h-auto rounded-lg shadow-lg animate-on-scroll animate-slide-in-left overflow-hidden"
                 />

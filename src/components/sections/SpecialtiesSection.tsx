@@ -54,7 +54,7 @@ const SpecialtiesSection = () => {
             className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
           >
             <img
-              src="/lovable-uploads/e289bad1-8ea7-4cf5-b269-53d46fb35896.png"
+              src="/lovable-uploads/e289bad1-8ea7-4cf5-b269-53d46fb35896.jpg"
               alt="Cirugía mamaria"
               className="w-full h-full object-cover"
             />

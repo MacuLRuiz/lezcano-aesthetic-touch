@@ -56,7 +56,7 @@ const FeaturedProceduresSection = () => {
                     title="Rinoplastia"
                     description="Armoniza la forma y funcionalidad de la nariz, mejorando tanto la estética como la respiración."
                     link="/procedimientos"
-                    imageSrc="/lovable-uploads/4595e78e-5fb5-4554-af82-3b5386081e5a.png"
+                    imageSrc="/lovable-uploads/4595e78e-5fb5-4554-af82-3b5386081e5a.jpg"
                   />
                 </div>
               </CarouselItem>
@@ -89,7 +89,7 @@ const FeaturedProceduresSection = () => {
                     title="Lipoescultura"
                     description="Remodela el contorno corporal eliminando acúmulos de grasa localizada para una silueta armónica."
                     link="/procedimientos"
-                    imageSrc="/lovable-uploads/3980f895-566b-4465-8516-6c1cd83ab4d1.png"
+                    imageSrc="/lovable-uploads/3980f895-566b-4465-8516-6c1cd83ab4d1.jpg"
                   />
                 </div>
               </CarouselItem>

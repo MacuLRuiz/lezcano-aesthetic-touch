@@ -26,7 +26,7 @@ const FAQSection = () => {
           <div className="order-2 md:order-1 self-start animate-on-scroll animate-slide-in-left">
             <div className="aspect-[4/3] bg-white rounded-lg overflow-hidden shadow-lg sticky top-8">
               <img
-                src="/lovable-uploads/5c7e72cc-bdeb-4027-89b9-414c6309f0d2.png"
+                src="/lovable-uploads/5c7e72cc-bdeb-4027-89b9-414c6309f0d2.jpg"
                 alt="Dra. Beatriz Lezcano en consulta médica"
                 className="w-full h-full object-cover"
               />

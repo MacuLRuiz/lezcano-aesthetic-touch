@@ -57,7 +57,7 @@ const Contact = () => {
       <section 
         className="relative pt-32 pb-24 min-h-[90vh] flex items-center" 
         style={{
-          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.66), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/3289c88c-f7f0-4e63-b541-4f1fee5facac.png')",
+          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.66), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/3289c88c-f7f0-4e63-b541-4f1fee5facac.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "50% 20%"
         }}

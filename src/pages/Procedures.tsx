@@ -36,7 +36,7 @@ const Procedures = () => {
       <section 
         className="relative pt-32 pb-24 min-h-[90vh] flex items-center" 
         style={{
-          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.71), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/890f1051-e9fc-40ef-af55-b00b9596e3ed.png')",
+          backgroundImage: "linear-gradient(to right, rgba(131, 72, 74, 0.71), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/6bb65d15-f2c1-40ce-bf35-7c4803f37bea.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
@@ -65,7 +65,7 @@ const Procedures = () => {
                 title="Rinoplastia"
                 description="Armoniza la forma y funcionalidad de la nariz, mejorando tanto la estética como la respiración. Resultados naturales que armonizan con tus rasgos faciales."
                 link="/contacto"
-                imageSrc="/lovable-uploads/31d4bbfe-a465-49de-b1f9-29b01424f112.png"
+                imageSrc="/lovable-uploads/31d4bbfe-a465-49de-b1f9-29b01424f112.jpg"
               />
             </div>
             
@@ -83,7 +83,7 @@ const Procedures = () => {
                 title="Lipoescultura"
                 description="Remodela el contorno corporal eliminando acúmulos de grasa localizada y definiendo la silueta para un resultado proporcional y armónico."
                 link="/contacto"
-                imageSrc="/lovable-uploads/3980f895-566b-4465-8516-6c1cd83ab4d1.png"
+                imageSrc="/lovable-uploads/3980f895-566b-4465-8516-6c1cd83ab4d1.jpg"
               />
             </div>
           </div>
@@ -113,7 +113,7 @@ const Procedures = () => {
                 title="Relleno con ácido hialurónico"
                 description="Restaura el volumen perdido, define contornos y mejora la hidratación en labios, pómulos y surcos nasogenianos. Resultados inmediatos y naturales."
                 link="/contacto"
-                imageSrc="/lovable-uploads/d700353d-f0af-4a66-aa7d-01c9069e8613.png"
+                imageSrc="/lovable-uploads/d700353d-f0af-4a66-aa7d-01c9069e8613.jpg"
               />
             </div>
           </div>

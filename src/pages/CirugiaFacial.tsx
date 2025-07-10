@@ -91,7 +91,7 @@ const CirugiaFacial = () => {
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <OptimizedImage
-                  src="/lovable-uploads/4595e78e-5fb5-4554-af82-3b5386081e5a.png"
+                  src="/lovable-uploads/4595e78e-5fb5-4554-af82-3b5386081e5a.jpg"
                   alt="Rinoplastia (Nariz)"
                   className="w-full h-full"
                   quality={85}

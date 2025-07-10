@@ -51,7 +51,7 @@ const TeamSection = () => {
                 <CarouselItem>
                   <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
                     <img
-                      src="/lovable-uploads/c090dfe1-61a0-4dbe-9ed6-74c907526ca4.png"
+                      src="/lovable-uploads/c090dfe1-61a0-4dbe-9ed6-74c907526ca4.jpg"
                       alt="Dra. Lezcano trabajando en consulta - Planificación de procedimientos"
                       className="w-full h-full object-cover object-center"
                     />
@@ -60,7 +60,7 @@ const TeamSection = () => {
                 <CarouselItem>
                   <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
                     <img
-                      src="/lovable-uploads/18f2e586-f072-4f7c-8b62-d726d1c69d34.png"
+                      src="/lovable-uploads/18f2e586-f072-4f7c-8b62-d726d1c69d34.jpg"
                       alt="Consulta personalizada - Dra. Lezcano con paciente"
                       className="w-full h-full object-cover object-center"
                     />
@@ -69,7 +69,7 @@ const TeamSection = () => {
                 <CarouselItem>
                   <div className="h-[50vh] bg-white rounded-md overflow-hidden image-container">
                     <img
-                      src="/lovable-uploads/9333fc54-a3ca-4127-9a8d-7304461af630.png"
+                      src="/lovable-uploads/9333fc54-a3ca-4127-9a8d-7304461af630.jpg"
                       alt="Tratamiento estético en consultorio - Equipo Lezcano"
                       className="w-full h-full object-cover object-center"
                     />

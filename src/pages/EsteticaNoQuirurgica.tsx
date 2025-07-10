@@ -39,7 +39,7 @@ const EsteticaNoQuirurgica = () => {
             <div>
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="/lovable-uploads/243dd21a-d6ab-44ce-9864-860c9ee44492.png"
+                  src="/lovable-uploads/243dd21a-d6ab-44ce-9864-860c9ee44492.jpg"
                   alt="Botox - Tratamiento de líneas de expresión"
                   className="w-full h-full object-cover"
                 />

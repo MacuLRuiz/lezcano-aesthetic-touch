@@ -62,7 +62,7 @@ const CirugiaCorporal = () => {
             <div className="md:order-1">
               <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="/lovable-uploads/3980f895-566b-4465-8516-6c1cd83ab4d1.png"
+                  src="/lovable-uploads/3980f895-566b-4465-8516-6c1cd83ab4d1.jpg"
                   alt="Lipoescultura"
                   className="w-full h-full object-cover"
                 />
