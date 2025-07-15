@@ -69,13 +69,14 @@ const TestimonialsSection = () => {
   }, [api]);
 
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-50 to-cyan-50">
+    <section className="py-16 bg-bordo">
       <div className="container-custom">
         <div className="animate-on-scroll">
           <SectionTitle 
             title="Lo que dicen mis pacientes" 
             subtitle="Testimonios reales de personas que confiaron en nuestros tratamientos"
             hideLine={true}
+            whiteText={true}
           />
         </div>
         
@@ -88,29 +89,29 @@ const TestimonialsSection = () => {
             }}
             className="w-full"
           >
-            <CarouselContent className="h-auto">
+            <CarouselContent className="h-80">
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-4 h-full">
                     <div className="bg-white rounded-xl shadow-lg p-6 h-full flex flex-col">
                       {/* Header with name */}
-                      <div className="mb-4">
-                        <h3 className="text-xl font-semibold text-borgona mb-2">{testimonial.name}</h3>
+                      <div className="mb-3">
+                        <h3 className="text-lg font-semibold text-borgona mb-2">{testimonial.name}</h3>
                         
                         {/* 5 stars */}
                         <div className="flex items-center gap-1 mb-2">
                           {[...Array(5)].map((_, i) => (
-                            <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                            <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                           ))}
                         </div>
                         
                         {/* Date */}
-                        <p className="text-sm text-gray-500">{testimonial.date}</p>
+                        <p className="text-xs text-gray-500">{testimonial.date}</p>
                       </div>
                       
                       {/* Testimonial text */}
-                      <div className="flex-1">
-                        <p className="text-gray-700 leading-relaxed italic">
+                      <div className="flex-1 overflow-hidden">
+                        <p className="text-gray-700 leading-relaxed italic text-sm line-clamp-6">
                           "{testimonial.text}"
                         </p>
                       </div>
@@ -121,10 +122,10 @@ const TestimonialsSection = () => {
             </CarouselContent>
             
             <div className="absolute top-1/2 -translate-y-1/2 -left-6 z-10">
-              <CarouselPrevious className="relative left-0 bg-white hover:bg-white/90 border-borgona/20 text-borgona hover:text-borgona shadow-lg h-12 w-12" />
+              <CarouselPrevious className="relative left-0 bg-white hover:bg-white/90 border-white text-borgona hover:text-borgona shadow-lg h-12 w-12" />
             </div>
             <div className="absolute top-1/2 -translate-y-1/2 -right-6 z-10">
-              <CarouselNext className="relative right-0 bg-white hover:bg-white/90 border-borgona/20 text-borgona hover:text-borgona shadow-lg h-12 w-12" />
+              <CarouselNext className="relative right-0 bg-white hover:bg-white/90 border-white text-borgona hover:text-borgona shadow-lg h-12 w-12" />
             </div>
           </Carousel>
 
@@ -135,7 +136,7 @@ const TestimonialsSection = () => {
                 key={index}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index + 1 === current 
-                    ? 'bg-borgona scale-110' 
+                    ? 'bg-white scale-110' 
                     : 'bg-white/50 hover:bg-white/70'
                 }`}
                 onClick={() => api?.scrollTo(index)}
