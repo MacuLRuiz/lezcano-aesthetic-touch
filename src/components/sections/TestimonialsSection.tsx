@@ -89,7 +89,7 @@ const TestimonialsSection = () => {
             }}
             className="w-full"
           >
-            <CarouselContent className="min-h-96">
+            <CarouselContent className="h-80">
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-4 h-full">
@@ -110,8 +110,8 @@ const TestimonialsSection = () => {
                       </div>
                       
                       {/* Testimonial text */}
-                      <div className="flex-1">
-                        <p className="text-gray-700 leading-relaxed italic text-sm">
+                      <div className="flex-1 overflow-hidden">
+                        <p className="text-gray-700 leading-relaxed italic text-sm line-clamp-6">
                           "{testimonial.text}"
                         </p>
                       </div>
