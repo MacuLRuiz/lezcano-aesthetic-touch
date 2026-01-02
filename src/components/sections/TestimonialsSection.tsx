@@ -26,32 +26,32 @@ const TestimonialsSection = () => {
     {
       name: "Silvana Toubes",
       text: "Mi experiencia siempre fue muy buena. Mucho profesionalismo. He hecho varios tratamientos con ella y estoy muy conforme con los resultados. Abanico de posibilidades y tratamientos acordes a las necesidades de cada uno. ¡Estoy muy agradecida!",
-      date: "hace 2 semanas"
+      date: ""
     },
     {
       name: "Virginia Medina",
       text: "Excelente profesional y muchísima calidez humana. Inmejorable el asesoramiento para el tratamiento adecuado que se necesita. 100% recomendable.",
-      date: "hace 2 semanas"
+      date: ""
     },
     {
       name: "Laura Molina",
       text: "Súper recomendable. A mí me cambió la vida. Me operó de hidradenitis supurativa, enfermedad que sufrí por años, y la Dra. Lezcano me cambió la calidad de vida. Aparte de ser una excelente profesional, es una gran persona, muy humana para atender. ¡Sin dudas la mejor de todas!",
-      date: "hace 2 semanas"
+      date: ""
     },
     {
       name: "Celina Caballero",
       text: "Excelentes cirujanos. Siempre agradecida con el Dr., el cual me operó de niña varias veces (cicatrices de quemaduras), y junto a la Dra. hoy día los sigo eligiendo y recomendando. Eternamente agradecida con ambos. ♥️",
-      date: "hace 2 semanas"
+      date: ""
     },
     {
       name: "Emilia Benítez",
       text: "La verdad, es un privilegio conocer la calidez humana y profesional de la doctora. El compromiso para con los pacientes y su continua capacitación para ayudarnos a estar bien con nosotras mismas. Gracias.",
-      date: "hace 2 semanas"
+      date: ""
     },
     {
       name: "Adriana",
       text: "Hola, soy Adriana y quiero contarles la hermosa experiencia que tuve con la Dra. Beatriz Lezcano, con la cual me realicé una blefaroplastia superior e inferior y quedé totalmente conforme. Además, me realicé varios tratamientos con ella como el bótox y el plasma rico en plaquetas, con excelente resultado. Hace unos años me realicé un lifting facial con ella y su papá, el Dr. Horacio Lezcano. La verdad, un placer haberme atendido con ellos. Y no quiero olvidarme de la calidez humana de ambos, aparte de lo grandes profesionales que son. Estoy muy agradecida. 🫶",
-      date: "hace 2 semanas"
+      date: ""
     }
   ];
 

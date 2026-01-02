@@ -75,8 +75,8 @@ const FeaturedProceduresSection = () => {
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-6 h-full">
                   <ProcedureCard
-                    title="Botox"
-                    description="Tratamiento no invasivo para suavizar líneas de expresión y prevenir signos de envejecimiento."
+                    title="Tratamiento de líneas de expresión"
+                    description="Procedimiento no invasivo para suavizar líneas de expresión y prevenir signos de envejecimiento."
                     link="/procedimientos"
                     imageSrc="/lovable-uploads/00472de7-6b8d-441f-ab84-6d52d2dd899e.png"
                   />

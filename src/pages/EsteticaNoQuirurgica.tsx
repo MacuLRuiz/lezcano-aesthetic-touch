@@ -31,9 +31,10 @@ const EsteticaNoQuirurgica = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-seasons mb-6 text-borgona">Botox</h2>
+              <h2 className="text-3xl font-seasons mb-6 text-borgona">Tratamiento de líneas de expresión</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Suaviza las líneas de expresión y previene los signos del envejecimiento de manera natural. El botox es ideal para tratar arrugas en la frente, patas de gallo y entrecejo. Este tratamiento mínimamente invasivo proporciona resultados visibles en pocos días, manteniendo la expresión natural del rostro.
+                Suaviza las líneas de expresión y previene los signos del envejecimiento de manera natural. Es ideal para tratar arrugas en la frente, el entrecejo y las conocidas “patas de gallo”.
+Se trata de un procedimiento mínimamente invasivo que ofrece resultados visibles en pocos días, manteniendo siempre la expresión natural del rostro.
               </p>
             </div>
             <div>

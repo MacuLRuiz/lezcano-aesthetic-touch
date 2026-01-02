@@ -40,15 +40,11 @@ const Contact = () => {
       schedule: "Martes de 14 a 18 hs"
     },
     {
-      location: "Nordelta",
-      address: "Estética Dardano – Barrio Puerto Escondido, local 4001",
-      schedule: "Viernes de 15 a 18 hs"
+      location: "Barracas",
+      address: "Bolívar 1640. Edificio La Galerie",
+      schedule: "Consultar"
     },
-    {
-      location: "Hudson",
-      address: "Rincón de Hudson, Calle 137 N6313",
-      schedule: "Atención con turno previo"
-    }
+  
   ];
 
   return (

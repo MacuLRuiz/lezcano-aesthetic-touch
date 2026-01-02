@@ -101,8 +101,8 @@ const Procedures = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="animate-on-scroll">
               <ProcedureCard
-                title="Botox"
-                description="Tratamiento para suavizar líneas de expresión y prevenir signos de envejecimiento, especialmente en frente, entrecejo y patas de gallo. Proporciona un aspecto rejuvenecido y natural."
+                title="Tratamiento de líneas de expresión"
+                description="Procedimiento para suavizar líneas de expresión y prevenir signos de envejecimiento, especialmente en frente, entrecejo y patas de gallo. Proporciona un aspecto rejuvenecido y natural."
                 link="/contacto"
                 imageSrc="/lovable-uploads/00472de7-6b8d-441f-ab84-6d52d2dd899e.png"
               />
